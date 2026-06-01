@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore premium Laminates Chennai at Interior Spot, Chennai's top destination for interior decorative materials.">
+    <meta name="keywords" content="laminates chennai, interior spot, laminates, chennai interiors, decorative sheets, wall panels">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laminates | Interior Spot Chennai</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/next-level.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root { --next-blue: #1a3b8f; }
+
+        /* ===== HERO ===== */
+        .laminate-hero {
+            background: linear-gradient(135deg, #1a3b8f 0%, #0d2157 60%, #162d6e 100%);
+            padding: 100px 0 70px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .laminate-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 500px;
+            height: 500px;
+            background: rgba(255,255,255,0.04);
+            border-radius: 50%;
+        }
+        .laminate-hero h1 {
+            font-size: 60px;
+            font-weight: 800;
+            margin-bottom: 18px;
+            font-family: 'Outfit', sans-serif;
+            letter-spacing: -1px;
+        }
+        .laminate-hero p {
+            font-size: 16px;
+            opacity: 0.85;
+            margin-bottom: 30px;
+        }
+        .hero-pills {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        .hero-pill {
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white;
+            padding: 7px 18px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        /* ===== E-COMMERCE LAYOUT & SIDEBAR ===== */
+        .ecommerce-layout {
+            display: flex;
+            gap: 40px;
+            padding: 40px 0;
+            align-items: flex-start;
+        }
+        .sidebar-filters {
+            width: 260px;
+            flex-shrink: 0;
+            position: sticky;
+            top: 30px;
+        }
+        .active-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+        .filter-chip {
+            background: #f1f2f6;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .filter-chip:hover { background: #e2e4ed; }
+        .filter-chip i { font-size: 11px; }
+
+        .filter-group {
+            border-top: 1px solid #eaeaea;
+            padding: 18px 0;
+        }
+        .filter-group:last-child { border-bottom: 1px solid #eaeaea; }
+        
+        .filter-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            font-size: 15px;
+            cursor: pointer;
+            color: #111;
+        }
+        .filter-header i { font-size: 12px; transition: transform 0.3s; }
+        .filter-header.open i { transform: rotate(45deg); }
+        
+        .filter-body {
+            padding-top: 15px;
+            display: none;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .filter-header.open + .filter-body { display: flex; }
+        
+        .filter-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            color: #555;
+            cursor: pointer;
+        }
+        .filter-label input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            accent-color: var(--next-blue);
+        }
+        
+        .main-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        /* ===== BRAND CARDS ===== */
+        .brand-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 28px;
+        }
+        .brand-card {
+            background: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 3px 18px rgba(0,0,0,0.07);
+            border: 1.5px solid #f0f0f5;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        .brand-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(26,59,143,0.14);
+            border-color: #c8d5ff;
+        }
+        .brand-card .card-img {
+            width: 100%;
+            aspect-ratio: 4/5;
+            overflow: hidden;
+            background: #f5f6fb;
+        }
+        .brand-card .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .brand-card:hover .card-img img { transform: scale(1.08); }
+        .brand-card .card-body {
+            padding: 18px 18px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            flex: 1;
+        }
+        .brand-name { font-size: 16px; font-weight: 700; color: #1a1a2e; line-height: 1.3; }
+        .brand-desc { font-size: 13px; color: #888; line-height: 1.55; flex: 1; margin-bottom: 8px; }
+        
+        .card-specs {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f8f9ff;
+            padding: 10px 14px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #555;
+            border: 1px solid #eef1ff;
+        }
+        .card-specs .spec-item { display: flex; align-items: center; gap: 5px; }
+        .card-specs .spec-item i { color: #9aaeff; font-size: 11px; }
+        .card-specs .price {
+            color: var(--next-blue);
+            font-size: 15px;
+            font-weight: 800;
+        }
+
+        .card-actions {
+            display: flex;
+            gap: 9px;
+            margin-top: auto;
+        }
+        .btn-wa {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            background: #25D366;
+            color: #fff;
+            padding: 11px 14px;
+            border-radius: 11px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+        .btn-wa:hover { background: #1bab52; transform: scale(1.02); }
+        .btn-phone {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eef1ff;
+            color: var(--next-blue);
+            padding: 11px 14px;
+            border-radius: 11px;
+            font-size: 14px;
+            text-decoration: none;
+            border: 1.5px solid #d0d9ff;
+            transition: all 0.25s ease;
+            min-width: 44px;
+        }
+        .btn-phone:hover { background: var(--next-blue); color: white; border-color: var(--next-blue); }
+
+        @media (max-width: 992px) {
+            .ecommerce-layout {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .sidebar-filters {
+                width: 100%;
+                position: static;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .laminate-hero h1 { font-size: 38px; }
+            .brand-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+            .lam-section-header h2 { font-size: 22px; }
+            .brand-name { font-size: 14px; }
+            .card-specs {
+                padding: 8px 10px;
+                font-size: 11px;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 6px;
+            }
+            .card-specs .price {
+                margin-left: auto;
+                margin-top: 0;
+            }
+            .btn-wa, .btn-phone { padding: 9px 10px; font-size: 12px; }
+        }
+
+        /* ===== CATEGORY TABS ===== */
+        .category-tabs-wrapper {
+            background: #fff;
+            border-bottom: 2px solid #eef0f5;
+            position: sticky;
+            top: 70px;
+            z-index: 200;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+        }
+        .category-tabs {
+            display: flex;
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        .category-tabs::-webkit-scrollbar { display: none; }
+        .cat-tab {
+            flex-shrink: 0;
+            padding: 16px 22px;
+            font-size: 13.5px;
+            font-weight: 600;
+            color: #777;
+            cursor: pointer;
+            border: none;
+            border-bottom: 3px solid transparent;
+            background: none;
+            font-family: 'Outfit', sans-serif;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+        .cat-tab:hover { color: var(--next-blue); background: #f8f9ff; }
+        .cat-tab.active {
+            color: var(--next-blue);
+            border-bottom-color: var(--next-blue);
+            background: #f4f6ff;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="site-header"></header>
+
+    <section class="laminate-hero">
+        <div class="container">
+            <h1>Laminates</h1>
+            <p>Premium quality laminates in 8 collections — from everyday inner to luxury acrylic & high texture.</p>
+            <div class="hero-pills">
+                <span class="hero-pill"><i class="fas fa-layer-group"></i> 8 Collections</span>
+                <span class="hero-pill"><i class="fas fa-ruler-combined"></i> 0.72mm – 1.5mm</span>
+                <span class="hero-pill"><i class="fas fa-palette"></i> Plain, Wood, Marble, Digital, Acrylic</span>
+                <span class="hero-pill"><i class="fas fa-tags"></i> 15+ Brands</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORY TABS -->
+    <div class="category-tabs-wrapper">
+        <div class="container">
+            <div class="category-tabs">
+                <button class="cat-tab active" data-filter="all">All Laminates</button>
+                <button class="cat-tab" data-filter="1mm Plain Colour Laminates">1mm Plain Colour Laminates</button><button class="cat-tab" data-filter="0.8mm Plain Colour Laminates">0.8mm Plain Colour Laminates</button><button class="cat-tab" data-filter="1mm Wood & Marble Laminates">1mm Wood & Marble Laminates</button><button class="cat-tab" data-filter="0.8mm Wood & Marble Laminates">0.8mm Wood & Marble Laminates</button><button class="cat-tab" data-filter="0.72mm Inner Laminates">0.72mm Inner Laminates</button><button class="cat-tab" data-filter="Acrylic Laminates">Acrylic Laminates</button><button class="cat-tab" data-filter="1mm Digital Laminates">1mm Digital Laminates</button><button class="cat-tab" data-filter="1.25mm High Texture Laminates">1.25mm High Texture Laminates</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- E-COMMERCE LAYOUT -->
+    <main class="container">
+        <div class="ecommerce-layout">
+
+            
+            <!-- PRODUCT GRID -->
+            <div class="main-content">
+                <div class="brand-grid">
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Plain Colour Laminates">
+                    <div class="card-img"><a href="crayon.html"><img src="assets/product/crayon-pages/page_001.jpg" alt="CRAYON"></a></div>
+                    <div class="card-body">
+                        <a href="crayon.html" class="brand-name" style="text-decoration:none;">CRAYON</a>
+                        <div class="brand-desc">Vibrant solid colour range with a curated palette.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹2350</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in CRAYON" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Plain Colour Laminates">
+                    <div class="card-img"><a href="laminter.html"><img src="assets/product/laminter-pages/page_001.jpg" alt="Laminter Plain Color"></a></div>
+                    <div class="card-body">
+                        <a href="laminter.html" class="brand-name" style="text-decoration:none;">Laminter Plain Color</a>
+                        <div class="brand-desc">Classic plain colour range.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹2350</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Laminter Plain Color" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Plain Colour Laminates">
+                    <div class="card-img"><a href="luxe.html"><img src="assets/product/luxe-pages/page_001.jpg" alt="Luxe With Texture"></a></div>
+                    <div class="card-body">
+                        <a href="luxe.html" class="brand-name" style="text-decoration:none;">Luxe With Texture</a>
+                        <div class="brand-desc">1mm laminates with subtle texture.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹2350</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Luxe With Texture" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Plain Colour Laminates">
+                    <div class="card-img"><a href="mikolam.html"><img src="assets/product/mikolam-pages/page_001.jpg" alt="MIKOLAM SOLID"></a></div>
+                    <div class="card-body">
+                        <a href="mikolam.html" class="brand-name" style="text-decoration:none;">MIKOLAM SOLID</a>
+                        <div class="brand-desc">Good Vibes Only — MIKOLAM's flagship solid laminate range.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹2350</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in MIKOLAM SOLID" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Plain Colour Laminates">
+                    <div class="card-img"><a href="pastelo.html"><img src="assets/product/pastelo-pages/page_001.jpg" alt="Pastelo"></a></div>
+                    <div class="card-body">
+                        <a href="pastelo.html" class="brand-name" style="text-decoration:none;">Pastelo</a>
+                        <div class="brand-desc">Beautiful pastel shades.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹2350</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Pastelo" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Plain Colour Laminates">
+                    <div class="card-img"><a href="xosso.html"><img src="assets/product/xosso-pages/page_001.jpg" alt="Xosso"></a></div>
+                    <div class="card-body">
+                        <a href="xosso.html" class="brand-name" style="text-decoration:none;">Xosso</a>
+                        <div class="brand-desc">Premium solid colours.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹2350</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Xosso" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="0.8" data-type="0.8mm Plain Colour Laminates">
+                    <div class="card-img"><a href="pc-0-8mm.html"><img src="assets/product/pc-pages/page_001.jpg" alt="PC 0.8mm — PureColor Solid"></a></div>
+                    <div class="card-body">
+                        <a href="pc-0-8mm.html" class="brand-name" style="text-decoration:none;">PC 0.8mm — PureColor Solid</a>
+                        <div class="brand-desc">PureColor 0.8mm solid laminate.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹1200</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in PC 0.8mm — PureColor Solid" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="0.8" data-type="0.8mm Plain Colour Laminates">
+                    <div class="card-img"><a href="roto-shine.html"><img src="assets/product/roto-pages/page_001.jpg" alt="Roto Shine (2025)"></a></div>
+                    <div class="card-body">
+                        <a href="roto-shine.html" class="brand-name" style="text-decoration:none;">Roto Shine (2025)</a>
+                        <div class="brand-desc">Roto Shine 0.8mm solid laminate.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹1200</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Roto Shine (2025)" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Wood & Marble Laminates">
+                    <div class="card-img"><a href="amaryllis.html"><img src="assets/product/amaryllis-pages/page_001.jpg" alt="Amaryllis Wood Laminate"></a></div>
+                    <div class="card-body">
+                        <a href="amaryllis.html" class="brand-name" style="text-decoration:none;">Amaryllis Wood Laminate</a>
+                        <div class="brand-desc">Rich wood grain patterns.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹2800</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Amaryllis Wood Laminate" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Wood & Marble Laminates">
+                    <div class="card-img"><a href="belador.html"><img src="assets/product/belador-pages/page_001.jpg" alt="BELADOR Wood & Marble"></a></div>
+                    <div class="card-body">
+                        <a href="belador.html" class="brand-name" style="text-decoration:none;">BELADOR Wood & Marble</a>
+                        <div class="brand-desc">Belador premium wood and marble textures.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹2800</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in BELADOR Wood & Marble" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Wood & Marble Laminates">
+                    <div class="card-img"><a href="bookmatch.html"><img src="assets/product/bookmatch-pages/page_001.jpg" alt="BookMatch Marble Laminate"></a></div>
+                    <div class="card-body">
+                        <a href="bookmatch.html" class="brand-name" style="text-decoration:none;">BookMatch Marble Laminate</a>
+                        <div class="brand-desc">Bookmatch marble designs.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹2800</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in BookMatch Marble Laminate" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Wood & Marble Laminates">
+                    <div class="card-img"><a href="eco-touch.html"><img src="assets/product/eco-touch-pages/page_001.jpg" alt="Eco Touch Wood & Stone"></a></div>
+                    <div class="card-body">
+                        <a href="eco-touch.html" class="brand-name" style="text-decoration:none;">Eco Touch Wood & Stone</a>
+                        <div class="brand-desc">Eco Touch premium laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹2800</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Eco Touch Wood & Stone" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Wood & Marble Laminates">
+                    <div class="card-img"><a href="richlam.html"><img src="assets/product/richlam-pages/page_001.jpg" alt="RichLam Wood & Marble"></a></div>
+                    <div class="card-body">
+                        <a href="richlam.html" class="brand-name" style="text-decoration:none;">RichLam Wood & Marble</a>
+                        <div class="brand-desc">RichLam wood and marble laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹2800</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in RichLam Wood & Marble" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Wood & Marble Laminates">
+                    <div class="card-img"><a href="star.html"><img src="assets/product/star-pages/page_001.jpg" alt="Star 1mm Wood Laminate"></a></div>
+                    <div class="card-body">
+                        <a href="star.html" class="brand-name" style="text-decoration:none;">Star 1mm Wood Laminate</a>
+                        <div class="brand-desc">Star 1mm wood laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹2800</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Star 1mm Wood Laminate" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Wood & Marble Laminates">
+                    <div class="card-img"><a href="xosso-wood.html"><img src="assets/product/xosso-wood-pages/page_001.jpg" alt="Xosso Wood & Marble"></a></div>
+                    <div class="card-body">
+                        <a href="xosso-wood.html" class="brand-name" style="text-decoration:none;">Xosso Wood & Marble</a>
+                        <div class="brand-desc">Xosso wood and marble textures.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹2800</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Xosso Wood & Marble" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="0.8" data-type="0.8mm Wood & Marble Laminates">
+                    <div class="card-img"><a href="compass-navigate.html"><img src="assets/product/compass-navigate-pages/page_001.jpg" alt="Compass NAVIGATE Wood"></a></div>
+                    <div class="card-body">
+                        <a href="compass-navigate.html" class="brand-name" style="text-decoration:none;">Compass NAVIGATE Wood</a>
+                        <div class="brand-desc">Compass Navigate wood laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹1200</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Compass NAVIGATE Wood" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="0.8" data-type="0.8mm Wood & Marble Laminates">
+                    <div class="card-img"><a href="ivas-celebrations.html"><img src="assets/product/ivas-celebrations-pages/page_001.jpg" alt="IVAS Celebrations Wood"></a></div>
+                    <div class="card-body">
+                        <a href="ivas-celebrations.html" class="brand-name" style="text-decoration:none;">IVAS Celebrations Wood</a>
+                        <div class="brand-desc">IVAS Celebrations wood laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹1200</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in IVAS Celebrations Wood" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="0.8" data-type="0.8mm Wood & Marble Laminates">
+                    <div class="card-img"><a href="roto-shine.html"><img src="assets/product/roto-pages/page_001.jpg" alt="Roto Shine Wood Laminate"></a></div>
+                    <div class="card-body">
+                        <a href="roto-shine.html" class="brand-name" style="text-decoration:none;">Roto Shine Wood Laminate</a>
+                        <div class="brand-desc">Roto Shine wood laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹1200</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Roto Shine Wood Laminate" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="0.72" data-type="0.72mm Inner Laminates">
+                    <div class="card-img"><a href="prodek-inside.html"><img src="assets/product/prodek-inside-pages/page_001.jpg" alt="PRODEK INSIDE 0.72mm Inner Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="prodek-inside.html" class="brand-name" style="text-decoration:none;">PRODEK INSIDE 0.72mm Inner Laminates</a>
+                        <div class="brand-desc">PRODEK INSIDE inner laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹595</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in PRODEK INSIDE 0.72mm Inner Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="0.72" data-type="0.72mm Inner Laminates">
+                    <div class="card-img"><a href="apple-valley.html"><img src="assets/product/apple-valley-pages/page_001.jpg" alt="APPLE VALLEY 0.72mm Inner Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="apple-valley.html" class="brand-name" style="text-decoration:none;">APPLE VALLEY 0.72mm Inner Laminates</a>
+                        <div class="brand-desc">APPLE VALLEY inner laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹595</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in APPLE VALLEY 0.72mm Inner Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="Luxury" data-type="Acrylic Laminates">
+                    <div class="card-img"><a href="acrylikaa.html"><img src="assets/product/acrylikaa-pages/page_001.jpg" alt="Acrylikaa Acrylic Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="acrylikaa.html" class="brand-name" style="text-decoration:none;">Acrylikaa Acrylic Laminates</a>
+                        <div class="brand-desc">Premium acrylic laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹4400</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Acrylikaa Acrylic Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="Luxury" data-type="Acrylic Laminates">
+                    <div class="card-img"><a href="aventis.html"><img src="assets/product/aventis-pages/page_001.jpg" alt="Aventis Surface Acrylic Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="aventis.html" class="brand-name" style="text-decoration:none;">Aventis Surface Acrylic Laminates</a>
+                        <div class="brand-desc">Premium acrylic laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹4400</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Aventis Surface Acrylic Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="Luxury" data-type="Acrylic Laminates">
+                    <div class="card-img"><a href="benetti.html"><img src="assets/product/benetti-pages/page_001.jpg" alt="Benetti Acrylic Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="benetti.html" class="brand-name" style="text-decoration:none;">Benetti Acrylic Laminates</a>
+                        <div class="brand-desc">Premium acrylic laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹4400</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Benetti Acrylic Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="Luxury" data-type="Acrylic Laminates">
+                    <div class="card-img"><a href="happy-colours.html"><img src="assets/product/happy-colours-pages/page_001.jpg" alt="Happy Colours Acrylic Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="happy-colours.html" class="brand-name" style="text-decoration:none;">Happy Colours Acrylic Laminates</a>
+                        <div class="brand-desc">Premium acrylic laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹4400</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Happy Colours Acrylic Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="Luxury" data-type="Acrylic Laminates">
+                    <div class="card-img"><a href="keshari.html"><img src="assets/product/keshari-pages/page_001.jpg" alt="Keshari Acrylic Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="keshari.html" class="brand-name" style="text-decoration:none;">Keshari Acrylic Laminates</a>
+                        <div class="brand-desc">Premium acrylic laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹4400</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Keshari Acrylic Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="Luxury" data-type="Acrylic Laminates">
+                    <div class="card-img"><a href="rang-faded.html"><img src="assets/product/rang-faded-pages/page_001.jpg" alt="Rang Faded SuedeMate Acrylic Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="rang-faded.html" class="brand-name" style="text-decoration:none;">Rang Faded SuedeMate Acrylic Laminates</a>
+                        <div class="brand-desc">Premium acrylic laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹4400</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Rang Faded SuedeMate Acrylic Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="Luxury" data-type="Acrylic Laminates">
+                    <div class="card-img"><a href="rang-maskara.html"><img src="assets/product/rang-maskara-pages/page_001.jpg" alt="Rang Maskara Acrylic Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="rang-maskara.html" class="brand-name" style="text-decoration:none;">Rang Maskara Acrylic Laminates</a>
+                        <div class="brand-desc">Premium acrylic laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹4400</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Rang Maskara Acrylic Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Digital Laminates">
+                    <div class="card-img"><a href="art-effect.html"><img src="assets/product/art-effect-pages/page_001.jpg" alt="The Art Effect Digital Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="art-effect.html" class="brand-name" style="text-decoration:none;">The Art Effect Digital Laminates</a>
+                        <div class="brand-desc">Premium digital laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹6500</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in The Art Effect Digital Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Digital Laminates">
+                    <div class="card-img"><a href="textile.html"><img src="assets/product/textile-pages/page_001.jpg" alt="Textile Collection Digital Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="textile.html" class="brand-name" style="text-decoration:none;">Textile Collection Digital Laminates</a>
+                        <div class="brand-desc">Premium digital laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹6500</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Textile Collection Digital Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Digital Laminates">
+                    <div class="card-img"><a href="only-cane.html"><img src="assets/product/only-cane-pages/page_001.jpg" alt="Only Cane Mica Digital Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="only-cane.html" class="brand-name" style="text-decoration:none;">Only Cane Mica Digital Laminates</a>
+                        <div class="brand-desc">Premium digital laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹6500</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Only Cane Mica Digital Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Digital Laminates">
+                    <div class="card-img"><a href="ombre.html"><img src="assets/product/ombre-pages/page_001.jpg" alt="Ombre Digital Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="ombre.html" class="brand-name" style="text-decoration:none;">Ombre Digital Laminates</a>
+                        <div class="brand-desc">Premium digital laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹6500</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Ombre Digital Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Digital Laminates">
+                    <div class="card-img"><a href="gm-shadow.html"><img src="assets/product/gm-shadow-pages/page_001.jpg" alt="GM Shadow Digital Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="gm-shadow.html" class="brand-name" style="text-decoration:none;">GM Shadow Digital Laminates</a>
+                        <div class="brand-desc">Premium digital laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹6500</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in GM Shadow Digital Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Digital Laminates">
+                    <div class="card-img"><a href="lucas.html"><img src="assets/product/lucas-pages/page_001.jpg" alt="Lucas Digital Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="lucas.html" class="brand-name" style="text-decoration:none;">Lucas Digital Laminates</a>
+                        <div class="brand-desc">Premium digital laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹6500</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Lucas Digital Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Digital Laminates">
+                    <div class="card-img"><a href="ligital.html"><img src="assets/product/ligital-pages/page_001.jpg" alt="Ligital Series Digital Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="ligital.html" class="brand-name" style="text-decoration:none;">Ligital Series Digital Laminates</a>
+                        <div class="brand-desc">Premium digital laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹6500</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Ligital Series Digital Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Digital Laminates">
+                    <div class="card-img"><a href="lameca.html"><img src="assets/product/lameca-pages/page_001.jpg" alt="Lameca Digital Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="lameca.html" class="brand-name" style="text-decoration:none;">Lameca Digital Laminates</a>
+                        <div class="brand-desc">Premium digital laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹6500</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Lameca Digital Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Digital Laminates">
+                    <div class="card-img"><a href="digital-ace.html"><img src="assets/product/digital-ace-pages/page_001.jpg" alt="Digital Ace Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="digital-ace.html" class="brand-name" style="text-decoration:none;">Digital Ace Laminates</a>
+                        <div class="brand-desc">Premium digital laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹6500</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Digital Ace Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Digital Laminates">
+                    <div class="card-img"><a href="is-digital-print.html"><img src="assets/product/is-digital-print-pages/page_001.jpg" alt="IS Digital Print Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="is-digital-print.html" class="brand-name" style="text-decoration:none;">IS Digital Print Laminates</a>
+                        <div class="brand-desc">Premium digital laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹6500</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in IS Digital Print Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Digital Laminates">
+                    <div class="card-img"><a href="is-rangrez.html"><img src="assets/product/is-rangrez-pages/page_001.jpg" alt="IS Rangrez Digital Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="is-rangrez.html" class="brand-name" style="text-decoration:none;">IS Rangrez Digital Laminates</a>
+                        <div class="brand-desc">Premium digital laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹6500</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in IS Rangrez Digital Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Digital Laminates">
+                    <div class="card-img"><a href="is-nature.html"><img src="assets/product/is-nature-pages/page_001.jpg" alt="IS Nature Collection Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="is-nature.html" class="brand-name" style="text-decoration:none;">IS Nature Collection Laminates</a>
+                        <div class="brand-desc">Premium digital laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹6500</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in IS Nature Collection Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Digital Laminates">
+                    <div class="card-img"><a href="scout-lam.html"><img src="assets/product/scout-lam-pages/page_001.jpg" alt="Scout'Lam Digital Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="scout-lam.html" class="brand-name" style="text-decoration:none;">Scout'Lam Digital Laminates</a>
+                        <div class="brand-desc">Premium digital laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹6500</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Scout'Lam Digital Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Digital Laminates">
+                    <div class="card-img"><a href="canvas.html"><img src="assets/product/canvas-pages/page_001.jpg" alt="Canvas Series Digital Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="canvas.html" class="brand-name" style="text-decoration:none;">Canvas Series Digital Laminates</a>
+                        <div class="brand-desc">Premium digital laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹6500</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Canvas Series Digital Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Digital Laminates">
+                    <div class="card-img"><a href="arto.html"><img src="assets/product/arto-pages/page_001.jpg" alt="Arto Flap Digital Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="arto.html" class="brand-name" style="text-decoration:none;">Arto Flap Digital Laminates</a>
+                        <div class="brand-desc">Premium digital laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹6500</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Arto Flap Digital Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.0" data-type="1mm Digital Laminates">
+                    <div class="card-img"><a href="artisan.html"><img src="assets/product/artisan-pages/page_001.jpg" alt="Artisan Flap Digital Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="artisan.html" class="brand-name" style="text-decoration:none;">Artisan Flap Digital Laminates</a>
+                        <div class="brand-desc">Premium digital laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹6500</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Artisan Flap Digital Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.25" data-type="1.25mm High Texture Laminates">
+                    <div class="card-img"><a href="leafing-wood.html"><img src="assets/product/leafing-wood-pages/page_001.jpg" alt="Leafing Wood 1.25mm Laminates"></a></div>
+                    <div class="card-body">
+                        <a href="leafing-wood.html" class="brand-name" style="text-decoration:none;">Leafing Wood 1.25mm Laminates</a>
+                        <div class="brand-desc">Premium 1.25mm high texture laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹6500</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Leafing Wood 1.25mm Laminates" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card" data-thickness="1.25" data-type="1.25mm High Texture Laminates">
+                    <div class="card-img"><a href="high-texture.html"><img src="assets/product/high-texture-pages/page_001.jpg" alt="1.25mm Flap High Texture"></a></div>
+                    <div class="card-body">
+                        <a href="high-texture.html" class="brand-name" style="text-decoration:none;">1.25mm Flap High Texture</a>
+                        <div class="brand-desc">Premium 1.25mm high texture laminates.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="price">₹6500</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in 1.25mm Flap High Texture" class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="javascript:void(0)" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                </div></div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="site-footer"></footer>
+    
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/header-nav.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Sidebar Accordion Logic
+            const headers = document.querySelectorAll('.filter-header');
+            headers.forEach(header => {
+                header.addEventListener('click', () => {
+                    header.classList.toggle('open');
+                    const body = header.nextElementSibling;
+                    if(header.classList.contains('open')) {
+                        body.style.display = 'flex';
+                    } else {
+                        body.style.display = 'none';
+                    }
+                });
+            });
+
+            // Category Tab Filter Logic
+            const tabs = document.querySelectorAll('.cat-tab');
+            const cards = document.querySelectorAll('.brand-card');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Update active tab
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+
+                    // Filter cards
+                    const filter = tab.getAttribute('data-filter');
+                    cards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-type') === filter) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

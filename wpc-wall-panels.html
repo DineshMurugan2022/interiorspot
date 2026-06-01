@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Soffit & Ceiling Panels | Interior Spot Chennai</title>
+    <meta name="description" content="Add a flawless finishing touch to your ceilings with durable PVC soffit panels and wooden fluted ceiling panels. Conceal beams and wiring effortlessly.">
+    <meta name="keywords" content="soffit, soffit panels, pvc panel, pvc fluted, pvc soffit panel, ceiling panel, ceiling, ceiling louvers, ceiling fluted panel, wooden ceiling panel, 10x1 panel">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/next-level.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root { --next-blue: #1a3b8f; }
+
+        /* ===== HERO ===== */
+        .category-hero {
+            background: linear-gradient(135deg, #1a3b8f 0%, #0d2157 60%, #162d6e 100%);
+            padding: 100px 0 70px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .category-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 500px;
+            height: 500px;
+            background: rgba(255,255,255,0.04);
+            border-radius: 50%;
+        }
+        .category-hero h1 {
+            font-size: 60px;
+            font-weight: 800;
+            margin-bottom: 18px;
+            font-family: 'Outfit', sans-serif;
+            letter-spacing: -1px;
+        }
+        .category-hero p {
+            font-size: 16px;
+            opacity: 0.85;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hero-pills {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        .hero-pill {
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white;
+            padding: 7px 18px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .btn-hero {
+            background: white;
+            color: var(--next-blue);
+            padding: 13px 38px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            font-size: 15px;
+        }
+        .btn-hero:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.3); }
+
+        /* ===== STICKY FILTER TABS ===== */
+        .cat-filter-bar {
+            background: #fff;
+            border-bottom: 2px solid #eef0f5;
+            position: sticky;
+            top: 0;
+            z-index: 200;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+        }
+        .cat-filter-scroll {
+            display: flex;
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            justify-content: center;
+        }
+        .cat-filter-scroll::-webkit-scrollbar { display: none; }
+        .cat-tab {
+            flex-shrink: 0;
+            padding: 16px 22px;
+            font-size: 13.5px;
+            font-weight: 600;
+            color: #777;
+            cursor: pointer;
+            border: none;
+            border-bottom: 3px solid transparent;
+            background: none;
+            font-family: 'Outfit', sans-serif;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+        .cat-tab:hover { color: var(--next-blue); background: #f8f9ff; }
+        .cat-tab.active {
+            color: var(--next-blue);
+            border-bottom-color: var(--next-blue);
+            background: #f4f6ff;
+        }
+
+        /* ===== SECTION ===== */
+        .cat-section {
+            padding: 55px 0 40px;
+            display: none;
+        }
+        .cat-section.active { display: block; animation: fadeUp 0.35s ease; }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(18px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .cat-section-header { margin-bottom: 35px; }
+        .cat-badge {
+            display: inline-block;
+            background: var(--next-blue);
+            color: white;
+            padding: 5px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+        .cat-section-header h2 {
+            font-size: 30px;
+            font-weight: 800;
+            color: #1a1a2e;
+            margin-bottom: 8px;
+        }
+        .cat-section-header .sub-desc {
+            color: #777;
+            font-size: 15px;
+            max-width: 750px;
+            line-height: 1.6;
+        }
+
+        /* ===== BRAND CARDS ===== */
+        .brand-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 28px;
+        }
+        .brand-card {
+            background: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 3px 18px rgba(0,0,0,0.07);
+            border: 1.5px solid #f0f0f5;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        .brand-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(26,59,143,0.14);
+            border-color: #c8d5ff;
+        }
+        .brand-card .card-img {
+            width: 100%;
+            aspect-ratio: 4/5;
+            overflow: hidden;
+            background: #f5f6fb;
+        }
+        .brand-card .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .brand-card:hover .card-img img { transform: scale(1.08); }
+        .brand-card .card-body {
+            padding: 18px 18px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            flex: 1;
+        }
+        .brand-name { font-size: 16px; font-weight: 700; color: #1a1a2e; line-height: 1.3; }
+        .brand-desc { font-size: 13px; color: #888; line-height: 1.55; flex: 1; margin-bottom: 8px; }
+        
+        /* ===== CARD SPECS ===== */
+        .card-specs {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f8f9ff;
+            padding: 10px 14px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #555;
+            border: 1px solid #eef1ff;
+        }
+        .card-specs .spec-item { display: flex; align-items: center; gap: 5px; }
+        .card-specs .spec-item i { color: #9aaeff; font-size: 11px; }
+        .card-specs .price {
+            color: var(--next-blue);
+            font-size: 15px;
+            font-weight: 800;
+        }
+
+        .card-actions {
+            display: flex;
+            gap: 9px;
+            margin-top: auto;
+        }
+        .btn-wa {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            background: #25D366;
+            color: #fff;
+            padding: 11px 14px;
+            border-radius: 11px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+        .btn-wa:hover { background: #1bab52; transform: scale(1.02); }
+        .btn-phone {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eef1ff;
+            color: var(--next-blue);
+            padding: 11px 14px;
+            border-radius: 11px;
+            font-size: 14px;
+            text-decoration: none;
+            border: 1.5px solid #d0d9ff;
+            transition: all 0.25s ease;
+            min-width: 44px;
+        }
+        .btn-phone:hover { background: var(--next-blue); color: white; border-color: var(--next-blue); }
+
+        /* Placeholder when no image */
+        .img-ph {
+            width: 100%;
+            height: 100%;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #edf0ff 0%, #f5f7ff 100%);
+            color: var(--next-blue);
+        }
+        .img-ph i { font-size: 38px; opacity: 0.35; }
+        .img-ph span { font-size: 12px; font-weight: 700; opacity: 0.5; letter-spacing: 0.5px; text-transform: uppercase; text-align: center; padding: 0 10px;}
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .category-hero h1 { font-size: 38px; }
+            .brand-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+            .cat-section-header h2 { font-size: 22px; }
+            .cat-filter-scroll { justify-content: flex-start; }
+            .brand-name { font-size: 14px; }
+            .card-specs {
+                padding: 8px 10px;
+                font-size: 11px;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 6px;
+            }
+            .card-specs .price {
+                margin-left: auto;
+                margin-top: 0;
+            }
+            .btn-wa, .btn-phone { padding: 9px 10px; font-size: 12px; }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="site-header"></header>
+
+    <!-- HERO -->
+    <section class="category-hero">
+        <div class="container">
+            <h1>Soffit &amp; Ceiling Panels</h1>
+            <p>Add a flawless finishing touch to your ceilings! Conceal unsightly beams or wiring while adding a sleek, modern look. Durable, easy to install, and versatile for homes or commercial spaces.</p>
+            <div class="hero-pills">
+                <span class="hero-pill"><i class="fas fa-layer-group"></i> Wooden &amp; PVC Finishes</span>
+                <span class="hero-pill"><i class="fas fa-hammer"></i> Easy to Install</span>
+                <span class="hero-pill"><i class="fas fa-rupee-sign"></i> ₹110 - ₹200 / sqft</span>
+                <span class="hero-pill"><i class="fas fa-expand"></i> 10'x1', 10'x10", 13'x1'</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- STICKY SUB-TYPE FILTER TABS -->
+    <div class="cat-filter-bar">
+        <div class="container">
+            <div class="cat-filter-scroll">
+                <button class="cat-tab active" data-target="sec-pvc">PVC Soffit Panels</button>
+                <button class="cat-tab" data-target="sec-exterior">Exterior Soffits</button>
+                <button class="cat-tab" data-target="sec-wood">Wooden Ceiling Panels</button>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+
+        <!-- ===========================
+             1. PVC SOFFIT
+             =========================== -->
+        <section class="cat-section active" id="sec-pvc">
+            <div class="cat-section-header">
+                <span class="cat-badge">Lightweight · Durable</span>
+                <h2>PVC Soffit Panels</h2>
+                <p class="sub-desc">High-quality PVC fluted panels designed specifically for interior ceilings. Perfect for concealing wiring and providing a clean, modern aesthetic.</p>
+            </div>
+            <div class="brand-grid">
+                <div class="brand-card">
+                    <a href="auraluxe-soffit.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/auraluxe-soffit/page_007.jpg?v=2" alt="Auraluxe Decor Soffit" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="auraluxe-soffit.html" class="brand-name" style="text-decoration:none;">Auraluxe Decor Soffit</a>
+                        <div class="brand-desc">Premium Auraluxe Decor Soffit - Add a flawless finishing touch to your ceilings! Conceal unsightly beams or wiring while adding a sleek, modern look.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-hammer"></i> Easy Install</div>
+                            <div class="spec-item"><i class="fas fa-shield-alt"></i> Waterproof</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Auraluxe Decor Soffit. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="jeon-soffit.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/jeon-soffit/page_012.jpg?v=2" alt="JEON PVC Soffit" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="jeon-soffit.html" class="brand-name" style="text-decoration:none;">JEON PVC Soffit</a>
+                        <div class="brand-desc">Premium JEON PVC Soffit - Add a flawless finishing touch to your ceilings! Conceal unsightly beams or wiring while adding a sleek, modern look.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-hammer"></i> Easy Install</div>
+                            <div class="spec-item"><i class="fas fa-shield-alt"></i> Waterproof</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in JEON PVC Soffit. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="my-decor-soffit.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/my-decor-soffit/page_004.jpg?v=2" alt="MY Decor PVC Soffit" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="my-decor-soffit.html" class="brand-name" style="text-decoration:none;">MY Decor PVC Soffit</a>
+                        <div class="brand-desc">Premium MY Decor PVC Soffit - Add a flawless finishing touch to your ceilings! Conceal unsightly beams or wiring while adding a sleek, modern look.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-hammer"></i> Easy Install</div>
+                            <div class="spec-item"><i class="fas fa-shield-alt"></i> Waterproof</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in MY Decor PVC Soffit. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===========================
+             2. EXTERIOR SOFFIT
+             =========================== -->
+        <section class="cat-section" id="sec-exterior">
+            <div class="cat-section-header">
+                <span class="cat-badge">Weatherproof Overhangs</span>
+                <h2>Exterior Soffit Panels</h2>
+                <p class="sub-desc">Engineered for outdoor use, these soffit panels protect your roof overhangs while providing beautiful wood or solid color finishes.</p>
+            </div>
+            <div class="brand-grid">
+                <div class="brand-card">
+                    <a href="zuri-soffit.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/zuri-soffit/page_007.jpg?v=2" alt="Zuri Exterior Soffit" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="zuri-soffit.html" class="brand-name" style="text-decoration:none;">Zuri Exterior Soffit</a>
+                        <div class="brand-desc">Premium Zuri Exterior Soffit - Add a flawless finishing touch to your ceilings! Conceal unsightly beams or wiring while adding a sleek, modern look.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-hammer"></i> Easy Install</div>
+                            <div class="spec-item"><i class="fas fa-shield-alt"></i> Waterproof</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Zuri Exterior Soffit. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="soficlad-exterior-soffit.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/soficlad-exterior-soffit/page_006.jpg?v=2" alt="Soficlad Exterior Panels" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="soficlad-exterior-soffit.html" class="brand-name" style="text-decoration:none;">Soficlad Exterior Panels</a>
+                        <div class="brand-desc">Premium Soficlad Exterior Panels - Add a flawless finishing touch to your ceilings! Conceal unsightly beams or wiring while adding a sleek, modern look.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-hammer"></i> Easy Install</div>
+                            <div class="spec-item"><i class="fas fa-shield-alt"></i> Waterproof</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Soficlad Exterior Panels. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===========================
+             3. WOODEN CEILING
+             =========================== -->
+        <section class="cat-section" id="sec-wood">
+            <div class="cat-section-header">
+                <span class="cat-badge">Luxury Textures</span>
+                <h2>Wooden Ceiling Fluted Panels</h2>
+                <p class="sub-desc">Achieve the warmth and luxury of real wood ceilings without the maintenance or weight. Perfect for premium dining areas and lobbies.</p>
+            </div>
+            <div class="brand-grid">
+                <div class="brand-card">
+                    <a href="celesto-ceiling.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/celesto-ceiling/page_012.jpg?v=2" alt="Celesto Wooden Ceiling" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="celesto-ceiling.html" class="brand-name" style="text-decoration:none;">Celesto Wooden Ceiling</a>
+                        <div class="brand-desc">Premium Celesto Wooden Ceiling - Add a flawless finishing touch to your ceilings! Conceal unsightly beams or wiring while adding a sleek, modern look.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-hammer"></i> Easy Install</div>
+                            <div class="spec-item"><i class="fas fa-shield-alt"></i> Waterproof</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Celesto Wooden Ceiling. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="site-footer"></footer>
+
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/header-nav.js"></script>
+
+    <script>
+        // ===== SUB-TYPE TAB SWITCHING =====
+        const tabs = document.querySelectorAll('.cat-tab');
+        const sections = document.querySelectorAll('.cat-section');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = tab.dataset.target;
+
+                // Update active tab
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                // Show correct section
+                sections.forEach(sec => {
+                    sec.classList.toggle('active', sec.id === target);
+                });
+
+                // Smooth scroll to content
+                document.querySelector('main').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // Auto-select tab from URL hash
+        const hash = window.location.hash.replace('#', '');
+        if (hash) {
+            const matchTab = document.querySelector(`[data-target="${hash}"]`);
+            if (matchTab) matchTab.click();
+        }
+    </script>
+</body>
+</html>

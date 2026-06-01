@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Decoratives | Interior Spot Chennai</title>
+    <meta name="description" content="Explore our premium collection of decorative materials including Kalamkari cork laminates, prefinished wall panels, and luxurious velvet & fabric panels.">
+    <meta name="keywords" content="Cork, cork laminates, cork sheet, kalamkari cork, metalic cork, printed laminate, designer laminates, Decorative wall panels, 3d wall panels, wall panels, panels, prefinished panels, wooden wall panels, interior panels, decorative panels, Velvet panels, velvet wall panels, fabric sheet, fabric wall panels, fabric laminates">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/next-level.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root { --next-blue: #1a3b8f; }
+
+        /* ===== HERO ===== */
+        .category-hero {
+            background: linear-gradient(135deg, #1a3b8f 0%, #0d2157 60%, #162d6e 100%);
+            padding: 100px 0 70px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .category-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 500px;
+            height: 500px;
+            background: rgba(255,255,255,0.04);
+            border-radius: 50%;
+        }
+        .category-hero h1 {
+            font-size: 60px;
+            font-weight: 800;
+            margin-bottom: 18px;
+            font-family: 'Outfit', sans-serif;
+            letter-spacing: -1px;
+        }
+        .category-hero p {
+            font-size: 16px;
+            opacity: 0.85;
+            margin-bottom: 30px;
+        }
+        .hero-pills {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        .hero-pill {
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white;
+            padding: 7px 18px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .btn-hero {
+            background: white;
+            color: var(--next-blue);
+            padding: 13px 38px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            font-size: 15px;
+        }
+        .btn-hero:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.3); }
+
+        /* ===== STICKY FILTER TABS ===== */
+        .cat-filter-bar {
+            background: #fff;
+            border-bottom: 2px solid #eef0f5;
+            position: sticky;
+            top: 0;
+            z-index: 200;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+        }
+        .cat-filter-scroll {
+            display: flex;
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            justify-content: center;
+        }
+        .cat-filter-scroll::-webkit-scrollbar { display: none; }
+        .cat-tab {
+            flex-shrink: 0;
+            padding: 16px 22px;
+            font-size: 13.5px;
+            font-weight: 600;
+            color: #777;
+            cursor: pointer;
+            border: none;
+            border-bottom: 3px solid transparent;
+            background: none;
+            font-family: 'Outfit', sans-serif;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+        .cat-tab:hover { color: var(--next-blue); background: #f8f9ff; }
+        .cat-tab.active {
+            color: var(--next-blue);
+            border-bottom-color: var(--next-blue);
+            background: #f4f6ff;
+        }
+
+        /* ===== SECTION ===== */
+        .cat-section {
+            padding: 55px 0 40px;
+            display: none;
+        }
+        .cat-section.active { display: block; animation: fadeUp 0.35s ease; }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(18px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .cat-section-header { margin-bottom: 35px; }
+        .cat-badge {
+            display: inline-block;
+            background: var(--next-blue);
+            color: white;
+            padding: 5px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+        .cat-section-header h2 {
+            font-size: 30px;
+            font-weight: 800;
+            color: #1a1a2e;
+            margin-bottom: 8px;
+        }
+        .cat-section-header .sub-desc {
+            color: #777;
+            font-size: 15px;
+            max-width: 750px;
+            line-height: 1.6;
+        }
+
+        /* ===== BRAND CARDS ===== */
+        .brand-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 28px;
+        }
+        .brand-card {
+            background: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 3px 18px rgba(0,0,0,0.07);
+            border: 1.5px solid #f0f0f5;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        .brand-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(26,59,143,0.14);
+            border-color: #c8d5ff;
+        }
+        .brand-card .card-img {
+            width: 100%;
+            aspect-ratio: 4/5;
+            overflow: hidden;
+            background: #f5f6fb;
+        }
+        .brand-card .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .brand-card:hover .card-img img { transform: scale(1.08); }
+        .brand-card .card-body {
+            padding: 18px 18px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            flex: 1;
+        }
+        .brand-name { font-size: 16px; font-weight: 700; color: #1a1a2e; line-height: 1.3; }
+        .brand-desc { font-size: 13px; color: #888; line-height: 1.55; flex: 1; margin-bottom: 8px; }
+        
+        /* ===== CARD SPECS ===== */
+        .card-specs {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f8f9ff;
+            padding: 10px 14px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #555;
+            border: 1px solid #eef1ff;
+        }
+        .card-specs .spec-item { display: flex; align-items: center; gap: 5px; }
+        .card-specs .spec-item i { color: #9aaeff; font-size: 11px; }
+        .card-specs .price {
+            color: var(--next-blue);
+            font-size: 15px;
+            font-weight: 800;
+        }
+
+        .card-actions {
+            display: flex;
+            gap: 9px;
+            margin-top: auto;
+        }
+        .btn-wa {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            background: #25D366;
+            color: #fff;
+            padding: 11px 14px;
+            border-radius: 11px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+        .btn-wa:hover { background: #1bab52; transform: scale(1.02); }
+        .btn-phone {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eef1ff;
+            color: var(--next-blue);
+            padding: 11px 14px;
+            border-radius: 11px;
+            font-size: 14px;
+            text-decoration: none;
+            border: 1.5px solid #d0d9ff;
+            transition: all 0.25s ease;
+            min-width: 44px;
+        }
+        .btn-phone:hover { background: var(--next-blue); color: white; border-color: var(--next-blue); }
+
+        /* Placeholder when no image */
+        .img-ph {
+            width: 100%;
+            height: 100%;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #edf0ff 0%, #f5f7ff 100%);
+            color: var(--next-blue);
+        }
+        .img-ph i { font-size: 38px; opacity: 0.35; }
+        .img-ph span { font-size: 12px; font-weight: 700; opacity: 0.5; letter-spacing: 0.5px; text-transform: uppercase; text-align: center; padding: 0 10px;}
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .category-hero h1 { font-size: 38px; }
+            .brand-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+            .cat-section-header h2 { font-size: 22px; }
+            .cat-filter-scroll { justify-content: flex-start; }
+            .brand-name { font-size: 14px; }
+            .card-specs {
+                padding: 8px 10px;
+                font-size: 11px;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 6px;
+            }
+            .card-specs .price {
+                margin-left: auto;
+                margin-top: 0;
+            }
+            .btn-wa, .btn-phone { padding: 9px 10px; font-size: 12px; }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="site-header"></header>
+
+    <!-- HERO -->
+    <section class="category-hero">
+        <div class="container">
+            <h1>Premium Decoratives</h1>
+            <p>Exclusive decorative materials including Kalamkari cork, customizable prefinished panels, and luxurious velvet sheets.</p>
+            <div class="hero-pills">
+                <span class="hero-pill"><i class="fas fa-layer-group"></i> Cork &amp; Fabrics</span>
+                <span class="hero-pill"><i class="fas fa-palette"></i> Prefinished Finishes</span>
+                <span class="hero-pill"><i class="fas fa-cogs"></i> Customizable</span>
+                <span class="hero-pill"><i class="fas fa-rupee-sign"></i> ₹300 - ₹500 / sqft</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- STICKY SUB-TYPE FILTER TABS -->
+    <div class="cat-filter-bar">
+        <div class="container">
+            <div class="cat-filter-scroll">
+                <button class="cat-tab active" data-target="sec-cork">Cork Laminates</button>
+                <button class="cat-tab" data-target="sec-prefinished">Prefinished Wall Panels</button>
+                <button class="cat-tab" data-target="sec-velvet">Velvet &amp; Fabric Panels</button>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+
+        <!-- ===========================
+             1. CORK LAMINATES
+             =========================== -->
+        <section class="cat-section active" id="sec-cork">
+            <div class="cat-section-header">
+                <span class="cat-badge">Natural &amp; Metallic · Cork</span>
+                <h2>Premium Cork Laminates</h2>
+                <p class="sub-desc">Exquisite Kalamkari cork, metallic cork, and printed designer laminates offering a rich, organic texture to your premium interiors.</p>
+            </div>
+            <div class="brand-grid">
+                <div class="brand-card">
+                    <a href="is-sloan-kalamkari.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/is-sloan-kalamkari/page_008.jpg?v=1" alt="IS Sloan Kalamkari Cork" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="is-sloan-kalamkari.html" class="brand-name" style="text-decoration:none;">IS Sloan Kalamkari Cork</a>
+                        <div class="brand-desc">Exclusive kalamkari printed cork laminate for intricate and artistic wall highlights.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 1.5mm</div>
+                            <div class="price">₹300/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in IS Sloan Kalamkari Cork. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="is-sloan-metallic.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/is-sloan-metallic/page_008.jpg?v=1" alt="IS Sloan Metallic Cork" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="is-sloan-metallic.html" class="brand-name" style="text-decoration:none;">IS Sloan Metallic Cork</a>
+                        <div class="brand-desc">Premium metallic cork laminate for striking contemporary interiors.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 1.5mm</div>
+                            <div class="price">₹300/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in IS Sloan Metallic Cork. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="sns-naturo.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/sns-naturo/page_008.jpg?v=1" alt="SNS Naturo Cork" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="sns-naturo.html" class="brand-name" style="text-decoration:none;">SNS Naturo Cork</a>
+                        <div class="brand-desc">Natural and metallic cork laminates by Style & Surface for contemporary designer walls.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 1.5mm</div>
+                            <div class="price">₹300/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in SNS Naturo Cork. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="sns-highlighter.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/sns-highlighter/page_008.jpg?v=1" alt="SNS Cork Highlighter" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="sns-highlighter.html" class="brand-name" style="text-decoration:none;">SNS Cork Highlighter</a>
+                        <div class="brand-desc">High-end cork highlighter panels for unique focal points and accent walls.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 1.5mm</div>
+                            <div class="price">₹300/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in SNS Cork Highlighter. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="sns-updated-laminate.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/sns-updated-laminate/page_008.jpg?v=1" alt="SNS Updated Cork Laminate" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="sns-updated-laminate.html" class="brand-name" style="text-decoration:none;">SNS Updated Cork Laminate</a>
+                        <div class="brand-desc">The latest collection of premium cork laminates from SNS.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 1.5mm</div>
+                            <div class="price">₹300/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in SNS Updated Cork Laminate. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===========================
+             2. PREFINISHED WALL PANELS
+             =========================== -->
+        <section class="cat-section" id="sec-prefinished">
+            <div class="cat-section-header">
+                <span class="cat-badge">Customizable · Prefinished</span>
+                <h2>Premium Prefinished Wall Panels</h2>
+                <p class="sub-desc">Ready-to-install 3D decorative wall panels available in stunning PU, ceramic, marble, stone, and metal finishes. Fully customizable sizing.</p>
+            </div>
+            <div class="brand-grid">
+                <div class="brand-card">
+                    <a href="mirror-koreo.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/mirror-koreo/page_007.jpg?v=2" alt="Mirror Koreo" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="mirror-koreo.html" class="brand-name" style="text-decoration:none;">Mirror Koreo</a>
+                        <div class="brand-desc">Premium Mirror Koreo for stunning, ready-to-install luxury interiors.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> Up to 10x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-palette"></i> Custom</div>
+                            <div class="price">₹500/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Mirror Koreo. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="atlantis.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/atlantis/page_007.jpg?v=2" alt="Atlantis Meridian" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="atlantis.html" class="brand-name" style="text-decoration:none;">Atlantis Meridian</a>
+                        <div class="brand-desc">Premium Atlantis Meridian for stunning, ready-to-install luxury interiors.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> Up to 10x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-palette"></i> Custom</div>
+                            <div class="price">₹500/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Atlantis Meridian. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="canva.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/canva/page_007.jpg?v=2" alt="CANVA Decorative Panels" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="canva.html" class="brand-name" style="text-decoration:none;">CANVA Decorative Panels</a>
+                        <div class="brand-desc">Premium CANVA Decorative Panels for stunning, ready-to-install luxury interiors.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> Up to 10x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-palette"></i> Custom</div>
+                            <div class="price">₹500/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in CANVA Decorative Panels. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="is-shannon.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/is-shannon/page_007.jpg?v=2" alt="IS Shannon" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="is-shannon.html" class="brand-name" style="text-decoration:none;">IS Shannon</a>
+                        <div class="brand-desc">Premium IS Shannon for stunning, ready-to-install luxury interiors.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> Up to 10x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-palette"></i> Custom</div>
+                            <div class="price">₹500/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in IS Shannon. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="is-slater.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/is-slater/page_007.jpg?v=2" alt="IS Slater Door" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="is-slater.html" class="brand-name" style="text-decoration:none;">IS Slater Door</a>
+                        <div class="brand-desc">Premium IS Slater Door for stunning, ready-to-install luxury interiors.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> Up to 10x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-palette"></i> Custom</div>
+                            <div class="price">₹500/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in IS Slater Door. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="is-stefino.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/is-stefino/page_007.jpg?v=2" alt="IS Stefino" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="is-stefino.html" class="brand-name" style="text-decoration:none;">IS Stefino</a>
+                        <div class="brand-desc">Premium IS Stefino for stunning, ready-to-install luxury interiors.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> Up to 10x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-palette"></i> Custom</div>
+                            <div class="price">₹500/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in IS Stefino. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="is-artisan.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/is-artisan/page_007.jpg?v=2" alt="IS Artisan" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="is-artisan.html" class="brand-name" style="text-decoration:none;">IS Artisan</a>
+                        <div class="brand-desc">Premium IS Artisan for stunning, ready-to-install luxury interiors.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> Up to 10x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-palette"></i> Custom</div>
+                            <div class="price">₹500/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in IS Artisan. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="is-hybrid.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/is-hybrid/page_007.jpg?v=2" alt="IS Hybrid" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="is-hybrid.html" class="brand-name" style="text-decoration:none;">IS Hybrid</a>
+                        <div class="brand-desc">Premium IS Hybrid for stunning, ready-to-install luxury interiors.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> Up to 10x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-palette"></i> Custom</div>
+                            <div class="price">₹500/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in IS Hybrid. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="is-liquid-metal.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/is-liquid-metal/page_007.jpg?v=2" alt="IS Liquid Metal" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="is-liquid-metal.html" class="brand-name" style="text-decoration:none;">IS Liquid Metal</a>
+                        <div class="brand-desc">Premium IS Liquid Metal for stunning, ready-to-install luxury interiors.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> Up to 10x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-palette"></i> Custom</div>
+                            <div class="price">₹500/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in IS Liquid Metal. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="is-marvel.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/is-marvel/page_005.jpg?v=2" alt="IS Marvel" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="is-marvel.html" class="brand-name" style="text-decoration:none;">IS Marvel</a>
+                        <div class="brand-desc">Premium IS Marvel for stunning, ready-to-install luxury interiors.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> Up to 10x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-palette"></i> Custom</div>
+                            <div class="price">₹500/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in IS Marvel. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="picassa-artisan.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/picassa-artisan/page_007.jpg?v=2" alt="Picassa Artisan" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="picassa-artisan.html" class="brand-name" style="text-decoration:none;">Picassa Artisan</a>
+                        <div class="brand-desc">Premium Picassa Artisan for stunning, ready-to-install luxury interiors.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> Up to 10x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-palette"></i> Custom</div>
+                            <div class="price">₹500/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Picassa Artisan. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="picassa-hybrid.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/picassa-hybrid/page_007.jpg?v=2" alt="Picassa Hybrid" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="picassa-hybrid.html" class="brand-name" style="text-decoration:none;">Picassa Hybrid</a>
+                        <div class="brand-desc">Premium Picassa Hybrid for stunning, ready-to-install luxury interiors.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> Up to 10x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-palette"></i> Custom</div>
+                            <div class="price">₹500/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Picassa Hybrid. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="picassa-liquid-metal.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/picassa-liquid-metal/page_007.jpg?v=2" alt="Picassa Liquid Metal" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="picassa-liquid-metal.html" class="brand-name" style="text-decoration:none;">Picassa Liquid Metal</a>
+                        <div class="brand-desc">Premium Picassa Liquid Metal for stunning, ready-to-install luxury interiors.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> Up to 10x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-palette"></i> Custom</div>
+                            <div class="price">₹500/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Picassa Liquid Metal. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="picassa-marvel.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/picassa-marvel/page_005.jpg?v=2" alt="Picassa Marvel" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="picassa-marvel.html" class="brand-name" style="text-decoration:none;">Picassa Marvel</a>
+                        <div class="brand-desc">Premium Picassa Marvel for stunning, ready-to-install luxury interiors.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> Up to 10x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-palette"></i> Custom</div>
+                            <div class="price">₹500/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Picassa Marvel. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="spectre.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/spectre/page_007.jpg?v=2" alt="Spectre" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="spectre.html" class="brand-name" style="text-decoration:none;">Spectre</a>
+                        <div class="brand-desc">Premium Spectre for stunning, ready-to-install luxury interiors.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> Up to 10x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-palette"></i> Custom</div>
+                            <div class="price">₹500/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Spectre. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="concept-theory.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/concept-theory/page_007.jpg?v=2" alt="The Concept Theory" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="concept-theory.html" class="brand-name" style="text-decoration:none;">The Concept Theory</a>
+                        <div class="brand-desc">Premium The Concept Theory for stunning, ready-to-install luxury interiors.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> Up to 10x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-palette"></i> Custom</div>
+                            <div class="price">₹500/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in The Concept Theory. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="collection-1.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/collection-1/page_007.jpg?v=2" alt="Premium Panel Collection 1" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="collection-1.html" class="brand-name" style="text-decoration:none;">Premium Panel Collection 1</a>
+                        <div class="brand-desc">Premium Premium Panel Collection 1 for stunning, ready-to-install luxury interiors.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> Up to 10x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-palette"></i> Custom</div>
+                            <div class="price">₹500/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Premium Panel Collection 1. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="collection-2.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/collection-2/page_007.jpg?v=2" alt="Premium Panel Collection 2" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="collection-2.html" class="brand-name" style="text-decoration:none;">Premium Panel Collection 2</a>
+                        <div class="brand-desc">Premium Premium Panel Collection 2 for stunning, ready-to-install luxury interiors.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> Up to 10x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-palette"></i> Custom</div>
+                            <div class="price">₹500/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Premium Panel Collection 2. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="collection-3.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/collection-3/page_007.jpg?v=2" alt="Premium Panel Collection 3" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="collection-3.html" class="brand-name" style="text-decoration:none;">Premium Panel Collection 3</a>
+                        <div class="brand-desc">Premium Premium Panel Collection 3 for stunning, ready-to-install luxury interiors.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> Up to 10x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-palette"></i> Custom</div>
+                            <div class="price">₹500/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Premium Panel Collection 3. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="collection-4.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/collection-4/page_001.jpg?v=2" alt="Premium Panel Collection 4" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="collection-4.html" class="brand-name" style="text-decoration:none;">Premium Panel Collection 4</a>
+                        <div class="brand-desc">Premium Premium Panel Collection 4 for stunning, ready-to-install luxury interiors.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> Up to 10x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-palette"></i> Custom</div>
+                            <div class="price">₹500/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Premium Panel Collection 4. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="collection-5.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/collection-5/page_006.jpg?v=2" alt="Premium Panel Collection 5" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="collection-5.html" class="brand-name" style="text-decoration:none;">Premium Panel Collection 5</a>
+                        <div class="brand-desc">Premium Premium Panel Collection 5 for stunning, ready-to-install luxury interiors.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> Up to 10x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-palette"></i> Custom</div>
+                            <div class="price">₹500/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Premium Panel Collection 5. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===========================
+             3. VELVET & FABRIC PANELS
+             =========================== -->
+        <section class="cat-section" id="sec-velvet">
+            <div class="cat-section-header">
+                <span class="cat-badge">Soft Touch · Velvet &amp; Fabric</span>
+                <h2>Velvet &amp; Fabric Panels</h2>
+                <p class="sub-desc">Luxurious soft-touch velvet and fabric laminates designed for premium furniture cladding and acoustic decorative walls.</p>
+            </div>
+            <div class="brand-grid">
+                <div class="brand-card">
+                    <a href="velour.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/velour/page_007.jpg?v=2" alt="Velour" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="velour.html" class="brand-name" style="text-decoration:none;">Velour</a>
+                        <div class="brand-desc">Premium Velour for luxurious soft-touch interior cladding.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x2 / 8x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 1.5 / 6mm</div>
+                            <div class="price">₹300/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Velour. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="velour-1.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/velour-1/page_007.jpg?v=2" alt="Velour Series 1" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="velour-1.html" class="brand-name" style="text-decoration:none;">Velour Series 1</a>
+                        <div class="brand-desc">Premium Velour Series 1 for luxurious soft-touch interior cladding.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x2 / 8x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 1.5 / 6mm</div>
+                            <div class="price">₹300/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Velour Series 1. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="velvet-3d.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/velvet-3d/page_007.jpg?v=2" alt="3D Velvet 8x4" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="velvet-3d.html" class="brand-name" style="text-decoration:none;">3D Velvet 8x4</a>
+                        <div class="brand-desc">Premium 3D Velvet 8x4 for luxurious soft-touch interior cladding.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x2 / 8x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 1.5 / 6mm</div>
+                            <div class="price">₹300/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in 3D Velvet 8x4. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="velvet-panels.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/velvet-panels/page_007.jpg?v=2" alt="Velvet Panels" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="velvet-panels.html" class="brand-name" style="text-decoration:none;">Velvet Panels</a>
+                        <div class="brand-desc">Premium Velvet Panels for luxurious soft-touch interior cladding.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x2 / 8x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 1.5 / 6mm</div>
+                            <div class="price">₹300/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Velvet Panels. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="velvet-verve.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/velvet-verve/page_007.jpg?v=2" alt="Velvet Verve" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="velvet-verve.html" class="brand-name" style="text-decoration:none;">Velvet Verve</a>
+                        <div class="brand-desc">Premium Velvet Verve for luxurious soft-touch interior cladding.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x2 / 8x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 1.5 / 6mm</div>
+                            <div class="price">₹300/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Velvet Verve. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="picassa-meta-fabric.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/picassa-meta-fabric/page_007.jpg?v=2" alt="Picassa Meta Fabric" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="picassa-meta-fabric.html" class="brand-name" style="text-decoration:none;">Picassa Meta Fabric</a>
+                        <div class="brand-desc">Premium Picassa Meta Fabric for luxurious soft-touch interior cladding.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x2 / 8x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 1.5 / 6mm</div>
+                            <div class="price">₹300/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Picassa Meta Fabric. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="picassa-fabricio.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/picassa-fabricio/page_007.jpg?v=2" alt="Picassa Fabricio" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="picassa-fabricio.html" class="brand-name" style="text-decoration:none;">Picassa Fabricio</a>
+                        <div class="brand-desc">Premium Picassa Fabricio for luxurious soft-touch interior cladding.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x2 / 8x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 1.5 / 6mm</div>
+                            <div class="price">₹300/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Picassa Fabricio. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="picassa-leather-lam.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/picassa-leather-lam/page_007.jpg?v=2" alt="Picassa Leather Lam" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="picassa-leather-lam.html" class="brand-name" style="text-decoration:none;">Picassa Leather Lam</a>
+                        <div class="brand-desc">Premium Picassa Leather Lam for luxurious soft-touch interior cladding.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x2 / 8x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 1.5 / 6mm</div>
+                            <div class="price">₹300/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Picassa Leather Lam. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="xya-leather.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/xya-leather/page_007.jpg?v=2" alt="XYA Leather Laminate" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="xya-leather.html" class="brand-name" style="text-decoration:none;">XYA Leather Laminate</a>
+                        <div class="brand-desc">Premium XYA Leather Laminate for luxurious soft-touch interior cladding.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x2 / 8x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 1.5 / 6mm</div>
+                            <div class="price">₹300/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in XYA Leather Laminate. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="c-leather.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/c-leather/page_007.jpg?v=2" alt="C Leather Laminate" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="c-leather.html" class="brand-name" style="text-decoration:none;">C Leather Laminate</a>
+                        <div class="brand-desc">Premium C Leather Laminate for luxurious soft-touch interior cladding.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x2 / 8x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 1.5 / 6mm</div>
+                            <div class="price">₹300/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in C Leather Laminate. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="is-sutton.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/is-sutton/page_007.jpg?v=2" alt="IS Sutton Flexible Louvers" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="is-sutton.html" class="brand-name" style="text-decoration:none;">IS Sutton Flexible Louvers</a>
+                        <div class="brand-desc">Premium IS Sutton Flexible Louvers for luxurious soft-touch interior cladding.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x2 / 8x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 1.5 / 6mm</div>
+                            <div class="price">₹300/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in IS Sutton Flexible Louvers. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="is-shade.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/is-shade/page_007.jpg?v=2" alt="IS Shade" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="is-shade.html" class="brand-name" style="text-decoration:none;">IS Shade</a>
+                        <div class="brand-desc">Premium IS Shade for luxurious soft-touch interior cladding.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x2 / 8x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 1.5 / 6mm</div>
+                            <div class="price">₹300/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in IS Shade. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="is-selene.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/is-selene/page_007.jpg?v=2" alt="IS Selene" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="is-selene.html" class="brand-name" style="text-decoration:none;">IS Selene</a>
+                        <div class="brand-desc">Premium IS Selene for luxurious soft-touch interior cladding.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x2 / 8x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 1.5 / 6mm</div>
+                            <div class="price">₹300/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in IS Selene. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="icarus.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/icarus/page_006.jpg?v=2" alt="Icarus Kathiyawadi" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="icarus.html" class="brand-name" style="text-decoration:none;">Icarus Kathiyawadi</a>
+                        <div class="brand-desc">Premium Icarus Kathiyawadi for luxurious soft-touch interior cladding.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x2 / 8x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 1.5 / 6mm</div>
+                            <div class="price">₹300/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Icarus Kathiyawadi. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="site-footer"></footer>
+
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/header-nav.js"></script>
+
+    <script>
+        // ===== SUB-TYPE TAB SWITCHING =====
+        const tabs = document.querySelectorAll('.cat-tab');
+        const sections = document.querySelectorAll('.cat-section');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = tab.dataset.target;
+
+                // Update active tab
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                // Show correct section
+                sections.forEach(sec => {
+                    sec.classList.toggle('active', sec.id === target);
+                });
+
+                // Smooth scroll to content
+                document.querySelector('main').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // Auto-select tab from URL hash
+        const hash = window.location.hash.replace('#', '');
+        if (hash) {
+            const matchTab = document.querySelector(`[data-target="${hash}"]`);
+            if (matchTab) matchTab.click();
+        }
+    </script>
+</body>
+</html>

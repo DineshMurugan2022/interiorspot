@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Charcoal Sheets | Interior Spot Chennai</title>
+    <meta name="description" content="Interlocking premium charcoal sheets designed for seamless joint-free wall applications. Available in 4mm and 6mm thickness from top brands.">
+    <meta name="keywords" content="charcoal sheet, charcoal panel, wall panel, charcoal wall panel, decorative panels">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/next-level.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root { --next-blue: #1a3b8f; }
+
+        /* ===== HERO ===== */
+        .category-hero {
+            background: linear-gradient(135deg, #1a3b8f 0%, #0d2157 60%, #162d6e 100%);
+            padding: 100px 0 70px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .category-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 500px;
+            height: 500px;
+            background: rgba(255,255,255,0.04);
+            border-radius: 50%;
+        }
+        .category-hero h1 {
+            font-size: 60px;
+            font-weight: 800;
+            margin-bottom: 18px;
+            font-family: 'Outfit', sans-serif;
+            letter-spacing: -1px;
+        }
+        .category-hero p {
+            font-size: 16px;
+            opacity: 0.85;
+            margin-bottom: 30px;
+        }
+        .hero-pills {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        .hero-pill {
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white;
+            padding: 7px 18px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .btn-hero {
+            background: white;
+            color: var(--next-blue);
+            padding: 13px 38px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            font-size: 15px;
+        }
+        .btn-hero:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.3); }
+
+        /* ===== SECTION ===== */
+        .cat-section {
+            padding: 60px 0 80px;
+        }
+
+        /* ===== BRAND CARDS ===== */
+        .brand-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 28px;
+        }
+        .brand-card {
+            background: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 3px 18px rgba(0,0,0,0.07);
+            border: 1.5px solid #f0f0f5;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        .brand-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(26,59,143,0.14);
+            border-color: #c8d5ff;
+        }
+        .brand-card .card-img {
+            width: 100%;
+            aspect-ratio: 4/5;
+            overflow: hidden;
+            background: #f5f6fb;
+        }
+        .brand-card .card-img a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .brand-card .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .brand-card:hover .card-img img { transform: scale(1.08); }
+        .brand-card .card-body {
+            padding: 18px 18px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            flex: 1;
+        }
+        .brand-name { font-size: 16px; font-weight: 700; color: #1a1a2e; line-height: 1.3; }
+        .brand-desc { font-size: 13px; color: #888; line-height: 1.55; flex: 1; margin-bottom: 8px; }
+        
+        /* ===== CARD SPECS ===== */
+        .card-specs {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f8f9ff;
+            padding: 10px 14px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #555;
+            border: 1px solid #eef1ff;
+        }
+        .card-specs .spec-item { display: flex; align-items: center; gap: 5px; }
+        .card-specs .spec-item i { color: #9aaeff; font-size: 11px; }
+        .card-specs .price {
+            color: var(--next-blue);
+            font-size: 15px;
+            font-weight: 800;
+        }
+
+        .card-actions {
+            display: flex;
+            gap: 9px;
+            margin-top: auto;
+        }
+        .btn-wa {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            background: #25D366;
+            color: #fff;
+            padding: 11px 14px;
+            border-radius: 11px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+        .btn-view {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            background: var(--next-blue);
+            color: #fff;
+            padding: 11px 14px;
+            border-radius: 11px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+        .btn-view:hover { background: #112763; transform: scale(1.02); }
+        .btn-wa:hover { background: #1bab52; transform: scale(1.02); }
+        .btn-phone {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eef1ff;
+            color: var(--next-blue);
+            padding: 11px 14px;
+            border-radius: 11px;
+            font-size: 14px;
+            text-decoration: none;
+            border: 1.5px solid #d0d9ff;
+            transition: all 0.25s ease;
+            min-width: 44px;
+        }
+        .btn-phone:hover { background: var(--next-blue); color: white; border-color: var(--next-blue); }
+
+        /* Placeholder when no image */
+        .img-ph {
+            width: 100%;
+            height: 100%;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #edf0ff 0%, #f5f7ff 100%);
+            color: var(--next-blue);
+        }
+        .img-ph i { font-size: 38px; opacity: 0.35; }
+        .img-ph span { font-size: 12px; font-weight: 700; opacity: 0.5; letter-spacing: 0.5px; text-transform: uppercase; text-align: center; padding: 0 10px;}
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .category-hero h1 { font-size: 38px; }
+            .brand-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+            .brand-name { font-size: 14px; }
+            .card-specs {
+                padding: 8px 10px;
+                font-size: 11px;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 6px;
+            }
+            .card-specs .price {
+                margin-left: auto;
+                margin-top: 0;
+            }
+            .btn-wa, .btn-phone { padding: 9px 10px; font-size: 12px; }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="site-header"></header>
+
+    <!-- HERO -->
+    <section class="category-hero">
+        <div class="container">
+            <h1>Premium Charcoal Sheets</h1>
+            <p>Interlocking charcoal sheets designed for seamless joint-free wall applications. Available from 10+ premium brands.</p>
+            <div class="hero-pills">
+                <span class="hero-pill"><i class="fas fa-expand"></i> 8x4 ft &amp; 8x2 ft</span>
+                <span class="hero-pill"><i class="fas fa-arrows-alt-v"></i> 4mm, 6mm Thickness</span>
+                <span class="hero-pill"><i class="fas fa-rupee-sign"></i> ₹250 / sqft</span>
+                <span class="hero-pill"><i class="fas fa-tags"></i> 10+ Brands</span>
+            </div>
+        </div>
+    </section>
+
+    <main class="container cat-section">
+        <div class="brand-grid">
+
+            <div class="brand-card">
+                <div class="card-img">
+                    <a href="vivre-adonis.html"><img src="assets/product/galleries/vivre-adonis/page_003.jpg?v=4" alt="Vivre ADONIS Charcoal"
+                         onerror="this.parentElement.innerHTML='<div class=\'img-ph\'><i class=\'fas fa-border-all\'></i><span>Vivre ADONIS</span></div>'"></a>
+                </div>
+                <div class="card-body">
+                    <a href="vivre-adonis.html" class="brand-name" style="text-decoration: none;">Vivre ADONIS</a>
+                    <div class="brand-desc">Exclusive designer charcoal panels for luxurious interiors. Seamless interlocking design.</div>
+                    <div class="card-specs">
+                        <div class="spec-item"><i class="fas fa-expand"></i> 8x4 / 8x2 ft</div>
+                        <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 4mm / 6mm</div>
+                        <div class="price">₹250/sqft</div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://wa.me/918122258359?text=Hi, I'm interested in Vivre ADONIS Charcoal Sheets. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="brand-card">
+                <div class="card-img">
+                    <a href="allure.html"><img src="assets/product/galleries/allure/page_006.jpg?v=4" alt="ALLURE Charcoal Sheets"
+                         onerror="this.parentElement.innerHTML='<div class=\'img-ph\'><i class=\'fas fa-border-all\'></i><span>ALLURE</span></div>'"></a>
+                </div>
+                <div class="card-body">
+                    <a href="allure.html" class="brand-name" style="text-decoration: none;">ALLURE</a>
+                    <div class="brand-desc">Premium wall paneling with deep charcoal textures to create stunning visual depth in any room.</div>
+                    <div class="card-specs">
+                        <div class="spec-item"><i class="fas fa-expand"></i> 8x4 / 8x2 ft</div>
+                        <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 4mm / 6mm</div>
+                        <div class="price">₹250/sqft</div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://wa.me/918122258359?text=Hi, I'm interested in ALLURE Charcoal Sheets. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="brand-card">
+                <div class="card-img">
+                    <a href="infini-decorative.html"><img src="assets/product/galleries/infini-decorative/page_007.jpg?v=4" alt="Infini Decorative Charcoal"
+                         onerror="this.parentElement.innerHTML='<div class=\'img-ph\'><i class=\'fas fa-border-all\'></i><span>Infini</span></div>'"></a>
+                </div>
+                <div class="card-body">
+                    <a href="infini-decorative.html" class="brand-name" style="text-decoration: none;">Infini Decorative</a>
+                    <div class="brand-desc">High-quality decorative charcoal sheets offering a perfect blend of style and durability.</div>
+                    <div class="card-specs">
+                        <div class="spec-item"><i class="fas fa-expand"></i> 8x4 / 8x2 ft</div>
+                        <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 4mm / 6mm</div>
+                        <div class="price">₹250/sqft</div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://wa.me/918122258359?text=Hi, I'm interested in Infini Decorative Charcoal Sheets. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="brand-card">
+                <div class="card-img">
+                    <a href="decolite.html"><img src="assets/product/galleries/decolite/page_002.jpg?v=4" alt="Decolite Charcoal"
+                         onerror="this.parentElement.innerHTML='<div class=\'img-ph\'><i class=\'fas fa-border-all\'></i><span>Decolite</span></div>'"></a>
+                </div>
+                <div class="card-body">
+                    <a href="decolite.html" class="brand-name" style="text-decoration: none;">Decolite</a>
+                    <div class="brand-desc">Sophisticated Decolite charcoal panels designed for modern statement walls and premium spaces.</div>
+                    <div class="card-specs">
+                        <div class="spec-item"><i class="fas fa-expand"></i> 8x4 / 8x2 ft</div>
+                        <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 4mm / 6mm</div>
+                        <div class="price">₹250/sqft</div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://wa.me/918122258359?text=Hi, I'm interested in Decolite Charcoal Sheets. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="brand-card">
+                <div class="card-img">
+                    <a href="dimenza-ultimo.html"><img src="assets/product/galleries/dimenza-ultimo/page_007.jpg?v=4" alt="DiMENza Ultimo"
+                         onerror="this.parentElement.innerHTML='<div class=\'img-ph\'><i class=\'fas fa-border-all\'></i><span>DiMENza Ultimo</span></div>'"></a>
+                </div>
+                <div class="card-body">
+                    <a href="dimenza-ultimo.html" class="brand-name" style="text-decoration: none;">DiMENza Ultimo</a>
+                    <div class="brand-desc">Ultimo range of charcoal sheets featuring striking 3D textures and exceptional finish.</div>
+                    <div class="card-specs">
+                        <div class="spec-item"><i class="fas fa-expand"></i> 8x4 / 8x2 ft</div>
+                        <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 4mm / 6mm</div>
+                        <div class="price">₹250/sqft</div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://wa.me/918122258359?text=Hi, I'm interested in DiMENza Ultimo Charcoal Sheets. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="brand-card">
+                <div class="card-img">
+                    <a href="ducotex.html"><img src="assets/product/galleries/ducotex/page_002.jpg?v=4" alt="DUCOTEX Charcoal"
+                         onerror="this.parentElement.innerHTML='<div class=\'img-ph\'><i class=\'fas fa-border-all\'></i><span>DUCOTEX</span></div>'"></a>
+                </div>
+                <div class="card-body">
+                    <a href="ducotex.html" class="brand-name" style="text-decoration: none;">DUCOTEX</a>
+                    <div class="brand-desc">Durable and elegant DUCOTEX panels for effortless interior styling and long-lasting beauty.</div>
+                    <div class="card-specs">
+                        <div class="spec-item"><i class="fas fa-expand"></i> 8x4 / 8x2 ft</div>
+                        <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 4mm / 6mm</div>
+                        <div class="price">₹250/sqft</div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://wa.me/918122258359?text=Hi, I'm interested in DUCOTEX Charcoal Sheets. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="brand-card">
+                <div class="card-img">
+                    <a href="icoal.html"><img src="assets/product/galleries/icoal/page_007.jpg?v=4" alt="iCoal Panels"
+                         onerror="this.parentElement.innerHTML='<div class=\'img-ph\'><i class=\'fas fa-border-all\'></i><span>iCoal</span></div>'"></a>
+                </div>
+                <div class="card-body">
+                    <a href="icoal.html" class="brand-name" style="text-decoration: none;">iCoal</a>
+                    <div class="brand-desc">Contemporary iCoal sheets that deliver a sleek, architectural look without visible joints.</div>
+                    <div class="card-specs">
+                        <div class="spec-item"><i class="fas fa-expand"></i> 8x4 / 8x2 ft</div>
+                        <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 4mm / 6mm</div>
+                        <div class="price">₹250/sqft</div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://wa.me/918122258359?text=Hi, I'm interested in iCoal Charcoal Sheets. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="brand-card">
+                <div class="card-img">
+                    <a href="srh-panels.html"><img src="assets/product/galleries/srh-panels/page_007.jpg?v=4" alt="SRH Charcoal Panels"
+                         onerror="this.parentElement.innerHTML='<div class=\'img-ph\'><i class=\'fas fa-border-all\'></i><span>SRH Panels</span></div>'"></a>
+                </div>
+                <div class="card-body">
+                    <a href="srh-panels.html" class="brand-name" style="text-decoration: none;">SRH Charcoal Panels</a>
+                    <div class="brand-desc">SRH panels offering exceptional interlocking design for quick and perfect installation.</div>
+                    <div class="card-specs">
+                        <div class="spec-item"><i class="fas fa-expand"></i> 8x4 / 8x2 ft</div>
+                        <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 4mm / 6mm</div>
+                        <div class="price">₹250/sqft</div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://wa.me/918122258359?text=Hi, I'm interested in SRH Charcoal Panels. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="brand-card">
+                <div class="card-img">
+                    <a href="shore-coalcraft.html" class="card-img" style="display:block; text-decoration:none;"><img src="assets/product/galleries/shore-coalcraft/page_007.jpg?v=4" alt="SHORE Coalcraft" style="width:100%; height:100%; object-fit:cover;"></a>
+                </div>
+                <div class="card-body">
+                    <a href="shore-coalcraft.html" class="brand-name" style="text-decoration: none;">SHORE Coalcraft</a>
+                    <div class="brand-desc">Masterfully crafted charcoal sheets from SHORE for an artistic, textured feature wall.</div>
+                    <div class="card-specs">
+                        <div class="spec-item"><i class="fas fa-expand"></i> 8x4 / 8x2 ft</div>
+                        <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 4mm / 6mm</div>
+                        <div class="price">₹250/sqft</div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://wa.me/918122258359?text=Hi, I'm interested in SHORE Coalcraft Charcoal Sheets. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="brand-card">
+                <div class="card-img">
+                    <a href="creative-charcoal.html" class="card-img" style="display:block; text-decoration:none;"><img src="assets/product/galleries/creative-charcoal/page_007.jpg?v=4" alt="Creative Charcoal" style="width:100%; height:100%; object-fit:cover;"></a>
+                </div>
+                <div class="card-body">
+                    <a href="creative-charcoal.html" class="brand-name" style="text-decoration: none;">Creative Charcoal</a>
+                    <div class="brand-desc">Versatile and stylish creative charcoal panels suitable for both classic and modern themes.</div>
+                    <div class="card-specs">
+                        <div class="spec-item"><i class="fas fa-expand"></i> 8x4 / 8x2 ft</div>
+                        <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 4mm / 6mm</div>
+                        <div class="price">₹250/sqft</div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://wa.me/918122258359?text=Hi, I'm interested in Creative Charcoal Sheets. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="brand-card">
+                <div class="card-img">
+                    <a href="charcoal-vol-11.html"><img src="assets/product/galleries/charcoal-vol-11/page_004.jpg?v=4" alt="Charcoal Vol 11"
+                         onerror="this.parentElement.innerHTML='<div class=\'img-ph\'><i class=\'fas fa-border-all\'></i><span>Charcoal Vol 11</span></div>'"></a>
+                </div>
+                <div class="card-body">
+                    <a href="charcoal-vol-11.html" class="brand-name" style="text-decoration: none;">Charcoal Vol 11</a>
+                    <div class="brand-desc">Premium Charcoal Vol 11 sheets featuring elegant textures.</div>
+                    <div class="card-specs">
+                        <div class="spec-item"><i class="fas fa-expand"></i> 8x4 / 8x2 ft</div>
+                        <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 4mm / 6mm</div>
+                        <div class="price">₹250/sqft</div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://wa.me/918122258359?text=Hi, I'm interested in Charcoal Vol 11 Sheets." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="brand-card">
+                <div class="card-img">
+                    <a href="charco-charm.html" class="card-img" style="display:block; text-decoration:none;"><img src="assets/product/galleries/charco-charm/page_007.jpg?v=4" alt="Charco Charm" style="width:100%; height:100%; object-fit:cover;"></a>
+                </div>
+                <div class="card-body">
+                    <a href="charco-charm.html" class="brand-name" style="text-decoration: none;">Charco Charm</a>
+                    <div class="brand-desc">Stylish Charco Charm panels for modern spaces.</div>
+                    <div class="card-specs">
+                        <div class="spec-item"><i class="fas fa-expand"></i> 8x4 / 8x2 ft</div>
+                        <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 4mm / 6mm</div>
+                        <div class="price">₹250/sqft</div>
+                    </div>
+                    <div class="card-actions">
+                        <a href="https://wa.me/918122258359?text=Hi, I'm interested in Charco Charm Sheets." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="site-footer"></footer>
+
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/header-nav.js"></script>
+</body>
+</html>

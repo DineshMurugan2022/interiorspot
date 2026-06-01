@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore premium CRAYON Laminates Chennai at Interior Spot, Chennai's top destination for interior decorative materials.">
+    <meta name="keywords" content="crayon laminates chennai, interior spot, laminates, chennai interiors, decorative sheets, wall panels">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRAYON Laminates | Interior Spot Chennai</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/next-level.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --next-blue: #1a3b8f;
+        }
+
+        /* ===== PDP LAYOUT ===== */
+        .pdp-layout {
+            display: flex;
+            gap: 50px;
+            padding: 60px 0;
+            align-items: flex-start;
+        }
+
+        .pdp-images {
+            flex: 1;
+            position: sticky;
+            top: 40px;
+        }
+
+        .pdp-main-image {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            background: #f5f5f5;
+        }
+
+        .pdp-main-image img {
+            width: 100%;
+            height: auto;
+            max-height: 600px;
+            object-fit: cover;
+            display: block;
+            aspect-ratio: 4/5;
+        }
+
+        .pdp-details {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .pdp-sku {
+            font-size: 13px;
+            color: #888;
+            font-weight: 500;
+        }
+
+        .pdp-title {
+            font-size: 32px;
+            font-weight: 800;
+            color: #111;
+            line-height: 1.2;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .pdp-price-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .pdp-price {
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+        }
+
+        .pdp-price .current {
+            font-size: 24px;
+            font-weight: 700;
+            color: #d83b23;
+        }
+
+        .pdp-price .old {
+            font-size: 16px;
+            color: #888;
+            text-decoration: line-through;
+        }
+
+        .pdp-price-wrap .tax {
+            font-size: 11px;
+            color: #777;
+        }
+
+        .pdp-actions {
+            margin: 20px 0;
+        }
+
+        .pdp-specs {
+            margin-top: 20px;
+        }
+
+        .pdp-specs h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #111;
+        }
+
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .specs-table th,
+        .specs-table td {
+            border: 1px solid #e0e0e0;
+            padding: 12px 15px;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        .specs-table th {
+            font-weight: 600;
+            color: #333;
+            width: 30%;
+        }
+
+        .specs-table td {
+            color: #555;
+        }
+
+        @media (max-width: 900px) {
+            .pdp-layout {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .pdp-images {
+                position: static;
+            }
+
+            .pdp-title {
+                font-size: 26px;
+            }
+        }
+
+        /* ===== GALLERY ===== */
+        .gallery-section {
+            padding: 60px 0;
+            background: #fafafa;
+        }
+
+        .gallery-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .gallery-header h2 {
+            font-size: 32px;
+            font-weight: 800;
+            color: #111;
+        }
+
+        .crayon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .crayon-img-wrap {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            aspect-ratio: 4/3;
+            background: #fff;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .crayon-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .crayon-img-wrap:hover img {
+            transform: scale(1.05);
+        }
+
+        .enquire-bar {
+            text-align: center;
+            padding: 40px 0 80px;
+            background: #fafafa;
+        }
+
+        .btn-wa-large {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #25D366;
+            color: white;
+            padding: 16px 32px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.2);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .btn-wa-large:hover {
+            transform: translateY(-2px);
+            background: #1bab52;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.3);
+        }
+
+        /* ===== BRAND CARDS (Related Products) ===== */
+        .related-products-section {
+            padding: 60px 0 80px;
+            background: #fff;
+        }
+
+        .related-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .related-header h2 {
+            font-size: 32px;
+            font-weight: 800;
+            color: #111;
+        }
+
+        .brand-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 28px;
+        }
+
+        .brand-card {
+            background: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 3px 18px rgba(0, 0, 0, 0.07);
+            border: 1.5px solid #f0f0f5;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .brand-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(26, 59, 143, 0.14);
+            border-color: #c8d5ff;
+        }
+
+        .brand-card .card-img {
+            width: 100%;
+            aspect-ratio: 4/5;
+            overflow: hidden;
+            background: #f5f6fb;
+        }
+
+        .brand-card .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .brand-card:hover .card-img img {
+            transform: scale(1.08);
+        }
+
+        .brand-card .card-body {
+            padding: 18px 18px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            flex: 1;
+        }
+
+        .brand-name {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1a1a2e;
+            line-height: 1.3;
+            text-decoration: none;
+            display: block;
+        }
+
+        .brand-desc {
+            font-size: 13px;
+            color: #888;
+            line-height: 1.55;
+            flex: 1;
+            margin-bottom: 8px;
+        }
+
+        .card-specs {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f8f9ff;
+            padding: 10px 14px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #555;
+            border: 1px solid #eef1ff;
+        }
+
+        .card-specs .spec-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .card-specs .spec-item i {
+            color: #9aaeff;
+            font-size: 11px;
+        }
+
+        .card-specs .price {
+            color: var(--next-blue);
+            font-size: 15px;
+            font-weight: 800;
+        }
+
+        .card-actions {
+            display: flex;
+            gap: 9px;
+            margin-top: auto;
+        }
+
+        .btn-wa {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            background: #25D366;
+            color: #fff;
+            padding: 11px 14px;
+            border-radius: 11px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+
+        .btn-wa:hover {
+            background: #1bab52;
+            transform: scale(1.02);
+        }
+
+        .btn-phone {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eef1ff;
+            color: var(--next-blue);
+            padding: 11px 14px;
+            border-radius: 11px;
+            font-size: 14px;
+            text-decoration: none;
+            border: 1.5px solid #d0d9ff;
+            transition: all 0.25s ease;
+            min-width: 44px;
+        }
+
+        .btn-phone:hover {
+            background: var(--next-blue);
+            color: white;
+            border-color: var(--next-blue);
+        }
+
+        @media (max-width: 768px) {
+            .brand-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 14px;
+            }
+
+            .brand-name {
+                font-size: 14px;
+            }
+
+            .card-specs {
+                padding: 8px 10px;
+                font-size: 11px;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 6px;
+            }
+            .card-specs .price {
+                margin-left: auto;
+                margin-top: 0;
+            }
+
+            .btn-wa,
+            .btn-phone {
+                padding: 9px 10px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="site-header"></header>
+
+    <main class="container pdp-layout">
+        <!-- LEFT: IMAGE -->
+        <div class="pdp-images">
+            <div class="pdp-main-image">
+                <img src="assets/product/galleries/sk2-bronte/page_003.jpg?v=1" alt="SK2 Bronte Louvers">
+            </div>' ">
+            </div>
+        </div>
+
+        <!-- RIGHT: DETAILS -->
+        <div class="pdp-details">
+            <div class="pdp-sku">SKU: CR-SOLID-8X4</div>
+            <h1 class="pdp-title">Crayon Vibrant Solid Colour Laminate 4x8 ft</h1>
+
+            <div class="pdp-price-wrap">
+                <div class="pdp-price">
+                    <span class="current">Rs. 2,350.00</span>
+                    <span class="old">Rs. 2,820.00</span>
+                </div>
+                <span class="tax">Tax included.</span>
+            </div>
+
+            <div class="pdp-actions">
+                <a href="https://wa.me/918122258359?text=Hi, I'm interested in the CRAYON Laminates."
+                    class="btn-wa-large" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Enquire Now
+                </a>
+            </div>
+
+            <div class="pdp-specs">
+                <h3>Product Specifications</h3>
+                <div class="pdp-specs">
+                        <div class="spec-row"><div class="spec-label">Dimensions</div><div class="spec-value">8-9.5' H x 5-12" W</div></div>
+                        <div class="spec-row"><div class="spec-label">Thickness</div><div class="spec-value">8/12/25mm</div></div>
+                        <div class="spec-row"><div class="spec-label">Application</div><div class="spec-value">Interiors, Walls, Ceilings</div></div>
+                        <div class="spec-row"><div class="spec-label">Finish</div><div class="spec-value">Fluted / Louver</div></div>
+                        <div class="spec-row"><div class="spec-label">Base Material</div><div class="spec-value">Premium Charcoal</div></div>
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="gallery-section">
+        <div class="container">
+            <div class="gallery-header">
+                <h2>Related Images & Textures</h2>
+                <p style="color: #666; margin-top: 10px;">Select images extracted from the official CRAYON e-catalogue
+                </p>
+            </div>
+
+            <div class="crayon-grid">
+                <div class="crayon-img-wrap"><img src="g:/interio/assets/product/galleries/sk2-bronte/page_001.jpg?v=1" alt="SK2 Bronte Louvers Catalog Page"></div>
+                <div class="crayon-img-wrap"><img src="g:/interio/assets/product/galleries/sk2-bronte/page_002.jpg?v=1" alt="SK2 Bronte Louvers Catalog Page"></div>
+                <div class="crayon-img-wrap"><img src="g:/interio/assets/product/galleries/sk2-bronte/page_003.jpg?v=1" alt="SK2 Bronte Louvers Catalog Page"></div>
+                <div class="crayon-img-wrap"><img src="g:/interio/assets/product/galleries/sk2-bronte/page_004.jpg?v=1" alt="SK2 Bronte Louvers Catalog Page"></div>
+                <div class="crayon-img-wrap"><img src="g:/interio/assets/product/galleries/sk2-bronte/page_005.jpg?v=1" alt="SK2 Bronte Louvers Catalog Page"></div>
+
+</div>
+        </div>
+    </section>
+
+    <section class="related-products-section">
+        <div class="container">
+            <div class="related-header">
+                <h2>Related Products</h2>
+                <p style="color: #666; margin-top: 10px;">Explore other premium materials from Interior Spot</p>
+            </div>
+            <div class="brand-grid" id="dynamic-related-products">
+                <!-- Dynamically injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <footer id="site-footer"></footer>
+
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/header-nav.js"></script>
+</body>
+
+</html>

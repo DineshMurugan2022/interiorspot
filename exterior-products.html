@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Exterior Products & Cladding | Interior Spot Chennai</title>
+    <meta name="description" content="Explore a wide variety of exterior products including WPC louvers, aluminium fluted panels, PU stone, and HPL cladding. Weatherproof and waterproof exterior panels.">
+    <meta name="keywords" content="wpc, aluminium, louvers, exterior louvers, wpc louvers, aluminium louvers, exterior grade louvers, wpc exterior louvers, aluminium exterior louvers, Weatherproof, waterproof, waterproof louvers, exterior panel, fluted panel, wpc fluted, aluminium panel, aluminium fluted, Pu panels, pu stone, pu feather, pu, pvc exterior panel, exterior wall panel, stone, fiber stone, exterior, stone veneer, exterior stone panel">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/next-level.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root { --next-blue: #1a3b8f; }
+
+        /* ===== HERO ===== */
+        .category-hero {
+            background: linear-gradient(135deg, #1a3b8f 0%, #0d2157 60%, #162d6e 100%);
+            padding: 100px 0 70px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .category-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 500px;
+            height: 500px;
+            background: rgba(255,255,255,0.04);
+            border-radius: 50%;
+        }
+        .category-hero h1 {
+            font-size: 60px;
+            font-weight: 800;
+            margin-bottom: 18px;
+            font-family: 'Outfit', sans-serif;
+            letter-spacing: -1px;
+        }
+        .category-hero p {
+            font-size: 16px;
+            opacity: 0.85;
+            margin-bottom: 30px;
+        }
+        .hero-pills {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        .hero-pill {
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white;
+            padding: 7px 18px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .btn-hero {
+            background: white;
+            color: var(--next-blue);
+            padding: 13px 38px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            font-size: 15px;
+        }
+        .btn-hero:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.3); }
+
+        /* ===== STICKY FILTER TABS ===== */
+        .cat-filter-bar {
+            background: #fff;
+            border-bottom: 2px solid #eef0f5;
+            position: sticky;
+            top: 0;
+            z-index: 200;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+        }
+        .cat-filter-scroll {
+            display: flex;
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            justify-content: center;
+        }
+        .cat-filter-scroll::-webkit-scrollbar { display: none; }
+        .cat-tab {
+            flex-shrink: 0;
+            padding: 16px 22px;
+            font-size: 13.5px;
+            font-weight: 600;
+            color: #777;
+            cursor: pointer;
+            border: none;
+            border-bottom: 3px solid transparent;
+            background: none;
+            font-family: 'Outfit', sans-serif;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+        .cat-tab:hover { color: var(--next-blue); background: #f8f9ff; }
+        .cat-tab.active {
+            color: var(--next-blue);
+            border-bottom-color: var(--next-blue);
+            background: #f4f6ff;
+        }
+
+        /* ===== SECTION ===== */
+        .cat-section {
+            padding: 55px 0 40px;
+            display: none;
+        }
+        .cat-section.active { display: block; animation: fadeUp 0.35s ease; }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(18px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .cat-section-header { margin-bottom: 35px; }
+        .cat-badge {
+            display: inline-block;
+            background: var(--next-blue);
+            color: white;
+            padding: 5px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+        .cat-section-header h2 {
+            font-size: 30px;
+            font-weight: 800;
+            color: #1a1a2e;
+            margin-bottom: 8px;
+        }
+        .cat-section-header .sub-desc {
+            color: #777;
+            font-size: 15px;
+            max-width: 750px;
+            line-height: 1.6;
+        }
+
+        /* ===== BRAND CARDS ===== */
+        .brand-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 28px;
+        }
+        .brand-card {
+            background: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 3px 18px rgba(0,0,0,0.07);
+            border: 1.5px solid #f0f0f5;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        .brand-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(26,59,143,0.14);
+            border-color: #c8d5ff;
+        }
+        .brand-card .card-img {
+            width: 100%;
+            aspect-ratio: 4/5;
+            overflow: hidden;
+            background: #f5f6fb;
+        }
+        .brand-card .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .brand-card:hover .card-img img { transform: scale(1.08); }
+        .brand-card .card-body {
+            padding: 18px 18px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            flex: 1;
+        }
+        .brand-name { font-size: 16px; font-weight: 700; color: #1a1a2e; line-height: 1.3; }
+        .brand-desc { font-size: 13px; color: #888; line-height: 1.55; flex: 1; margin-bottom: 8px; }
+        
+        /* ===== CARD SPECS ===== */
+        .card-specs {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f8f9ff;
+            padding: 10px 14px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #555;
+            border: 1px solid #eef1ff;
+        }
+        .card-specs .spec-item { display: flex; align-items: center; gap: 5px; }
+        .card-specs .spec-item i { color: #9aaeff; font-size: 11px; }
+        .card-specs .price {
+            color: var(--next-blue);
+            font-size: 15px;
+            font-weight: 800;
+        }
+
+        .card-actions {
+            display: flex;
+            gap: 9px;
+            margin-top: auto;
+        }
+        .btn-wa {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            background: #25D366;
+            color: #fff;
+            padding: 11px 14px;
+            border-radius: 11px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+        .btn-wa:hover { background: #1bab52; transform: scale(1.02); }
+        .btn-phone {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eef1ff;
+            color: var(--next-blue);
+            padding: 11px 14px;
+            border-radius: 11px;
+            font-size: 14px;
+            text-decoration: none;
+            border: 1.5px solid #d0d9ff;
+            transition: all 0.25s ease;
+            min-width: 44px;
+        }
+        .btn-phone:hover { background: var(--next-blue); color: white; border-color: var(--next-blue); }
+
+        /* Placeholder when no image */
+        .img-ph {
+            width: 100%;
+            height: 100%;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #edf0ff 0%, #f5f7ff 100%);
+            color: var(--next-blue);
+        }
+        .img-ph i { font-size: 38px; opacity: 0.35; }
+        .img-ph span { font-size: 12px; font-weight: 700; opacity: 0.5; letter-spacing: 0.5px; text-transform: uppercase; text-align: center; padding: 0 10px;}
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .category-hero h1 { font-size: 38px; }
+            .brand-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+            .cat-section-header h2 { font-size: 22px; }
+            .cat-filter-scroll { justify-content: flex-start; }
+            .brand-name { font-size: 14px; }
+            .card-specs {
+                padding: 8px 10px;
+                font-size: 11px;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 6px;
+            }
+            .card-specs .price {
+                margin-left: auto;
+                margin-top: 0;
+            }
+            .btn-wa, .btn-phone { padding: 9px 10px; font-size: 12px; }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="site-header"></header>
+
+    <!-- HERO -->
+    <section class="category-hero">
+        <div class="container">
+            <h1>Premium Exterior Products</h1>
+            <p>100% waterproof and weatherproof exterior cladding solutions. Discover WPC louvers, aluminium fluted panels, PU stone, and HPL sheets for building facades.</p>
+            <div class="hero-pills">
+                <span class="hero-pill"><i class="fas fa-cloud-showers-heavy"></i> 100% Waterproof</span>
+                <span class="hero-pill"><i class="fas fa-sun"></i> UV &amp; Weatherproof</span>
+                <span class="hero-pill"><i class="fas fa-building"></i> Facade &amp; Cladding</span>
+                <span class="hero-pill"><i class="fas fa-tools"></i> Durable &amp; Low Maintenance</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- STICKY SUB-TYPE FILTER TABS -->
+    <div class="cat-filter-bar">
+        <div class="container">
+            <div class="cat-filter-scroll">
+                <button class="cat-tab active" data-target="sec-louvers">WPC &amp; Aluminium Louvers</button>
+                <button class="cat-tab" data-target="sec-stone">PU &amp; Exterior Stone</button>
+                <button class="cat-tab" data-target="sec-hpl">HPL Cladding</button>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+
+        <!-- ===========================
+             1. LOUVERS
+             =========================== -->
+        <section class="cat-section active" id="sec-louvers">
+            <div class="cat-section-header">
+                <span class="cat-badge">Weatherproof Fluted Profiles</span>
+                <h2>WPC &amp; Aluminium Exterior Louvers</h2>
+                <p class="sub-desc">Enhance your building's facade with premium WPC and Aluminium louvers. Designed to withstand harsh exterior climates while providing a modern fluted aesthetic.</p>
+            </div>
+            <div class="brand-grid">
+                <div class="brand-card">
+                    <a href="aluluxe-louvers.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/aluluxe-louvers/page_013.jpg?v=2" alt="Aluluxe Aluminium Louvers" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="aluluxe-louvers.html" class="brand-name" style="text-decoration:none;">Aluluxe Aluminium Louvers</a>
+                        <div class="brand-desc">Premium Aluluxe Aluminium Louvers - Top quality exterior cladding engineered to withstand harsh weather.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-umbrella"></i> 100% Waterproof</div>
+                            <div class="spec-item"><i class="fas fa-sun"></i> UV Resistant</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Aluluxe Aluminium Louvers. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="vivre-aluclad.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/vivre-aluclad/page_008.jpg?v=2" alt="Vivre Aluclad Profiles" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="vivre-aluclad.html" class="brand-name" style="text-decoration:none;">Vivre Aluclad Profiles</a>
+                        <div class="brand-desc">Premium Vivre Aluclad Profiles - Top quality exterior cladding engineered to withstand harsh weather.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-umbrella"></i> 100% Waterproof</div>
+                            <div class="spec-item"><i class="fas fa-sun"></i> UV Resistant</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Vivre Aluclad Profiles. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="zuri-fluted.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/zuri-fluted/page_009.jpg?v=2" alt="ZURI Fluted Louvers" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="zuri-fluted.html" class="brand-name" style="text-decoration:none;">ZURI Fluted Louvers</a>
+                        <div class="brand-desc">Premium ZURI Fluted Louvers - Top quality exterior cladding engineered to withstand harsh weather.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-umbrella"></i> 100% Waterproof</div>
+                            <div class="spec-item"><i class="fas fa-sun"></i> UV Resistant</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in ZURI Fluted Louvers. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="zuri-wpc.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/zuri-wpc/page_002.jpg?v=2" alt="ZURI WPC Planks" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="zuri-wpc.html" class="brand-name" style="text-decoration:none;">ZURI WPC Planks</a>
+                        <div class="brand-desc">Premium ZURI WPC Planks - Top quality exterior cladding engineered to withstand harsh weather.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-umbrella"></i> 100% Waterproof</div>
+                            <div class="spec-item"><i class="fas fa-sun"></i> UV Resistant</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in ZURI WPC Planks. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="soficlad-wpc.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/soficlad-wpc/page_006.jpg?v=2" alt="Soficlad Exterior WPC" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="soficlad-wpc.html" class="brand-name" style="text-decoration:none;">Soficlad Exterior WPC</a>
+                        <div class="brand-desc">Premium Soficlad Exterior WPC - Top quality exterior cladding engineered to withstand harsh weather.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-umbrella"></i> 100% Waterproof</div>
+                            <div class="spec-item"><i class="fas fa-sun"></i> UV Resistant</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Soficlad Exterior WPC. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="standard-wpc.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/standard-wpc/page_002.jpg?v=2" alt="Standard WPC Cladding" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="standard-wpc.html" class="brand-name" style="text-decoration:none;">Standard WPC Cladding</a>
+                        <div class="brand-desc">Premium Standard WPC Cladding - Top quality exterior cladding engineered to withstand harsh weather.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-umbrella"></i> 100% Waterproof</div>
+                            <div class="spec-item"><i class="fas fa-sun"></i> UV Resistant</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Standard WPC Cladding. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="exterior-louvers-col.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/exterior-louvers-col/page_007.jpg?v=2" alt="Premium Exterior Louvers Collection" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="exterior-louvers-col.html" class="brand-name" style="text-decoration:none;">Premium Exterior Louvers Collection</a>
+                        <div class="brand-desc">Premium Premium Exterior Louvers Collection - Top quality exterior cladding engineered to withstand harsh weather.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-umbrella"></i> 100% Waterproof</div>
+                            <div class="spec-item"><i class="fas fa-sun"></i> UV Resistant</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Premium Exterior Louvers Collection. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===========================
+             2. STONE & PU
+             =========================== -->
+        <section class="cat-section" id="sec-stone">
+            <div class="cat-section-header">
+                <span class="cat-badge">3D Facades · Fiber Stone</span>
+                <h2>Exterior PU Panels &amp; Stonera</h2>
+                <p class="sub-desc">Massive 3D PU stone chunks and exterior grade fiber stone sheets designed for rapid installation on boundary walls, gateways, and outdoor feature areas.</p>
+            </div>
+            <div class="brand-grid">
+                <div class="brand-card">
+                    <a href="rockoera-pu.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/rockoera-pu/page_013.jpg?v=2" alt="ROCKOERA PU Stone" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="rockoera-pu.html" class="brand-name" style="text-decoration:none;">ROCKOERA PU Stone</a>
+                        <div class="brand-desc">Premium ROCKOERA PU Stone - Top quality exterior cladding engineered to withstand harsh weather.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-umbrella"></i> 100% Waterproof</div>
+                            <div class="spec-item"><i class="fas fa-sun"></i> UV Resistant</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in ROCKOERA PU Stone. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="pu-panels-exterior.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/pu-panels-exterior/page_013.jpg?v=2" alt="Premium PU Wall Panels" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="pu-panels-exterior.html" class="brand-name" style="text-decoration:none;">Premium PU Wall Panels</a>
+                        <div class="brand-desc">Premium Premium PU Wall Panels - Top quality exterior cladding engineered to withstand harsh weather.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-umbrella"></i> 100% Waterproof</div>
+                            <div class="spec-item"><i class="fas fa-sun"></i> UV Resistant</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Premium PU Wall Panels. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="flexartoera-exterior.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/flexartoera-exterior/page_013.jpg?v=2" alt="FlexartOera Exterior Stone" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="flexartoera-exterior.html" class="brand-name" style="text-decoration:none;">FlexartOera Exterior Stone</a>
+                        <div class="brand-desc">Premium FlexartOera Exterior Stone - Top quality exterior cladding engineered to withstand harsh weather.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-umbrella"></i> 100% Waterproof</div>
+                            <div class="spec-item"><i class="fas fa-sun"></i> UV Resistant</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in FlexartOera Exterior Stone. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="master-sandera-exterior.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/master-sandera-exterior/page_013.jpg?v=2" alt="Master Sandera Exterior Veneer" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="master-sandera-exterior.html" class="brand-name" style="text-decoration:none;">Master Sandera Exterior Veneer</a>
+                        <div class="brand-desc">Premium Master Sandera Exterior Veneer - Top quality exterior cladding engineered to withstand harsh weather.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-umbrella"></i> 100% Waterproof</div>
+                            <div class="spec-item"><i class="fas fa-sun"></i> UV Resistant</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Master Sandera Exterior Veneer. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===========================
+             3. HPL CLADDING
+             =========================== -->
+        <section class="cat-section" id="sec-hpl">
+            <div class="cat-section-header">
+                <span class="cat-badge">High Pressure Laminates</span>
+                <h2>HPL Exterior Cladding</h2>
+                <p class="sub-desc">Extremely durable High-Pressure Laminates designed specifically to protect and decorate building exteriors against intense sun and heavy rain.</p>
+            </div>
+            <div class="brand-grid">
+                <div class="brand-card">
+                    <a href="fascia-hpl.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/fascia-hpl/page_013.jpg?v=2" alt="Fascia Stylam HPL" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="fascia-hpl.html" class="brand-name" style="text-decoration:none;">Fascia Stylam HPL</a>
+                        <div class="brand-desc">Premium Fascia Stylam HPL - Top quality exterior cladding engineered to withstand harsh weather.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-umbrella"></i> 100% Waterproof</div>
+                            <div class="spec-item"><i class="fas fa-sun"></i> UV Resistant</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Fascia Stylam HPL. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="green-hpl.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/green-hpl/page_013.jpg?v=2" alt="Green HPL Panels" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="green-hpl.html" class="brand-name" style="text-decoration:none;">Green HPL Panels</a>
+                        <div class="brand-desc">Premium Green HPL Panels - Top quality exterior cladding engineered to withstand harsh weather.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-umbrella"></i> 100% Waterproof</div>
+                            <div class="spec-item"><i class="fas fa-sun"></i> UV Resistant</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Green HPL Panels. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="site-footer"></footer>
+
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/header-nav.js"></script>
+
+    <script>
+        // ===== SUB-TYPE TAB SWITCHING =====
+        const tabs = document.querySelectorAll('.cat-tab');
+        const sections = document.querySelectorAll('.cat-section');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = tab.dataset.target;
+
+                // Update active tab
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                // Show correct section
+                sections.forEach(sec => {
+                    sec.classList.toggle('active', sec.id === target);
+                });
+
+                // Smooth scroll to content
+                document.querySelector('main').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // Auto-select tab from URL hash
+        const hash = window.location.hash.replace('#', '');
+        if (hash) {
+            const matchTab = document.querySelector(`[data-target="${hash}"]`);
+            if (matchTab) matchTab.click();
+        }
+    </script>
+</body>
+</html>

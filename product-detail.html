@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore premium Product Details Chennai at Interior Spot, Chennai's top destination for interior decorative materials.">
+    <meta name="keywords" content="product details chennai, interior spot, laminates, chennai interiors, decorative sheets, wall panels">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | Interior Spot Chennai</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .breadcrumb {
+                        padding: 20px 0;
+            font-size: 13px;
+            color: #888;
+        }
+
+        .breadcrumb a {
+            color: #444;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--primary);
+        }
+
+        .breadcrumb span {
+            margin: 0 8px;
+        }
+
+        .product-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 80px;
+        }
+
+        .product-image-side {
+            position: relative;
+        }
+
+        .main-image-box {
+            background: #f8f8f8;
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 600px;
+            margin-bottom: 30px;
+            position: relative;
+            border: 1px solid #eee;
+        }
+
+        .main-image-box img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .zoom-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            color: #888;
+        }
+
+        .wishlist-icon-detail {
+            position: absolute;
+            bottom: -20px;
+            left: 20px;
+            width: 45px;
+            height: 45px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            color: #888;
+            cursor: pointer;
+            z-index: 5;
+        }
+
+        .samples-contact {
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+            margin-top: 40px;
+        }
+
+        .samples-contact h4 {
+            font-size: 16px;
+            font-weight: 700;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .samples-contact p {
+            font-size: 13px;
+            color: #666;
+        }
+
+        .product-info-side {
+            padding-top: 10px;
+        }
+
+        .save-badge {
+            background: #e74c3c;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .sku-code {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .product-title {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        .price-box {
+            margin-bottom: 30px;
+        }
+
+        .current-price {
+            font-size: 28px;
+            font-weight: 800;
+            color: #e74c3c;
+        }
+
+        .old-price {
+            font-size: 18px;
+            color: #999;
+            text-decoration: line-through;
+            margin-left: 10px;
+            font-weight: 400;
+        }
+
+        .tax-info {
+            font-size: 12px;
+            color: #888;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .action-buttons-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .btn-row {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn-detail {
+            flex: 1;
+            padding: 15px;
+            border-radius: 25px;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+            text-align: center;
+            border: none;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-download {
+            background: #000;
+            color: white;
+        }
+
+        .btn-ai {
+            background: linear-gradient(90deg, #333, #b8860b);
+            color: white;
+        }
+
+        .btn-cart {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .btn-buy {
+            background: #000;
+            color: white;
+        }
+
+        .share-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .share-row span {
+            font-size: 13px;
+            font-weight: 600;
+            color: #666;
+        }
+
+        .social-circle {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #444;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .social-circle:hover {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+
+        .specifications-section {
+            margin-top: 40px;
+        }
+
+        .specifications-section h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .specs-table th {
+            text-align: left;
+            background: #f9f9f9;
+            padding: 12px 15px;
+            font-size: 13px;
+            font-weight: 700;
+            border: 1px solid #eee;
+            width: 35%;
+        }
+
+        .specs-table td {
+            padding: 12px 15px;
+            font-size: 13px;
+            border: 1px solid #eee;
+            color: #555;
+        }
+
+        @media (max-width: 992px) {
+            .product-container {
+                grid-template-columns: 1fr;
+            }
+
+            .main-image-box {
+                height: 400px;
+            }
+        }
+    </style>
+
+  <link href="assets/css/next-level.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="site-header"></header>
+
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> <span>|</span>
+            <a href="laminate.html">Laminates</a> <span>|</span>
+            <a href="acrylic.html">Acrylic</a> <span>|</span>
+            <span id="breadcrumb-product">Product Detail</span>
+        </div>
+
+        <div class="product-container">
+            <!-- Left Side: Image -->
+            <div class="product-image-side">
+                <div class="main-image-box">
+                    <img src="assets/img/categories/laminates.png" alt="Product Image" id="main-product-img">
+                </div>
+
+                <div class="samples-contact">
+                    <h4>Contact Us For Samples <i class="fas fa-minus"></i></h4>
+                    <p>For Samples or Full Sheet Images - Contact us at +91 81222 58359</p>
+                </div>
+            </div>
+
+            <!-- Right Side: Details -->
+            <div class="product-info-side">
+                <div class="save-badge">Save 15%</div>
+                <div class="sku-code" id="product-sku">SKU: ASA-17007</div>
+
+                <h1 class="product-title" id="product-name">Product Name Loading...</h1>
+
+                <div class="price-box">
+                    <span class="current-price" id="product-price">Rs. 0.00</span>
+                    <span class="old-price" id="product-old-price">Rs. 0.00</span>
+                    <span class="tax-info">Tax included.</span>
+                </div>
+
+                <p class="product-description" id="product-desc"
+                    style="margin-bottom: 30px; line-height: 1.6; color: #666;">
+                    Loading product description...
+                </p>
+
+                <div class="action-buttons-stack">
+                    <a href="https://wa.me/918122258359" class="btn-detail btn-buy"
+                        style="background: #25d366; border-radius: 5px;">
+                        <i class="fab fa-whatsapp"></i> Enquire on WhatsApp
+                    </a>
+                </div>
+
+                <div class="share-row">
+                    <span>Share:</span>
+                    <a href="#" class="social-circle"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#" class="social-circle"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+
+                <div class="specifications-section">
+                    <h3>Product Specifications</h3>
+                    <table class="specs-table">
+                        <tbody>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Details</th>
+                            </tr>
+                            <tr>
+                                <td>Color</td>
+                                <td id="spec-color">-</td>
+                            </tr>
+                            <tr>
+                                <td>Application</td>
+                                <td id="spec-app">Living Room, Bedroom, Kitchen, Office</td>
+                            </tr>
+                            <tr>
+                                <td>Finish</td>
+                                <td id="spec-finish">-</td>
+                            </tr>
+                            <tr>
+                                <td>Collection Name</td>
+                                <td id="spec-collection">-</td>
+                            </tr>
+                            <tr>
+                                <td>Base Material</td>
+                                <td>Laminate</td>
+                            </tr>
+                            <tr>
+                                <td>Width</td>
+                                <td>4 ft</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="site-footer"></footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const productId = params.get('id') || 'la8';
+
+            const products = {
+                // Acrylic
+                'l1': { name: 'Acrylic Glass Finish L-1', sku: 'IS-ACR-L1', img: 'assets/product/l1.jpg', price: '2,800', old: '3,400', color: 'White Gloss', app: 'Kitchen, Wardrobe', finish: 'High Gloss', collection: 'Premium Acrylic', desc: 'A mirror-like high gloss acrylic laminate that provides a sleek, modern look to your kitchen cabinets and wardrobes. It is highly resistant to scratches and easy to maintain.' },
+                'l2': { name: 'Acrylic Matte L-2', sku: 'IS-ACR-L2', img: 'assets/product/l2.jpg', price: '2,900', old: '3,500', color: 'Matte Grey', app: 'Bedroom, Cabinets', finish: 'Matte', collection: 'Premium Acrylic', desc: 'Elegant matte finish acrylic laminate that offers a sophisticated, non-reflective surface. Perfect for creating a calm and premium atmosphere in bedrooms and luxury living spaces.' },
+                'la8': { name: 'Acrylic Elite LA-8', sku: 'IS-ACR-LA8', img: 'assets/product/la8.jpg', price: '3,200', old: '4,000', color: 'Deep Blue Marble', app: 'Living Room, Feature Wall', finish: 'Glossy Texture', collection: 'Acrylic Elite', desc: 'Premium deep blue marble texture that brings a sense of luxury and depth to feature walls and living room interiors.' },
+
+                // ASAA
+                'asa1': { name: 'ASAA Texture A1', sku: 'IS-ASA-A1', img: 'assets/product/f2(1).jpg', price: '2,600', old: '3,200', color: 'Sandstone', app: 'Exterior, Living Room', finish: 'Rough Texture', collection: 'ASAA Series', desc: 'Durable ASAA sheet with a natural sandstone texture. Weather-resistant and perfect for both interior feature walls and exterior cladding.' },
+                'asa2': { name: 'ASAA Texture A2', sku: 'IS-ASA-A2', img: 'assets/product/f2(2).jpg', price: '2,700', old: '3,300', color: 'Clay Brown', app: 'Furniture, Wall Panels', finish: 'Matte Texture', collection: 'ASAA Series', desc: 'Warm clay brown ASAA laminate providing a rustic yet modern finish for bespoke furniture and wall paneling projects.' },
+
+                // Polymer
+                'pol1': { name: 'Polymer Soft Touch P1', sku: 'IS-POL-P1', img: 'assets/product/f1(1).jpg', price: '2,400', old: '3,000', color: 'Creamy White', app: 'Kitchen, Wardrobes', finish: 'Soft Matte', collection: 'Polymer Plus', desc: 'Ultra-soft touch polymer sheet that is fingerprint-resistant and incredibly smooth. Ideal for high-use areas like kitchen cabinets.' },
+                'pol2': { name: 'Polymer Soft Touch P2', sku: 'IS-POL-P2', img: 'assets/product/f1(2).jpg', price: '2,500', old: '3,100', color: 'Dusty Pink', app: 'Kids Room, Cabinets', finish: 'Soft Matte', collection: 'Polymer Plus', desc: 'Contemporary dusty pink polymer laminate with a velvet-like feel. Perfect for adding a soft pop of color to modern interiors.' },
+
+                // Thermo lam
+                'the1': { name: 'Thermo Lam T1', sku: 'IS-THE-T1', img: 'assets/product/de1.jpg', price: '2,200', old: '2,800', color: 'Walnut Wood', app: 'Ceilings, Wall Cladding', finish: 'Thermo Texture', collection: 'Thermo Lam', desc: 'Heat-treated thermoplastic laminate with a realistic walnut wood grain. Excellent for moisture-prone areas and ceiling designs.' },
+
+                // Paper-based
+                'pap1': { name: 'Paper-based Fabric F1', sku: 'IS-PAP-F1', img: 'assets/product/fab1.jpg', price: '1,800', old: '2,400', color: 'Linen Grey', app: 'Wardrobe Interiors, Office', finish: 'Fabric Feel', collection: 'Eco Paper', desc: 'Sustainable paper-based laminate with a high-quality linen fabric texture. A cost-effective and eco-friendly solution for cabinet interiors.' },
+
+                // Digital
+                'dig1': { name: 'Digital Print D1', sku: 'IS-DIG-D1', img: 'assets/product/di1.jpg', price: '4,500', old: '5,500', color: 'Abstract Mural', app: 'Feature Walls, Lobby', finish: 'Glossy Print', collection: 'Digital Art', desc: 'Custom high-definition digital print on laminate. Perfect for creating unique statement feature walls in commercial lobbies and luxury homes.' },
+
+                // Bookmatch
+                'boo1': { name: 'Bookmatch Marble B1', sku: 'IS-BOO-B1', img: 'assets/product/f3(1).jpg', price: '5,800', old: '7,000', color: 'Calacatta Gold', app: 'Living Room, TV Unit', finish: 'Mirror Marble', collection: 'Bookmatch Elite', desc: 'Stunning bookmatched marble pattern laminate. Designed to create seamless, symmetrical luxury stone looks across large surfaces like TV units and accent walls.' },
+
+                // Inner Thickness
+                'in07': { name: 'Inner Laminate 0.7mm', sku: 'IS-INN-07', img: 'assets/product/in1.jpg', price: '850', old: '1,100', color: 'Off-White', app: 'Internal Cabinets, Shelves', finish: 'Matte', collection: 'Inner Series', desc: 'Standard 0.7mm thickness inner laminate. Balancing durability and cost-effectiveness for all your internal cabinet and shelving needs.' },
+                'in09': { name: 'Inner Laminate 0.9mm', sku: 'IS-INN-09', img: 'assets/product/in2.jpg', price: '1,050', old: '1,300', color: 'Soft Grey', app: 'Drawer Interiors, Back Panels', finish: 'Matte', collection: 'Inner Series', desc: 'Premium 0.9mm thickness inner laminate for enhanced durability. Ideal for high-traffic drawer interiors and sturdy back panels.' },
+
+                // Outer Thickness
+                'out08': { name: 'Outer Laminate 0.8mm', sku: 'IS-OUT-08', img: 'assets/product/in3.jpg', price: '1,500', old: '1,900', color: 'Standard', app: 'Cabinets, Paneling', finish: 'Satin', collection: 'Outer Series', desc: 'Lightweight 0.8mm decorative laminate. Ideal for surfaces with minimal impact requirements while maintaining a premium aesthetic.' },
+                'out09': { name: 'Outer Laminate 0.9mm', sku: 'IS-OUT-09', img: 'assets/product/in4.jpg', price: '1,650', old: '2,000', color: 'Standard', app: 'Furniture, Doors', finish: 'Satin', collection: 'Outer Series', desc: 'Versatile 0.9mm laminate providing a perfect balance of flexibility and strength for residential furniture and doors.' },
+                'out1': { name: 'Outer Laminate 1.0mm', sku: 'IS-OUT-10', img: 'assets/product/in5.jpg', price: '1,800', old: '2,200', color: 'Various', app: 'Kitchen Cabinets, Wardrobes', finish: 'Standard', collection: 'Outer Series', desc: 'Standard 1.0mm decorative laminate. Highly resistant to daily wear and tear, making it the top choice for modular kitchens.' },
+                'out125': { name: 'Outer Laminate 1.25mm', sku: 'IS-OUT-125', img: 'assets/product/in6.jpg', price: '2,100', old: '2,600', color: 'Various', app: 'Worktops, High Traffic', finish: 'Durable', collection: 'Outer Series', desc: 'Extra-thick 1.25mm laminate designed for heavy-duty use. Perfect for commercial worktops and high-traffic residential surfaces.' },
+                'out2': { name: 'Outer Laminate 2.0mm', sku: 'IS-OUT-20', img: 'assets/product/la9.jpg', price: '2,800', old: '3,500', color: 'Various', app: 'Structural Paneling, Lab Tops', finish: 'Heavy Duty', collection: 'Outer Series', desc: 'Ultra-thick 2.0mm sheet offering maximum impact resistance. Suitable for industrial applications and structural decorative paneling.' },
+
+                // Finishes
+                'fin_wood': { name: 'Wooden Finish Laminate', sku: 'IS-FIN-WOOD', img: 'assets/product/f4(1).jpg', price: '2,400', old: '3,000', color: 'Natural Wood', app: 'Bedroom, Living Room', finish: 'Wooden Texture', collection: 'Finish Series', desc: 'Exquisite wooden finish laminate that perfectly mimics the look and feel of natural timber. Adds warmth and organic elegance to any interior space.' },
+                'fin_past': { name: 'Pastel Finish Laminate', sku: 'IS-FIN-PAST', img: 'assets/product/f5(1).jpg', price: '2,500', old: '3,100', color: 'Soft Pastel', app: 'Kids Room, Modern Kitchen', finish: 'Soft Matte', collection: 'Finish Series', desc: 'Smooth pastel finish laminate in a variety of soft hues. Ideal for creating a calm, airy, and contemporary atmosphere.' },
+                'fin_sol': { name: 'Solid Finish Laminate', sku: 'IS-FIN-SOL', img: 'assets/product/la1.jpg', price: '2,600', old: '3,200', color: 'Solid Colors', app: 'Retail, Modular Furniture', finish: 'Glossy/Matte', collection: 'Finish Series', desc: 'Vibrant solid color laminates that provide a bold and uniform look. Available in both high-gloss and sophisticated matte versions.' },
+                'fin_leath': { name: 'Leather Finish Laminate', sku: 'IS-FIN-LEATH', img: 'assets/product/f2(1).jpg', price: '3,200', old: '4,000', color: 'Deep Tan/Black', app: 'Study Room, Accent Walls', finish: 'Leather Texture', collection: 'Finish Series', desc: 'Luxurious leather-textured laminate that adds a sense of opulence and depth. Perfect for study room desks and executive office interiors.' },
+                'fin_text': { name: 'Artistic Texture Laminate', sku: 'IS-FIN-TEXT', img: 'assets/product/de1.jpg', price: '2,900', old: '3,600', color: 'Multi-tone', app: 'Feature Walls, TV Units', finish: 'Artistic Texture', collection: 'Finish Series', desc: 'Uniquely textured laminate with abstract and geometric patterns. Designed to be the focal point of any modern interior design.' },
+                'fin_jute': { name: 'Natural Jute Finish', sku: 'IS-FIN-JUTE', img: 'assets/product/fab1.jpg', price: '2,300', old: '2,900', color: 'Earth Tones', app: 'Eco-themed Interiors, Wardrobes', finish: 'Jute Feel', collection: 'Finish Series', desc: 'Earth-friendly jute textured laminate. Provides a natural, tactile experience that complements sustainable and ethnic interior themes.' },
+
+                // Applications
+                'app_louv': { name: 'Louvers Application Sheet', sku: 'IS-APP-LOUV', img: 'assets/product/coll1.jpg', price: '3,500', old: '4,200', color: 'Modern Grey', app: 'Wall Paneling, Louvers', finish: 'Textured', collection: 'Application Series', desc: 'Specialized laminate designed for louver and rafter applications. Offers the flexibility and durability required for complex vertical paneling designs.' },
+                'app_flut': { name: 'Fluted Panel Laminate', sku: 'IS-APP-FLUT', img: 'assets/product/coll2.jpg', price: '3,600', old: '4,400', color: 'Natural Oak', app: 'TV Units, Bed Backs', finish: 'Fluted Texture', collection: 'Application Series', desc: 'Specifically engineered laminate for fluted panel designs. Its unique texture enhances shadows and depth on grooved surfaces.' },
+                'app_raft': { name: 'Rafters Decorative Sheet', sku: 'IS-APP-RAFT', img: 'assets/product/coll3.jpg', price: '3,400', old: '4,100', color: 'Deep Charcoal', app: 'Ceiling Rafters, Partitions', finish: 'Matte Wood', collection: 'Application Series', desc: 'Premium sheet for ceiling rafter applications. Lightweight yet durable, ensuring a long-lasting and stylish wood-beam look.' },
+
+                // Decorative Collection
+                // Liquid Metal Variants
+                'liq_silver': { name: 'Liquid Metal Silver Mirror', sku: 'IS-LIQ-SILV', img: 'assets/product/mirror.jpg', price: '7,500', old: '9,000', color: 'Silver Chrome', app: 'Luxury Feature Walls, Furniture', finish: 'Reflective Liquid', collection: 'Exclusive Decoratives', desc: 'Ultra-reflective silver mirror liquid metal sheet. Provides a flawless chrome finish that adds a sense of immense space and modern luxury to any room.' },
+                'liq_gold': { name: 'Liquid Metal Gold Mirror', sku: 'IS-LIQ-GOLD', img: 'assets/product/mm1.jpg', price: '8,500', old: '10,200', color: 'Gold Chrome', app: 'Royal Interiors, Temple Walls', finish: 'Reflective Gold', collection: 'Exclusive Decoratives', desc: 'Opulent gold mirror liquid metal sheet. Crafted to deliver a deep, rich golden glow with a perfect mirror-like surface.' },
+                'liq_bronze': { name: 'Liquid Metal Bronze Mirror', sku: 'IS-LIQ-BRNZ', img: 'assets/product/mm2.jpg', price: '8,000', old: '9,600', color: 'Bronze/Copper', app: 'Classic Interiors, Bar Areas', finish: 'Reflective Bronze', collection: 'Exclusive Decoratives', desc: 'Sophisticated bronze mirror liquid metal sheet. Offers a warm, antique metallic look with contemporary reflective properties.' },
+                'liq_ripple': { name: 'Liquid Metal Ripple Sheet', sku: 'IS-LIQ-RIPL', img: 'assets/product/ripple.jpg', price: '9,200', old: '11,000', color: 'Metallic Silver', app: 'Ceiling Highlights, Accent Walls', finish: 'Water Ripple Texture', collection: 'Exclusive Decoratives', desc: 'Stunning water ripple textured liquid metal. Creates a dynamic light-play effect that mimics the movement of water, perfect for ceilings.' },
+                'liq_hammer': { name: 'Liquid Metal Hammered', sku: 'IS-LIQ-HAMR', img: 'assets/product/mm3.jpg', price: '8,800', old: '10,500', color: 'Antique Metallic', app: 'Industrial Decor, Feature Pillars', finish: 'Hammered Texture', collection: 'Exclusive Decoratives', desc: 'Artisanal hammered liquid metal finish. Provides a rugged yet premium texture that adds character and depth to architectural elements.' },
+                // Velvet & Fabric Variants
+                'vel_royal': { name: 'Royal Velvet Sheet', sku: 'IS-VEL-ROY', img: 'assets/product/fab3.jpg', price: '3,800', old: '4,800', color: 'Royal Blue/Burgundy', app: 'Headboards, Wall Cladding', finish: 'Soft Velvet', collection: 'Fabric Series', desc: 'Premium royal velvet decorative sheets. Offers a plush, touch-sensitive surface with excellent acoustic properties for luxury bedrooms.' },
+                'vel_linen': { name: 'Linen Texture Fabric', sku: 'IS-VEL-LIN', img: 'assets/product/fab1.jpg', price: '3,200', old: '4,000', color: 'Oatmeal/Beige', app: 'Wardrobe Interiors, Panels', finish: 'Textured Linen', collection: 'Fabric Series', desc: 'Natural linen-look fabric sheets. Perfect for creating a calm, organic atmosphere inside wardrobes and on accent walls.' },
+
+                // Kalamkari Cork Variants
+                'cork_kal': { name: 'Kalamkari Print Cork', sku: 'IS-CRK-KAL', img: 'assets/product/coll4.jpg', price: '4,200', old: '5,400', color: 'Natural with Art', app: 'Office Walls, Pin Boards', finish: 'Natural Cork', collection: 'Cork Series', desc: 'Handcrafted Kalamkari patterns on sustainable cork. Combines traditional Indian art with functional, eco-friendly wall material.' },
+
+                // Prefinished Panels
+                'pre_art': { name: 'Artistic Prefinished Panel', sku: 'IS-PRE-ART', img: 'assets/product/dec1.jpg', price: '5,200', old: '6,500', color: 'Multi-color Art', app: 'TV Units, Bed Backs', finish: 'Prefinished Texture', collection: 'Panel Series', desc: 'Designer prefinished panels with intricate geometric and floral patterns. Saves significant labor time as no polishing or painting is required.' },
+
+                // Acrylic Engraved
+                'eng_frosted': { name: 'Frosted Engraved Acrylic', sku: 'IS-ENG-FROST', img: 'assets/product/la4.jpg', price: '6,000', old: '7,500', color: 'Frosted White', app: 'Partitions, Backlit Walls', finish: 'Engraved Pattern', collection: 'Acrylic Series', desc: 'High-quality frosted acrylic with precision engraving. Ideal for creating glowing partitions and decorative backlit features.' },
+
+                // Fiber Stone
+                'stone_rough': { name: 'Rough Fiber Stone', sku: 'IS-STN-RGH', img: 'assets/product/f3(3).jpg', price: '8,200', old: '10,000', color: 'Natural Slate', app: 'Exteriors, Feature Walls', finish: 'Rough Stone', collection: 'Stone Series', desc: 'Lightweight fiber-reinforced stone panels. Captures the rugged texture of natural mountain stone without the heavy weight of real rock.' },
+
+                // Charcoal Sheets
+                'char_8x2': { name: 'Charcoal Sheet 8x2 ft', sku: 'IS-CHAR-82', img: 'assets/product/rn1.jpg', price: '2,800', old: '3,500', color: 'Modern Grey', app: 'Feature Walls, TV Units', finish: 'Textured Charcoal', collection: 'Charcoal Series', desc: 'Standard 8x2 ft charcoal decorative sheet. Interlocking design for seamless installation on feature walls and modern residential interiors.' },
+                'char_8x4': { name: 'Charcoal Sheet 8x4 ft', sku: 'IS-CHAR-84', img: 'assets/product/rn2.jpg', price: '5,400', old: '6,800', color: 'Deep Black', app: 'Commercial Lobbies, Large Walls', finish: 'Textured Charcoal', collection: 'Charcoal Series', desc: 'Large format 8x4 ft charcoal sheet. Minimizes joints on large surfaces while providing the signature charcoal texture and durability.' },
+                'char_kay': { name: 'Kay Premium Charcoal', sku: 'IS-CHAR-KAY', img: 'assets/product/rn3.jpg', price: '3,200', old: '4,000', color: 'Designer Patterns', app: 'Luxury Homes, Showrooms', finish: 'Premium Matte', collection: 'Brand Series', desc: 'High-end charcoal sheet from Kay. Features unique designer patterns and a superior matte finish that resists scratches and fingerprints.' },
+
+                // Fluted Panels
+                'flu_mdf': { name: 'MDF Fluted Panel', sku: 'IS-FLU-MDF', img: 'assets/product/coll1.jpg', price: '180/sqft', old: '220/sqft', color: 'Natural Oak', app: 'TV Units, Bed Backs', finish: 'Wood Texture', collection: 'Fluted Series', desc: 'Classic MDF fluted panels. Precision-grooved to create beautiful shadow lines. Easy to paint or polish to match your interior theme.' },
+                'flu_pvc': { name: 'PVC Fluted Panel', sku: 'IS-FLU-PVC', img: 'assets/product/coll2.jpg', price: '150/sqft', old: '190/sqft', color: 'Solid Colors', app: 'Bathrooms, Damp Walls', finish: 'Waterproof Satin', collection: 'Fluted Series', desc: 'Water-resistant PVC fluted panels. Ideal for areas with high moisture like bathroom vanities and kitchen splashbacks. Maintenance-free and durable.' },
+                'flu_wpc': { name: 'WPC Fluted Panel', sku: 'IS-FLU-WPC', img: 'assets/product/coll5.jpg', price: '210/sqft', old: '260/sqft', color: 'Teak/Walnut', app: 'Exteriors, Balconies', finish: 'Weather-resistant', collection: 'Fluted Series', desc: 'Wood Polymer Composite (WPC) fluted panels designed for extreme durability. Termite-proof and UV-resistant, making them perfect for balcony ceilings and exterior walls.' },
+
+                // Rattan Cane
+                'rat_pvc': { name: 'PVC Rattan Cane', sku: 'IS-RAT-PVC', img: 'assets/product/sp1.jpg', price: '120/sqft', old: '160/sqft', color: 'Natural/Honey', app: 'Wardrobe Shutters, Cabinets', finish: 'Synthetic Weave', collection: 'Cane Series', desc: 'Durable PVC rattan cane weaving. Offers the classic look of natural cane with the added benefits of being waterproof and easy to clean. Perfect for modern furniture.' },
+                'rat_nat': { name: 'Natural See-through Cane', sku: 'IS-RAT-NAT', img: 'assets/product/sp2.jpg', price: '250/sqft', old: '320/sqft', color: 'Straw/Beige', app: 'Chair Backs, partitions', finish: 'Handwoven Natural', collection: 'Cane Series', desc: 'Authentic handwoven natural rattan cane with a see-through pattern. Brings a warm, organic feel to any space. Ideal for vintage and bohemian interior styles.' },
+
+                // Mosaics
+                'mos_std': { name: 'Standard Mosaic Tile', sku: 'IS-MOS-STD', img: 'assets/product/sp4.jpg', price: '450/sqft', old: '550/sqft', color: 'Multi-color', app: 'Kitchen Backsplash, Bathrooms', finish: 'Glossy/Matte Mix', collection: 'Mosaic Series', desc: 'Premium 1x1 ft mosaic tile sheets. Features a mesh backing for easy installation. A vibrant mix of textures and colors to create stunning wall highlights.' },
+
+                // 3D MDF Designs
+                'mdf3d_std': { name: '3D MDF Wall Panel', sku: 'IS-MDF-3D', img: 'assets/product/IS Catalogue 120 (3D MDF Edge Decorative).jpg', price: '280/sqft', old: '350/sqft', color: 'White/Custom', app: 'Ceiling, Wall Cladding', finish: 'Carved Raw MDF', collection: '3D Series', desc: 'High-density 3D MDF panels with intricate CNC-carved patterns. Available in multiple thicknesses, these panels can be painted or polished to create stunning architectural features.' },
+
+                // Customization Services - Colors
+                'cust_col_gold': { name: 'Custom Gold Toning', sku: 'IS-COL-GOLD', img: 'assets/product/la10.jpg', price: 'Premium', old: 'Standard', color: 'Gold/Champagne', app: 'Liquid Metal, Prefinished', finish: 'Metallic', collection: 'Color Customization', desc: 'Expert gold toning services. We can match specific shades of champagne, rose gold, or deep yellow gold to your existing metal accents.' },
+                'cust_col_ral': { name: 'RAL/Pantone Matching', sku: 'IS-COL-RAL', img: 'assets/product/dec1.jpg', price: 'Custom', old: 'Fixed', color: 'All Shades', app: 'Decorative Sheets', finish: 'As Specified', collection: 'Color Customization', desc: 'Industrial grade color matching. Provide us with any RAL or Pantone code, and we will produce your decorative sheets in that exact hue.' },
+                'cust_col_silver': { name: 'Silver Mirror Toning', sku: 'IS-COL-SILV', img: 'assets/product/mirror.jpg', price: 'Premium', old: 'Standard', color: 'Chrome/Steel', app: 'Liquid Metal', finish: 'Mirror', collection: 'Color Customization', desc: 'High-precision silver mirror toning. Adjust the reflectivity and tint of silver surfaces to achieve anything from bright chrome to dark gunmetal.' },
+
+                // Customization Services - Sizes
+                'cust_size_cnc': { name: 'Precision CNC Cutting', sku: 'IS-SIZE-CNC', img: 'assets/product/la11.jpg', price: 'Varies', old: 'Fixed', color: 'N/A', app: '3D MDF, Acrylic', finish: 'Clean Edge', collection: 'Size Customization', desc: 'State-of-the-art CNC routing for complex shapes. Perfect for jali patterns, geometric ceiling features, and intricate wall art.' },
+                'cust_size_over': { name: 'Oversized Wall Panels', sku: 'IS-SIZE-OVER', img: 'assets/product/dec2.jpg', price: 'Custom', old: 'Fixed', color: 'N/A', app: 'Feature Walls', finish: 'Seamless', collection: 'Size Customization', desc: 'Custom oversized panels beyond standard 8x4 dimensions. Eliminate visible joints on grand feature walls by ordering custom-scaled sheets.' },
+                'cust_size_ceil': { name: 'Custom Ceiling Shapes', sku: 'IS-SIZE-CEIL', img: 'assets/product/coll1.jpg', price: 'Varies', old: 'Fixed', color: 'N/A', app: 'Designer Ceilings', finish: 'As Per Design', collection: 'Size Customization', desc: 'Tailor-made ceiling elements. We cut and shape decorative materials to fit your specific ceiling layout, including circular, wavy, or multi-level designs.' }
+            };
+
+            const data = products[productId] || products['la8'];
+
+            document.getElementById('product-name').textContent = data.name;
+            document.getElementById('breadcrumb-product').textContent = data.name;
+            document.getElementById('product-sku').textContent = 'SKU: ' + data.sku;
+            document.getElementById('product-price').textContent = 'Rs. ' + data.price + '.00';
+            document.getElementById('product-old-price').textContent = 'Rs. ' + data.old + '.00';
+            document.getElementById('main-product-img').src = data.img;
+            document.getElementById('spec-color').textContent = data.color;
+            document.getElementById('spec-app').textContent = data.app;
+            document.getElementById('spec-finish').textContent = data.finish;
+            document.getElementById('spec-collection').textContent = data.collection;
+            document.getElementById('product-desc').textContent = data.desc;
+
+            document.title = `${data.name} | Interior Spot Chennai`;
+
+            // Dynamically set WhatsApp Enquiry Link with pre-built message including product details
+            const whatsappBtn = document.querySelector('.action-buttons-stack a');
+            if (whatsappBtn) {
+                whatsappBtn.setAttribute('target', '_blank');
+                const currentUrl = window.location.href;
+                const priceLabel = data.price.includes('/sqft') ? `Rs. ${data.price}` : `Rs. ${data.price}.00`;
+                const whatsappText = `Hello Interior Spot Chennai,\n\nI am interested in enquiring about a product I saw on your website:\n\n📦 *Product:* ${data.name}\n🔖 *SKU:* ${data.sku}\n💰 *Price:* ${priceLabel}\n🎨 *Color:* ${data.color}\n✨ *Finish:* ${data.finish}\n🔗 *Link:* ${currentUrl}\n\nCould you please provide more details regarding availability and ordering? Thanks!`;
+                
+                whatsappBtn.setAttribute('href', `https://wa.me/918122258359?text=${encodeURIComponent(whatsappText)}`);
+            }
+        });
+    </script>
+    <script src="assets/js/products.js"></script>
+
+
+
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/header-nav.js"></script>
+</body>
+</html>

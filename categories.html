@@ -1,0 +1,213 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore premium All Categories at Interior Spot, Chennai's top destination for interior decorative materials.">
+    <meta name="keywords" content="all categories, interior spot, laminates, chennai interiors, decorative sheets, wall panels">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Categories | Interior Spot</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/next-level.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/img/storefront.png');
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0 80px;
+            color: white;
+            text-align: center;
+        }
+
+        .category-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 60px 0;
+        }
+
+        .cat-card {
+            background-size: cover;
+            background-position: center;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            position: relative;
+            height: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            border: none;
+            text-decoration: none;
+        }
+
+        .cat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.8) 95%);
+            z-index: 1;
+            transition: opacity 0.4s ease;
+        }
+
+        .cat-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .cat-card:hover::before {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.9) 95%);
+        }
+
+        .cat-card h3 {
+            font-size: 20px;
+            color: white;
+            margin-bottom: 5px;
+            z-index: 2;
+            font-weight: 700;
+            padding: 0 20px;
+        }
+
+        .cat-card p {
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.8);
+            z-index: 2;
+            padding: 0 20px 25px 20px;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    
+
+    <header id="site-header"></header>
+
+
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Browse All Categories</h1>
+            <p>Premium solutions for your home interior needs</p>
+        </div>
+    </div>
+
+    
+
+    <div class="categories-container">
+        <div class="container">
+            <div class="category-cards-grid">
+                <!-- 1. Laminates -->
+                <a href="laminate.html" class="cat-card" style="background-image: url('assets/img/categories/laminates.png');">
+                    <h3>Laminates</h3>
+                    <p>Acrylic, ASAA, Polymer &amp; more</p>
+                </a>
+                <!-- 2. Charcoal Sheets -->
+                <a href="charcoal-sheets.html" class="cat-card" style="background-image: url('assets/img/categories/charcoal-sheets.png');">
+                    <h3>Charcoal Sheets</h3>
+                    <p>8x2 ft, 8x4 ft | 6 mm</p>
+                </a>
+                <!-- 3. Fluted Panel -->
+                <a href="fluted-panel.html" class="cat-card" style="background-image: url('assets/img/categories/fluted-panel.png');">
+                    <h3>Fluted Panel</h3>
+                    <p>MDF, PVC, WPC &amp; Natural wood</p>
+                </a>
+                <!-- 4. Decorative -->
+                <a href="decoratives.html" class="cat-card" style="background-image: url('assets/img/categories/decoratives.png');">
+                    <h3>Decorative</h3>
+                    <p>Liquid metal, Velvet &amp; Fiber stone</p>
+                </a>
+                <!-- 5. Rattan Cane -->
+                <a href="rattan-cane.html" class="cat-card" style="background-image: url('assets/img/categories/rattan-cane.png');">
+                    <h3>Rattan Cane</h3>
+                    <p>Natural &amp; PVC weaves</p>
+                </a>
+                <!-- 6. 3D MDF Designs -->
+                <a href="3d-designs.html" class="cat-card" style="background-image: url('assets/img/categories/3d-designs.png');">
+                    <h3>3D MDF Designs</h3>
+                    <p>1000+ Customizable designs</p>
+                </a>
+                <!-- 7. PVC Wall Panels -->
+                <a href="pvc-wall-panels.html" class="cat-card" style="background-image: url('assets/img/categories/pvc-wall-panels.png');">
+                    <h3>PVC Wall Panels</h3>
+                    <p>Self-adhesive &amp; Ceiling use</p>
+                </a>
+                <!-- 8. Mosaics -->
+                <a href="mosaics.html" class="cat-card" style="background-image: url('assets/img/categories/mosaics.png');">
+                    <h3>Mosaics</h3>
+                    <p>1x1 Multiple patterns</p>
+                </a>
+                <!-- 9. Corian -->
+                <a href="korian.html" class="cat-card" style="background-image: url('assets/img/categories/korian.png');">
+                    <h3>Corian</h3>
+                    <p>Solid surfaces | 6mm, 12mm</p>
+                </a>
+                <!-- 10. Alabaster -->
+                <a href="alabaster.html" class="cat-card" style="background-image: url('assets/img/categories/alabaster.png');">
+                    <h3>Alabaster</h3>
+                    <p>Translucent sheets 1.5mm - 10mm</p>
+                </a>
+                <!-- 11. Stone Veneer -->
+                <a href="stone-veneer.html" class="cat-card" style="background-image: url('assets/img/categories/stone-veneer.png');">
+                    <h3>Stone Veneer</h3>
+                    <p>Flexible natural stone sheets</p>
+                </a>
+                <!-- 12. Ripple SS -->
+                <a href="ripple-ss.html" class="cat-card" style="background-image: url('assets/img/categories/ripple-ss.png');">
+                    <h3>Ripple SS</h3>
+                    <p>Premium stainless steel finishes</p>
+                </a>
+                <!-- 13. Exterior Products -->
+                <a href="exterior-products.html" class="cat-card" style="background-image: url('assets/img/categories/exterior-products.png');">
+                    <h3>Exterior Products</h3>
+                    <p>HPL, ACP &amp; WPC cladding</p>
+                </a>
+                <!-- 14. Plywood & Paneling -->
+                <a href="plywood-paneling.html" class="cat-card" style="background-image: url('assets/img/categories/plywood.png');">
+                    <h3>Plywood &amp; Paneling</h3>
+                    <p>Century, Sharon, Greenply &amp; more</p>
+                </a>
+                <!-- 15. Flexible Panels -->
+                <a href="flexible-panels.html" class="cat-card" style="background-image: url('assets/img/categories/flexible-panels.png');">
+                    <h3>Flexible Panels</h3>
+                    <p>Liquid metal PVC &amp; Foam sheets</p>
+                </a>
+                <!-- 16. Soffit Panels -->
+                <a href="soffit-panels.html" class="cat-card" style="background-image: url('assets/img/categories/soffit-panels.png');">
+                    <h3>Soffit Panels</h3>
+                    <p>Interior &amp; Exterior ceilings</p>
+                </a>
+                <!-- 17. Timber Wood -->
+                <a href="timber-wood.html" class="cat-card" style="background-image: url('assets/img/categories/timber-wood.png');">
+                    <h3>Timber Wood</h3>
+                    <p>Teak wood &amp; Customizable sizes</p>
+                </a>
+                <!-- 18. Profile Works -->
+                <a href="profile-works.html" class="cat-card" style="background-image: url('assets/img/categories/profile-works.png');">
+                    <h3>Profile Works</h3>
+                    <p>Installation + Premium Materials</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer id="site-footer"></footer>
+
+    <script src="assets/js/products.js"></script>
+
+
+
+
+
+
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/header-nav.js"></script>
+</body></html>

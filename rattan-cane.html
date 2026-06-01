@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Rattan Cane | Interior Spot Chennai</title>
+    <meta name="description" content="Explore our premium collection of Rattan Cane materials including budget-friendly cane laminates, authentic natural cane webbing, and durable synthetic PVC/nylon cane.">
+    <meta name="keywords" content="cane, cane laminates, 1mm laminates, laminates, mica, decorative laminate, texture Laminate, cane texture laminate, rattan cane, natural cane, natural rattan cane, natural rattan, rattan cane webbing, webbing, natural webbing, bamboo cane, bamboo webbing, synthetic cane, nylon cane, cane roll">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/next-level.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root { --next-blue: #1a3b8f; }
+
+        /* ===== HERO ===== */
+        .category-hero {
+            background: linear-gradient(135deg, #1a3b8f 0%, #0d2157 60%, #162d6e 100%);
+            padding: 100px 0 70px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .category-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 500px;
+            height: 500px;
+            background: rgba(255,255,255,0.04);
+            border-radius: 50%;
+        }
+        .category-hero h1 {
+            font-size: 60px;
+            font-weight: 800;
+            margin-bottom: 18px;
+            font-family: 'Outfit', sans-serif;
+            letter-spacing: -1px;
+        }
+        .category-hero p {
+            font-size: 16px;
+            opacity: 0.85;
+            margin-bottom: 30px;
+        }
+        .hero-pills {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        .hero-pill {
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white;
+            padding: 7px 18px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .btn-hero {
+            background: white;
+            color: var(--next-blue);
+            padding: 13px 38px;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            font-size: 15px;
+        }
+        .btn-hero:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.3); }
+
+        /* ===== STICKY FILTER TABS ===== */
+        .cat-filter-bar {
+            background: #fff;
+            border-bottom: 2px solid #eef0f5;
+            position: sticky;
+            top: 0;
+            z-index: 200;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+        }
+        .cat-filter-scroll {
+            display: flex;
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            justify-content: center;
+        }
+        .cat-filter-scroll::-webkit-scrollbar { display: none; }
+        .cat-tab {
+            flex-shrink: 0;
+            padding: 16px 22px;
+            font-size: 13.5px;
+            font-weight: 600;
+            color: #777;
+            cursor: pointer;
+            border: none;
+            border-bottom: 3px solid transparent;
+            background: none;
+            font-family: 'Outfit', sans-serif;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+        .cat-tab:hover { color: var(--next-blue); background: #f8f9ff; }
+        .cat-tab.active {
+            color: var(--next-blue);
+            border-bottom-color: var(--next-blue);
+            background: #f4f6ff;
+        }
+
+        /* ===== SECTION ===== */
+        .cat-section {
+            padding: 55px 0 40px;
+            display: none;
+        }
+        .cat-section.active { display: block; animation: fadeUp 0.35s ease; }
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(18px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .cat-section-header { margin-bottom: 35px; }
+        .cat-badge {
+            display: inline-block;
+            background: var(--next-blue);
+            color: white;
+            padding: 5px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+        }
+        .cat-section-header h2 {
+            font-size: 30px;
+            font-weight: 800;
+            color: #1a1a2e;
+            margin-bottom: 8px;
+        }
+        .cat-section-header .sub-desc {
+            color: #777;
+            font-size: 15px;
+            max-width: 750px;
+            line-height: 1.6;
+        }
+
+        /* ===== BRAND CARDS ===== */
+        .brand-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 28px;
+        }
+        .brand-card {
+            background: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 3px 18px rgba(0,0,0,0.07);
+            border: 1.5px solid #f0f0f5;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        .brand-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(26,59,143,0.14);
+            border-color: #c8d5ff;
+        }
+        .brand-card .card-img {
+            width: 100%;
+            aspect-ratio: 4/5;
+            overflow: hidden;
+            background: #f5f6fb;
+        }
+        .brand-card .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .brand-card:hover .card-img img { transform: scale(1.08); }
+        .brand-card .card-body {
+            padding: 18px 18px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            flex: 1;
+        }
+        .brand-name { font-size: 16px; font-weight: 700; color: #1a1a2e; line-height: 1.3; }
+        .brand-desc { font-size: 13px; color: #888; line-height: 1.55; flex: 1; margin-bottom: 8px; }
+        
+        /* ===== CARD SPECS ===== */
+        .card-specs {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f8f9ff;
+            padding: 10px 14px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #555;
+            border: 1px solid #eef1ff;
+        }
+        .card-specs .spec-item { display: flex; align-items: center; gap: 5px; }
+        .card-specs .spec-item i { color: #9aaeff; font-size: 11px; }
+        .card-specs .price {
+            color: var(--next-blue);
+            font-size: 15px;
+            font-weight: 800;
+        }
+
+        .card-actions {
+            display: flex;
+            gap: 9px;
+            margin-top: auto;
+        }
+        .btn-wa {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            background: #25D366;
+            color: #fff;
+            padding: 11px 14px;
+            border-radius: 11px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.25s ease;
+        }
+        .btn-wa:hover { background: #1bab52; transform: scale(1.02); }
+        .btn-phone {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eef1ff;
+            color: var(--next-blue);
+            padding: 11px 14px;
+            border-radius: 11px;
+            font-size: 14px;
+            text-decoration: none;
+            border: 1.5px solid #d0d9ff;
+            transition: all 0.25s ease;
+            min-width: 44px;
+        }
+        .btn-phone:hover { background: var(--next-blue); color: white; border-color: var(--next-blue); }
+
+        /* Placeholder when no image */
+        .img-ph {
+            width: 100%;
+            height: 100%;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #edf0ff 0%, #f5f7ff 100%);
+            color: var(--next-blue);
+        }
+        .img-ph i { font-size: 38px; opacity: 0.35; }
+        .img-ph span { font-size: 12px; font-weight: 700; opacity: 0.5; letter-spacing: 0.5px; text-transform: uppercase; text-align: center; padding: 0 10px;}
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .category-hero h1 { font-size: 38px; }
+            .brand-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+            .cat-section-header h2 { font-size: 22px; }
+            .cat-filter-scroll { justify-content: flex-start; }
+            .brand-name { font-size: 14px; }
+            .card-specs {
+                padding: 8px 10px;
+                font-size: 11px;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 6px;
+            }
+            .card-specs .price {
+                margin-left: auto;
+                margin-top: 0;
+            }
+            .btn-wa, .btn-phone { padding: 9px 10px; font-size: 12px; }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="site-header"></header>
+
+    <!-- HERO -->
+    <section class="category-hero">
+        <div class="container">
+            <h1>Premium Rattan Cane</h1>
+            <p>Traditional and modern cane weaves including budget-friendly laminates, authentic bamboo webbing, and durable synthetic options.</p>
+            <div class="hero-pills">
+                <span class="hero-pill"><i class="fas fa-leaf"></i> 100% Natural Bamboo Options</span>
+                <span class="hero-pill"><i class="fas fa-shield-alt"></i> Durable Synthetic Nylon &amp; PVC</span>
+                <span class="hero-pill"><i class="fas fa-rupee-sign"></i> ₹110 - ₹350 / sqft</span>
+                <span class="hero-pill"><i class="fas fa-cut"></i> Cut Sizes Available</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- STICKY SUB-TYPE FILTER TABS -->
+    <div class="cat-filter-bar">
+        <div class="container">
+            <div class="cat-filter-scroll">
+                <button class="cat-tab active" data-target="sec-laminate">Cane Laminates</button>
+                <button class="cat-tab" data-target="sec-natural">Natural Cane Webbing</button>
+                <button class="cat-tab" data-target="sec-synthetic">Synthetic Cane</button>
+            </div>
+        </div>
+    </div>
+
+    <main class="container">
+
+        <!-- ===========================
+             1. CANE LAMINATES
+             =========================== -->
+        <section class="cat-section active" id="sec-laminate">
+            <div class="cat-section-header">
+                <span class="cat-badge">Budget Friendly · 1mm</span>
+                <h2>Cane Laminates</h2>
+                <p class="sub-desc">A budget-friendly laminate form of natural cane. Enjoy the authentic visual texture of cane webbing on a durable, easy-to-install 1mm mica base.</p>
+            </div>
+            <div class="brand-grid">
+                <div class="brand-card">
+                    <a href="bp-cane.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/bp-cane/page_008.jpg?v=1" alt="BP Cane Flap" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="bp-cane.html" class="brand-name" style="text-decoration:none;">BP Cane Flap</a>
+                        <div class="brand-desc">High-quality 1mm decorative laminate featuring a realistic natural cane weave texture.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 1mm</div>
+                            <div class="price">₹110/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in BP Cane Flap. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="cane-mica.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/cane-mica/page_007.jpg?v=1" alt="Only Cane Mica Series" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="cane-mica.html" class="brand-name" style="text-decoration:none;">Only Cane Mica Series</a>
+                        <div class="brand-desc">Perfect for quick furniture makeovers, giving the illusion of authentic rattan cane.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 1mm</div>
+                            <div class="price">₹110/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Only Cane Mica Series. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="cane-laminate.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/cane-laminate/page_008.jpg?v=1" alt="Premium Cane Laminate" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="cane-laminate.html" class="brand-name" style="text-decoration:none;">Premium Cane Laminate</a>
+                        <div class="brand-desc">A budget-friendly laminate form of natural cane.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 1mm</div>
+                            <div class="price">₹110/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Premium Cane Laminate. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===========================
+             2. NATURAL CANE WEBBING
+             =========================== -->
+        <section class="cat-section" id="sec-natural">
+            <div class="cat-section-header">
+                <span class="cat-badge">100% Authentic · Bamboo</span>
+                <h2>Natural Cane Webbing</h2>
+                <p class="sub-desc">Authentic webbing woven from natural bamboo cane. Ideal for classic chairs, cabinet doors, and bespoke furniture. Available in rolls and cut sizes.</p>
+            </div>
+            <div class="brand-grid">
+                <div class="brand-card">
+                    <a href="burlap.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/burlap/page_008.jpg?v=1" alt="Burlap by Cosmic Decor" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="burlap.html" class="brand-name" style="text-decoration:none;">Burlap by Cosmic Decor</a>
+                        <div class="brand-desc">Premium natural bamboo cane webbing for bespoke wall coverings and furniture.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 2x25' / 3x25'</div>
+                            <div class="spec-item"><i class="fas fa-cut"></i> Cut Size Avail.</div>
+                            <div class="price">₹350/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Burlap by Cosmic Decor. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="cane-theory.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/cane-theory/page_008.jpg?v=1" alt="Cane Theory Webbing" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="cane-theory.html" class="brand-name" style="text-decoration:none;">Cane Theory Webbing</a>
+                        <div class="brand-desc">Authentic natural rattan weaves available in classic octagonal and close-knit patterns.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 2x25' / 3x25'</div>
+                            <div class="spec-item"><i class="fas fa-cut"></i> Cut Size Avail.</div>
+                            <div class="price">₹350/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Cane Theory Webbing. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="is-stich-cane.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/is-stich-cane/page_008.jpg?v=1" alt="IS Stich Cane" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="is-stich-cane.html" class="brand-name" style="text-decoration:none;">IS Stich Cane</a>
+                        <div class="brand-desc">Interior Spot's finest natural bamboo cane webbing for artisanal interior details.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 3x18' Roll</div>
+                            <div class="spec-item"><i class="fas fa-cut"></i> Cut Size Avail.</div>
+                            <div class="price">₹350/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in IS Stich Cane. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===========================
+             3. SYNTHETIC CANE
+             =========================== -->
+        <section class="cat-section" id="sec-synthetic">
+            <div class="cat-section-header">
+                <span class="cat-badge">Highly Durable · Nylon &amp; PVC</span>
+                <h2>Synthetic Cane</h2>
+                <p class="sub-desc">A highly durable, modern alternative to natural cane. Crafted from nylon and PVC for superior strength, making it perfect for high-traffic areas and heavy usage.</p>
+            </div>
+            <div class="brand-grid">
+                <div class="brand-card">
+                    <a href="lamiteq.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/lamiteq/page_008.jpg?v=1" alt="Lamiteq by Gloirio" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="lamiteq.html" class="brand-name" style="text-decoration:none;">Lamiteq by Gloirio</a>
+                        <div class="brand-desc">Ultra-durable PVC and nylon based synthetic cane built for longevity and style.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 / 10x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 1/1.5mm</div>
+                            <div class="price">₹350/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Lamiteq by Gloirio. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="monoso-tessuto.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/monoso-tessuto/page_008.jpg?v=1" alt="Monoso Tessuto" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="monoso-tessuto.html" class="brand-name" style="text-decoration:none;">Monoso Tessuto</a>
+                        <div class="brand-desc">Premium synthetic rattan weaves that closely mimic the natural look with added strength.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 / 10x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 1/1.5mm</div>
+                            <div class="price">₹350/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Monoso Tessuto. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-card">
+                    <a href="tessuto.html" class="card-img" style="display:block; text-decoration:none;">
+                        <img src="assets/product/galleries/tessuto/page_008.jpg?v=1" alt="Tessuto Synthetic Cane" style="width:100%; height:100%; object-fit:cover;">
+                    </a>
+                    <div class="card-body">
+                        <a href="tessuto.html" class="brand-name" style="text-decoration:none;">Tessuto Synthetic Cane</a>
+                        <div class="brand-desc">High-performance synthetic tessellated rattan for modern exteriors and interiors.</div>
+                        <div class="card-specs">
+                            <div class="spec-item"><i class="fas fa-expand"></i> 8x4 / 10x4 ft</div>
+                            <div class="spec-item"><i class="fas fa-arrows-alt-v"></i> 1/1.5mm</div>
+                            <div class="price">₹350/sqft</div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in Tessuto Synthetic Cane. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="site-footer"></footer>
+
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/header-nav.js"></script>
+
+    <script>
+        // ===== SUB-TYPE TAB SWITCHING =====
+        const tabs = document.querySelectorAll('.cat-tab');
+        const sections = document.querySelectorAll('.cat-section');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const target = tab.dataset.target;
+
+                // Update active tab
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                // Show correct section
+                sections.forEach(sec => {
+                    sec.classList.toggle('active', sec.id === target);
+                });
+
+                // Smooth scroll to content
+                document.querySelector('main').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+
+        // Auto-select tab from URL hash
+        const hash = window.location.hash.replace('#', '');
+        if (hash) {
+            const matchTab = document.querySelector(`[data-target="${hash}"]`);
+            if (matchTab) matchTab.click();
+        }
+    </script>
+</body>
+</html>

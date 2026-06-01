@@ -1,0 +1,151 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore premium Prefinished Panels Chennai at Interior Spot, Chennai's top destination for interior decorative materials.">
+    <meta name="keywords" content="prefinished panels chennai, interior spot, laminates, chennai interiors, decorative sheets, wall panels">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefinished Panels | Interior Spot Chennai</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/next-level.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .product-hero {
+            background-color: #1a1a1a;
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/product/dec1.jpg');
+            background-size: cover;
+            background-position: center;
+            border-bottom: 3px solid var(--primary);
+        }
+
+        .product-hero h1 {
+            font-size: 56px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .product-hero p {
+            font-size: 18px;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .shop-section {
+            padding: 120px 0 80px;
+            background: #fdfdfd;
+        }
+
+        .shop-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .shop-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: all 0.4s ease;
+            text-decoration: none;
+            color: inherit;
+            border: 1px solid #eee;
+        }
+
+        .shop-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            border-color: var(--primary);
+        }
+
+        .image-wrapper {
+            width: 100%;
+            aspect-ratio: 1/1;
+            overflow: hidden;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .shop-card:hover .image-wrapper img {
+            transform: scale(1.1);
+        }
+
+        .card-info {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .card-info h3 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .btn-view {
+            display: inline-block;
+            padding: 10px 25px;
+            background: #222;
+            color: white;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="site-header"></header>
+
+    <section class="product-hero">
+        <div class="container">
+            <h1>Prefinished Panels</h1>
+            <p>Save time on site with our ready-to-install decorative panels. No paint or polish required, just stunning designer results.</p>
+        </div>
+    </section>
+
+    <main class="shop-section">
+        <div class="container">
+            <div class="shop-grid">
+                <a href="product-detail.html?id=pre_art" class="shop-card">
+                    <div class="image-wrapper"><img src="assets/product/dec1.jpg" alt="Artistic Panel"></div>
+                    <div class="card-info">
+                        <h3>Artistic Pattern Panel</h3>
+                        <p>Intricate designs with durable factory finish.</p>
+                        <span class="btn-view">View Details</span>
+                    </div>
+                </a>
+                <a href="product-detail.html?id=pre_art" class="shop-card">
+                    <div class="image-wrapper"><img src="assets/product/dec2.jpg" alt="Geometric Panel"></div>
+                    <div class="card-info">
+                        <h3>Geometric Series</h3>
+                        <p>Modern abstract patterns for contemporary walls.</p>
+                        <span class="btn-view">View Details</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer id="site-footer"></footer>
+
+
+    <script src="assets/js/products.js"></script>
+    <script src="assets/js/components.js"></script>
+    <script src="assets/js/header-nav.js"></script>
+</body></html>
