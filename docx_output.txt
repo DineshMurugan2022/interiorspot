@@ -1,0 +1,231 @@
+0: Laminates
+1: 1mm plain colour laminate
+2: All 
+3: Thickness 1mm
+4: Size 8feetx 4 feet
+5: Rate - 2350/- 
+6:  
+7: Keyword
+8: Laminates, mica, sunmica, pastel laminate, plain mica, plain colour laminate, 1mm mica, 1mm laminate, 
+9:   0.8 mm laminates
+10: Thickness 0.8mm 
+11: Size - 8feet x 4feet
+12: Rate - 1200/ sheet
+13: Keyword 
+14: 0.8 mm laminate, plain colours laminate, pastel laminate, laminates, sunmica, mica
+15: Premium Marbel and wooden laminates
+16: Pls check every laminates if it's marble like then name it marble laminate if wooden the name it wooden laminate 
+17: Size 8x4
+18: Thickness - 1mm
+19: Rate - 2800/-
+20: Keyword For wooden laminate 
+21: Laminates, mica, sunmica, laminate, 1mm mica, 1mm laminate, wooden, wooden mica, wooden laminate, 1mm wooden mica, wood laminate,
+22: Keyword for marble laminate 
+23: Laminates, mica, sunmica, laminate, plain mica, marbel laminate, 1mm mica, 1mm laminate, 1mm marbel laminate, marble mica, stone texture laminate, stone laminates 
+24: Premium Marbel and wooden laminates
+25: Pls check every laminates if it's marble like then name it marble laminate if wooden the name it wooden laminate 
+26: Size 8x4
+27: Thickness - 0.8 mm
+28: Rate - 1200/-
+29: Keyword For wooden laminate 
+30: Laminates, mica, sunmica, laminate, 1mm mica, 0.8mm laminate, wooden, wooden mica, wooden laminate, 0.8mm wooden mica, wood laminate,
+31: Keyword for marble laminate 
+32: Laminates, mica, sunmica, laminate, plain mica, marbel laminate, 0.8mm mica, 0.8mm laminate, 0.8mm marbel laminate, marble mica, stone texture laminate, stone laminates 
+33: Inner laminates 
+34: Thickness 0.72 mm
+35: Size 8x4 
+36: Price - 595/-
+37: Description 
+38: Add a touch of elegance to your interiors with our inner laminates! 💡 Perfect for cabinets, furniture, or walls, they offer a sleek, durable finish that's easy to maintain. With a range of designs and textures, you can create a look that's uniquely yours 😊. Want to know more about how inner laminates can transform your space?
+39: Keyword 
+40: Inner laminates, 0.72mm, 0.72, 0.72mm laminates, 0.72 liner, liner, liner lam, laminates, mica, inner mica
+41: Acrylic laminates 
+42: Thickness 1.5mm 
+43: Size 8x4
+44: Price - 4400/- 
+45: Description- 
+46: Get the luxe look with our acrylic laminates! 💎 They add a sleek, glossy finish to surfaces, making them perfect for kitchens, bathrooms, or anywhere you want a modern vibe. Durable, easy to clean, and resistant to moisture - what's not to love? 😍 Want to know how acrylic laminates can elevate your space?
+47: Keyword - 
+48: Premium acrylic laminates, acrylic laminates, acrylic mica, kitchen laminates, glossy laminate, high glossy laminate, 1.5mm acrylic, anti scratch laminate, anti scratch acrylic, anti scratch acrylic laminates, pastel acrylic laminate, pastel laminate 
+49: Premium digital laminates special is collection 
+50: Thickness 1mm
+51: Size 8feetx 4 feet
+52: Rate - 6500/-
+53:  
+54: Description -
+55: Make a statement with our digital and abstract designer laminates! 🌟 These babies feature bold, eye-catching designs that'll transform any surface into a work of art. Perfect for adding a pop of personality to your space 💡. With their durable finish and endless design possibilities, you can get as creative as you want 😊. Want to know more?
+56: Keyword
+57: 1mm digital , 1mm digital laminates, digital Laminate, printed laminate, abstract laminate, 1mm printed laminate, printed mica, Laminates, mica, sunmica, pastel laminate, plain mica, plain colour laminate, 1mm mica, 1mm laminate, 
+58: Premium 1.5mm high texture laminates special is collection 
+59: Thickness 1.25mm
+60: Size 8feetx 4 feet
+61: Rate - 6500/-
+62:  
+63: Description -
+64: Experience the best with our premium 1.25mm high texture hybrid laminates! 😍 These babies bring a luxurious feel to surfaces with their elevated texture and sleek finish. Perfect for adding depth and sophistication to your space 💡. Durable, versatile, and totally on-trend - want to know more?
+65: Keyword
+66: 1.25mm digital , 1.25mm high texture laminates, texture Laminate, hybrid 
+67: laminate, abstract laminate, 1mm printed laminate, texture mica, Laminates, mica, sunmica, pastel laminate, plain mica, plain colour laminate, 1.25mm mica, 1.25mm laminate, 
+68: Charcoal sheets
+69: Premium charcoal sheets
+70: Size 8feet x 4feet , 8feet x 4feet
+71: Thickness - 4mm , 6mm
+72: Price 250/ sqft
+73: Keyword - charcoal sheet, charcoal panel, wall panel, charcoal wall panel, decorative panels
+74: Premium bamboo Louvers 
+75: Size - 9.5’ x 10” 
+76: Thickness - 8mm, 12mm , 25mm
+77: Price - 400/ sqft
+78: Material - bamboo fiber
+79: Specifications - waterproof, termite proof, heat retardant, interior grade
+80: Keywords - bamboo panels , bamboo fluted panels , bamboo Louvers, louver, fluted, louvered panel, fluted panel, waterproof panel, waterproof louvers, 
+81: Premium charcoal louvers Louvers 
+82: Hight- 8ft, 9ft, 9.5ft,  
+83: Width - 5inch, 6”, 7” ,8” ,10” , 12”
+84: Thickness - 8mm, 12mm , 25mm
+85: Price - 250/ sqft
+86: Material - charcoal 
+87: Specifications - waterproof, termite proof, heat retardant, interior grade
+88: Keywords - charcoal panels , charcoal fluted panels , charcoal Louvers, louver, fluted, louvered panel, fluted panel, waterproof panel, waterproof louvers,
+89: Premium mdf louvers
+90: Hight- 9feet, 9.5ft,  
+91: Width - 5inch, 6inch
+92: Thickness - 8mm, 12mm 
+93: Price - 350/ sqft
+94: Material - mdf
+95: Keywords - mdf panels , mdf fluted panels , charcoal mdf, louver, fluted, louvered panel, fluted panel, wooden louvers, premium louvers, 
+96: Premium natural wood louvers
+97: Hight- 9feet, 9.5ft,  
+98: Width - 5inch, 6inch
+99: Thickness - 8mm, 12mm 
+100: Price - 500/sqft
+101: Material - burma, teak, others
+102: Keywords - wood panels , wood fluted panels , wooden flute, louver, fluted, louvered panel, fluted panel, wooden louvers, premium louvers, wooden wall panels 
+103: Pdf all
+104: Size - hight - 10feet
+105:           Width- 1 feet
+106: Thickness - 6 mm
+107: Price - 950/- 
+108: Description - premium pvc louvers a long-lasting wall solution, can be installed directly on the wall. Fully waterproof, termite proof
+109: Keywords- louvers, fluted panels, pvc, pvc fluted panels , louvers, pvc louvers, waterproof louvers, waterproof fluted panels , 10 feet louvers , 12 inch louvers 
+110: All in photos 
+111: Premium wpc Louvers 
+112: Size - 9.5’ x 10”, 6”, 8”
+113: Thickness - 8mm, 12mm , 25mm
+114: Price - 320/ sqft
+115: Material - wpc
+116: Specifications - waterproof, termite proof, heat retardant, interior grade, exterior grade, weather proof
+117: Keywords - wpc panels , wpc fluted panels , wpc Louvers, louver, fluted, louvered panel, fluted panel, waterproof panel, waterproof louvers, exterior fluted, exterior louvers, exterior panels
+118: 4.Decoratives
+119: Premium cork laminates 
+120: Size - 8feetx4feet
+121: Thickness - 1.5 mm
+122: Price - 300/ sqft
+123: Keyword - 
+124: Cork, cork laminates, cork sheet, kalamkari cork, metalic cork , printed laminate, designer laminates, 
+125: Premium prefinished wall panels available in pu, ceramic, marble , stone , matel finishes and customisable also
+126:  Size - 8x4, 8x2 , 9.5x2, 9.5x4, 10x2, 10x4
+127: Rate- 500/sqft
+128: Keyword- 
+129: Decorative wall panels, 3d wall panels, wall panels , panels , prefinished panels , wooden wall panels , interior panels , decorative panels 
+130: Velvet and fabric panels comes in size of 8x2 feet and 8x4 feet and 8x8 feet
+131: Thickness - 1mm , 2mm , 6mm
+132: Price - 300/ sqft 
+133: Keyword - 
+134: Velvet panels , wall panels , velvet wall panels, decorative wall panels, decorative panels , fabric sheet, fabric wall panels , fabric laminates 
+135: 5. Rattan cane
+136: Cane laminates a laminate form of natural cane in budget, it comes with natural cane texture 
+137: Size 8x4
+138: Thickness - 1mm
+139: Price - 110/ sqft
+140: Keyword- cane, cane laminates, 1mm laminates, laminates, mica , decorative laminate, texture Laminate, cane texture laminate, 
+141: Natural cane webbing made out of natural bamboo cane comes in various sizes of roll like 2feet x25feet, 3feetx 25 feet, 3feetx 18feet
+142: Rate - 350/sqft
+143: Available in cut size also
+144: Keyword - came, rattan cane , natural cane , natural rattan cane , natural rattan , rattan cane webbing, webbing , natural webbing, bamboo cane , bamboo webbing 
+145: Synthetic cane is made out of nylon and pvc a more durable form of natural cane 
+146: Comes in size of 8x4 , 10x4 feet
+147: Thickness - 1mm, 1.5 mm 
+148: Rate - 350/ sqft
+149: Keywords - cane , rattan cane , synthetic cane, nylon cane , cane laminates, cane roll , came webbing cane in mica base
+150: 6. 3d mdf designs
+151: 3d hdhmr designs can be customised in any design and size and thickness 
+152: Size - any
+153: Rate - 300/ sqft
+154: Keyword - 3d wall panel, 3d, 3d designs , 3d panels , wall highlight, wall decorative, wall panel, 3d mdf, 3d hdhmr, 3d mdf wall panel, customise wall panel, 
+155: 7. 3d pvc wall panels
+156: 3d pvc panels comes in various sizes like 20”x20”, 40”x20”, 12”x12”
+157: Thickness - 4mm-50mm
+158: Rate - 450/ sqft 
+159:  Keyword - pvc panels, pvc wall panels , 3d wall panels , 3d panels , 3d self adhesive panels , self adhesive panels , wall highlight, diy wall panels , 
+160: 8. Mosaic tiles
+161: Mosaic tiles are one the best solution for wall highlighting 
+162: Comes in size of 1’x1’
+163: Comes in materials like - stone , marbel, glass, pearl, matel granite , wood 
+164: Price - 600- 4000/ sqft
+165: Keyword - mosaic, mosaic tiles, mosaic panels, self adhesive wall panels, self adhesive mosaic , wall highlight, wall decorate, glass mosaic, mother of pearl mosaic, metalic mosaic, 1x1 panels , 
+166: 9. Corian
+167: Korean is mostly used for table tops and high end furnitures , its having a long life with a anti scratch and anti stain finish, we can buff the sheet and make it new against
+168: Size - 8x2.5
+169: Thickness - 6mm 
+170: Price - 850/sqft
+171: Keyword - korean, korean table top, acrylic solid surface, solid acrylic, 
+172: 10. Alabester
+173: Alabaster sheets are used for premium residencial and commercial areas, with its translucent or lightpassing effect it give very premium look.
+174: Size - 8x4
+175: Thickness - 1.5mm, 2mm, 3mm,5mm,6mm, 8mm, 10mm
+176: Price - 180- 3000/ sqft 
+177: Keyword- alabaster, alabaster sheet, translucent alabaster, translucent sheet, translucent, onix, lightpassing sheet, lightpassing alabaster 
+178: 11. Stone products
+179: Stone products like stone veneer, fiber stone and pu stone are to make your interior and exterior look premium and give a tropical vibe with its original stone coating 
+180: Size - 8x4, 8x2, 4x2, 4x1, 10x4
+181: Thickness - 1.5mm- 25mm, 35mm , 50mm,100mm
+182: Rate - 200- 600/sqft
+183: Keyword- stone, veneer, stone veneer, natural stone , natural stone veneer, fiber stone , stone wall panel, pu wall panels , pu feather, pu stone , pu stone panel, natural stone veneer, exterior stone panel, 
+184: 12. Ss ripple sheet
+185: Ss sheets available in flat , ripple and hammerd patterns with stainless steel 304 grade With pvd coating 
+186: Size - 8x4
+187: Thickness - 0.6mm, 0.7mm,1mm
+188: Rate - 320- 600/ sqft
+189: Keyword - SS SHEET, stainless steel sheet, ripple sheet, hammer sheet, stainless steel ripple sheet, 304 ss , ss , stainless steel, matel sheet, 
+190: 13. Exterior products
+191: We have a variety of products for exterior usage , in materials like stone,pu, aluminium, wpc, fiber clay and many more
+192: Size - louvers- 9.5’x5”, 9.5’x6”, 9.5’x8”, 9.5’x10”, 10’x10”
+193: Pu panels- 4’x2’, 4’x1’, 8’x2’,9.5’x2’
+194: Clay, stonera and stone veneer- 8x4,10x4
+195: Keyword for aluminium and wpc louvers - 
+196: wpc, aluminium, louvers, exterior louvers, wpc louvers, aluminium louvers, exterior grade louvers, wpc exterior louvers, aluminium exterior louvers, Weatherproof, waterproof, waterproof louvers, exterior panel, fluted panel, louvers, wpc fluted, aluminium panel, aluminium fluted, 
+197: Keyword for pu and stonera- .
+198: Pu panels, pu stone , pu feather, pu , pvc exterior panel, exterior panel, exterior wall panel, stone, fiber stone, exterior, waterproof, weather proof, stone veneer, exterior stone panel, 
+199: 14. Plywoods and panelings
+200: Century plywood 
+201: Build with confidence with Century Plywood! 🏗️ Known for their quality and durability, these plywood sheets are perfect for furniture, cabinets, or any woodworking project. With a smooth finish and reliable performance, they're a top choice for pros and DIY enthusiasts alike 💡. Want to know more about using Century Plywood for your next project?
+202: Thickness - 6mm, 9mm, 12mm, 16mm,19mm
+203: Size - 8x4
+204: Price - 44-200/ sqft
+205: Keyword - ply, plywood, century, century plywood, plyboard, waterproof ply, century architect, century club prime, architect, club prime, century sainik, century sainik bwp, century sainik mr, bwp plywood , waterproof, waterproof plywood, mr Plywood, commercial plywood 
+206: Greenply plywood -
+207: Build with confidence with Century Plywood! 🏗️ Known for their quality and durability, these plywood sheets are perfect for furniture, cabinets, or any woodworking project. With a smooth finish and reliable performance, they're a top choice for pros and DIY enthusiasts alike 💡. Want to know more about using greenply Plywood for your next project?
+208: Thickness - 6mm, 9mm, 12mm, 16mm,19mm
+209: Size - 8x4
+210: Price - 44-200/ sqft
+211: Keyword - ply, plywood, greenply, green ply, green plywood, greenply plywood, plyboard, waterproof ply, prime, architect, club prime, bwp, bwp plywood , waterproof, waterproof plywood, mr Plywood, commercial plywood , green echotec,greenply commercial ply, club gold, club platinum 
+212: 15. Flexible panels
+213: Flexible panels, made for the area with curve and bend. It can be bent 360° 
+214: Size - 8’x1.5”, 8’x2’, 8’x4’ 
+215: Thickness - 1mm,1.5mm, 4mm, 6mm
+216: Price - 200-400/ sqft
+217: Keyword - flexible, flexible fluted, flex, flexi, flexi louvers, flexible louvers, flexible wall panels, 
+218: bendable panel, flexible panel, bendable wall panel, 
+219: 16. Soffit panels
+220: Soffit panel- Add a finishing touch to your ceilings with soffit panels! 💡 They conceal unsightly beams or wiring while adding a sleek, modern look. Durable, easy to install, and versatile - perfect for homes, offices, or commercial spaces.
+221: Size- 10’x1’ 10’x10”, 13’x1’
+222: Price - 110-200/ sqft
+223: Keyword - soffit, soffit panels, pvc panel, pvc fluted, pvc soffit panel, ceiling panel, ceiling, ceiling louvers, ceiling fluted panel, wooden ceiling panel, 10x1 panel, 
+224: 17. Timber wood
+225: We can we timber wood in any of your required sizes inquir on WhatsApp for rates and other 
+226: Keyword - wood, timber, teak, burma teak, 1st teak, old burma, 2nd teak, timber wood , log, wooden log, bidding, wooden beeding, wooden moulding 
+227: 18. Profile work
+228: All kind of profile work are done by interior spot with a professional team 
+229: For price and site visit pls contact on WhatsApp 
+230: Keyword - profile , aluminium profile, profile work , profile door, sliding door, glass door, profile glass door, aluminium profile door, partition, profile partition, ss profile, steel profile, aluminium, door, sliding, wardrobe 
