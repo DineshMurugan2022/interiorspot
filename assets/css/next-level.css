@@ -2604,3 +2604,47 @@ header.scrolled {
     height: 200px;
     border-radius: 20px 20px 0 0;
 }
+
+
+/* Google Review Card specific styles */
+.google-review-card {
+    padding: 30px !important;
+    background: #fff !important;
+    border: 1px solid #e0e0e0 !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.google-review-card p::before {
+    display: none !important;
+}
+.gr-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+.gr-icon img {
+    width: 24px;
+    height: 24px;
+}
+.gr-stars {
+    color: #fbbc04;
+    font-size: 14px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+.google-review-card p {
+    font-size: 15px !important;
+    font-style: normal !important;
+    color: #3c4043 !important;
+    line-height: 1.6 !important;
+    margin-bottom: 0 !important;
+}
+.nl-author-info p {
+    text-transform: none !important;
+    letter-spacing: 0 !important;
+    font-size: 12px !important;
+    margin-top: 4px !important;
+}
