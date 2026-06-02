@@ -335,7 +335,7 @@
         }
 
         .card-specs .spec-item i {
-            color: #9aaeff;
+            color: #5c7aff;
             font-size: 11px;
         }
 
@@ -347,7 +347,7 @@
 
         .card-actions {
             display: flex;
-            gap: 9px;
+            gap: 12px;
             margin-top: auto;
         }
 
@@ -359,7 +359,8 @@
             gap: 7px;
             background: #25D366;
             color: #fff;
-            padding: 11px 14px;
+            padding: 14px 16px;
+            min-height: 44px;
             border-radius: 11px;
             font-size: 13px;
             font-weight: 600;
@@ -378,7 +379,8 @@
             justify-content: center;
             background: #eef1ff;
             color: var(--next-blue);
-            padding: 11px 14px;
+            padding: 14px 16px;
+            min-height: 44px;
             border-radius: 11px;
             font-size: 14px;
             text-decoration: none;
@@ -429,7 +431,7 @@
 <body>
     <header id="site-header"></header>
 
-    <main class="container pdp-layout">
+    <main class="container pdp-layout" role="main">
         <!-- LEFT: IMAGE -->
         <div class="pdp-images">
             <div class="pdp-main-image">
@@ -451,14 +453,13 @@
             </div>
 
             <div class="pdp-actions">
-                <a href="https://wa.me/918122258359?text=Hi, I'm interested in the MIKOLAM SOLID Laminates."
-                    class="btn-wa-large" target="_blank">
+                <a href="https://wa.me/918122258359?text=Hi, I'm interested in the MIKOLAM SOLID Laminates." class="btn-wa-large" target="_blank" aria-label="Enquire on WhatsApp">
                     <i class="fab fa-whatsapp"></i> Enquire Now
                 </a>
             </div>
 
             <div class="pdp-specs">
-                <h3>Product Specifications</h3>
+                <h2>Product Specifications</h2>
                 <table class="specs-table">
                     <tr>
                         <th>Collection Name</th>
@@ -499,30 +500,18 @@
             </div>
 
             <div class="crayon-grid">
-                <div class="crayon-img-wrap"><img src="assets/product/mikolam-pages/page_004.jpg"
-                        alt="Mikolam Catalog Page 4"></div>
-                <div class="crayon-img-wrap"><img src="assets/product/mikolam-pages/page_005.jpg"
-                        alt="Mikolam Catalog Page 5"></div>
-                <div class="crayon-img-wrap"><img src="assets/product/mikolam-pages/page_006.jpg"
-                        alt="Mikolam Catalog Page 6"></div>
-                <div class="crayon-img-wrap"><img src="assets/product/mikolam-pages/page_007.jpg"
-                        alt="Mikolam Catalog Page 7"></div>
-                <div class="crayon-img-wrap"><img src="assets/product/mikolam-pages/page_008.jpg"
-                        alt="Mikolam Catalog Page 8"></div>
-                <div class="crayon-img-wrap"><img src="assets/product/mikolam-pages/page_009.jpg"
-                        alt="Mikolam Catalog Page 9"></div>
-                <div class="crayon-img-wrap"><img src="assets/product/mikolam-pages/page_010.jpg"
-                        alt="Mikolam Catalog Page 10"></div>
-                <div class="crayon-img-wrap"><img src="assets/product/mikolam-pages/page_011.jpg"
-                        alt="Mikolam Catalog Page 11"></div>
-                <div class="crayon-img-wrap"><img src="assets/product/mikolam-pages/page_012.jpg"
-                        alt="Mikolam Catalog Page 12"></div>
-                <div class="crayon-img-wrap"><img src="assets/product/mikolam-pages/page_013.jpg"
-                        alt="Mikolam Catalog Page 13"></div>
-                <div class="crayon-img-wrap"><img src="assets/product/mikolam-pages/page_014.jpg"
-                        alt="Mikolam Catalog Page 14"></div>
-                <div class="crayon-img-wrap"><img src="assets/product/mikolam-pages/page_015.jpg"
-                        alt="Mikolam Catalog Page 15"></div>
+                <div class="crayon-img-wrap"><img src="assets/product/mikolam-pages/page_004.jpg" alt="Mikolam Catalog Page 4" width="800" height="1000" loading="lazy"></div>
+                <div class="crayon-img-wrap"><img src="assets/product/mikolam-pages/page_005.jpg" alt="Mikolam Catalog Page 5" width="800" height="1000" loading="lazy"></div>
+                <div class="crayon-img-wrap"><img src="assets/product/mikolam-pages/page_006.jpg" alt="Mikolam Catalog Page 6" width="800" height="1000" loading="lazy"></div>
+                <div class="crayon-img-wrap"><img src="assets/product/mikolam-pages/page_007.jpg" alt="Mikolam Catalog Page 7" width="800" height="1000" loading="lazy"></div>
+                <div class="crayon-img-wrap"><img src="assets/product/mikolam-pages/page_008.jpg" alt="Mikolam Catalog Page 8" width="800" height="1000" loading="lazy"></div>
+                <div class="crayon-img-wrap"><img src="assets/product/mikolam-pages/page_009.jpg" alt="Mikolam Catalog Page 9" width="800" height="1000" loading="lazy"></div>
+                <div class="crayon-img-wrap"><img src="assets/product/mikolam-pages/page_010.jpg" alt="Mikolam Catalog Page 10" width="800" height="1000" loading="lazy"></div>
+                <div class="crayon-img-wrap"><img src="assets/product/mikolam-pages/page_011.jpg" alt="Mikolam Catalog Page 11" width="800" height="1000" loading="lazy"></div>
+                <div class="crayon-img-wrap"><img src="assets/product/mikolam-pages/page_012.jpg" alt="Mikolam Catalog Page 12" width="800" height="1000" loading="lazy"></div>
+                <div class="crayon-img-wrap"><img src="assets/product/mikolam-pages/page_013.jpg" alt="Mikolam Catalog Page 13" width="800" height="1000" loading="lazy"></div>
+                <div class="crayon-img-wrap"><img src="assets/product/mikolam-pages/page_014.jpg" alt="Mikolam Catalog Page 14" width="800" height="1000" loading="lazy"></div>
+                <div class="crayon-img-wrap"><img src="assets/product/mikolam-pages/page_015.jpg" alt="Mikolam Catalog Page 15" width="800" height="1000" loading="lazy"></div>
             </div>
         </div>
     </section>
@@ -541,9 +530,9 @@
 
     <footer id="site-footer"></footer>
 
-    <script src="assets/js/products.js"></script>
-    <script src="assets/js/components.js"></script>
-    <script src="assets/js/header-nav.js"></script>
+    <script src="assets/js/products.js" defer></script>
+    <script src="assets/js/components.js" defer></script>
+    <script src="assets/js/header-nav.js" defer></script>
 </body>
 
 </html>

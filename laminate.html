@@ -204,7 +204,7 @@
             border: 1px solid #eef1ff;
         }
         .card-specs .spec-item { display: flex; align-items: center; gap: 5px; }
-        .card-specs .spec-item i { color: #9aaeff; font-size: 11px; }
+        .card-specs .spec-item i { color: #5c7aff; font-size: 11px; }
         .card-specs .price {
             color: var(--next-blue);
             font-size: 15px;
@@ -213,7 +213,7 @@
 
         .card-actions {
             display: flex;
-            gap: 9px;
+            gap: 12px;
             margin-top: auto;
         }
         .btn-wa {
@@ -224,7 +224,8 @@
             gap: 7px;
             background: #25D366;
             color: #fff;
-            padding: 11px 14px;
+            padding: 14px 16px;
+            min-height: 44px;
             border-radius: 11px;
             font-size: 13px;
             font-weight: 600;
@@ -238,7 +239,8 @@
             justify-content: center;
             background: #eef1ff;
             color: var(--next-blue);
-            padding: 11px 14px;
+            padding: 14px 16px;
+            min-height: 44px;
             border-radius: 11px;
             font-size: 14px;
             text-decoration: none;
@@ -277,7 +279,7 @@
                 margin-left: auto;
                 margin-top: 0;
             }
-            .btn-wa, .btn-phone { padding: 9px 10px; font-size: 12px; }
+            .btn-wa, .btn-phone { padding: 12px 14px; font-size: 12px; min-height: 44px; }
         }
 
         /* ===== CATEGORY TABS ===== */
@@ -346,7 +348,7 @@
     </div>
 
     <!-- E-COMMERCE LAYOUT -->
-    <main class="container">
+    <main class="container" role="main">
         <div class="ecommerce-layout">
 
             
@@ -1035,9 +1037,9 @@
 
     <footer id="site-footer"></footer>
     
-    <script src="assets/js/products.js"></script>
-    <script src="assets/js/components.js"></script>
-    <script src="assets/js/header-nav.js"></script>
+    <script src="assets/js/products.js" defer></script>
+    <script src="assets/js/components.js" defer></script>
+    <script src="assets/js/header-nav.js" defer></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             // Sidebar Accordion Logic

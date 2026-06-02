@@ -335,7 +335,7 @@
         }
 
         .card-specs .spec-item i {
-            color: #9aaeff;
+            color: #5c7aff;
             font-size: 11px;
         }
 
@@ -347,7 +347,7 @@
 
         .card-actions {
             display: flex;
-            gap: 9px;
+            gap: 12px;
             margin-top: auto;
         }
 
@@ -359,12 +359,13 @@
             gap: 7px;
             background: #25D366;
             color: #fff;
-            padding: 11px 14px;
+            padding: 14px 16px;
             border-radius: 11px;
             font-size: 13px;
             font-weight: 600;
             text-decoration: none;
             transition: all 0.25s ease;
+            min-height: 44px;
         }
 
         .btn-wa:hover {
@@ -378,13 +379,14 @@
             justify-content: center;
             background: #eef1ff;
             color: var(--next-blue);
-            padding: 11px 14px;
+            padding: 14px 16px;
             border-radius: 11px;
             font-size: 14px;
             text-decoration: none;
             border: 1.5px solid #d0d9ff;
             transition: all 0.25s ease;
             min-width: 44px;
+            min-height: 44px;
         }
 
         .btn-phone:hover {
@@ -419,8 +421,9 @@
 
             .btn-wa,
             .btn-phone {
-                padding: 9px 10px;
+                padding: 12px 14px;
                 font-size: 12px;
+                min-height: 44px;
             }
         }
     </style>
@@ -429,11 +432,11 @@
 <body>
     <header id="site-header"></header>
 
-    <main class="container pdp-layout">
+    <main class="container pdp-layout" role="main">
         <!-- LEFT: IMAGE -->
         <div class="pdp-images">
             <div class="pdp-main-image">
-                <img src="assets/product/xosso-pages/page_001.jpg" alt="Xosso Laminate" onerror="this.outerHTML='<div class=&quot;img-ph&quot; style=&quot;height: 100%; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #f5f5f5; color: #1a3b8f; border-radius: 12px;&quot;><i class=&quot;fas fa-image&quot; style=&quot;font-size: 48px; opacity: 0.3;&quot;></i><span style=&quot;margin-top:15px; font-weight:700; opacity:0.5; text-transform:uppercase;&quot;>Xosso Laminate</span></div>' ">
+                <img src="assets/product/xosso-pages/page_001.jpg" alt="Xosso Laminate" width="800" height="1000" onerror="this.outerHTML='<div class=&quot;img-ph&quot; style=&quot;height: 100%; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #f5f5f5; color: #1a3b8f; border-radius: 12px;&quot;><i class=&quot;fas fa-image&quot; style=&quot;font-size: 48px; opacity: 0.3;&quot;></i><span style=&quot;margin-top:15px; font-weight:700; opacity:0.5; text-transform:uppercase;&quot;>Xosso Laminate</span></div>' ">
             </div>
         </div>
 
@@ -452,13 +455,13 @@
 
             <div class="pdp-actions">
                 <a href="https://wa.me/918122258359?text=Hi, I'm interested in the Xosso Laminates."
-                    class="btn-wa-large" target="_blank">
+                    class="btn-wa-large" target="_blank" aria-label="Enquire about Xosso Laminates on WhatsApp">
                     <i class="fab fa-whatsapp"></i> Enquire Now
                 </a>
             </div>
 
             <div class="pdp-specs">
-                <h3>Product Specifications</h3>
+                <h2>Product Specifications</h2>
                 <table class="specs-table">
                     <tr>
                         <th>Collection Name</th>
@@ -500,29 +503,29 @@
 
             <div class="crayon-grid">
                 <div class="crayon-img-wrap"><img src="assets/product/xosso-pages/page_004.jpg"
-                        alt="Xosso Catalog Page 4"></div>
+                        alt="Xosso Catalog Page 4" width="800" height="1000" loading="lazy"></div>
                 <div class="crayon-img-wrap"><img src="assets/product/xosso-pages/page_005.jpg"
-                        alt="Xosso Catalog Page 5"></div>
+                        alt="Xosso Catalog Page 5" width="800" height="1000" loading="lazy"></div>
                 <div class="crayon-img-wrap"><img src="assets/product/xosso-pages/page_006.jpg"
-                        alt="Xosso Catalog Page 6"></div>
+                        alt="Xosso Catalog Page 6" width="800" height="1000" loading="lazy"></div>
                 <div class="crayon-img-wrap"><img src="assets/product/xosso-pages/page_007.jpg"
-                        alt="Xosso Catalog Page 7"></div>
+                        alt="Xosso Catalog Page 7" width="800" height="1000" loading="lazy"></div>
                 <div class="crayon-img-wrap"><img src="assets/product/xosso-pages/page_008.jpg"
-                        alt="Xosso Catalog Page 8"></div>
+                        alt="Xosso Catalog Page 8" width="800" height="1000" loading="lazy"></div>
                 <div class="crayon-img-wrap"><img src="assets/product/xosso-pages/page_009.jpg"
-                        alt="Xosso Catalog Page 9"></div>
+                        alt="Xosso Catalog Page 9" width="800" height="1000" loading="lazy"></div>
                 <div class="crayon-img-wrap"><img src="assets/product/xosso-pages/page_010.jpg"
-                        alt="Xosso Catalog Page 10"></div>
+                        alt="Xosso Catalog Page 10" width="800" height="1000" loading="lazy"></div>
                 <div class="crayon-img-wrap"><img src="assets/product/xosso-pages/page_011.jpg"
-                        alt="Xosso Catalog Page 11"></div>
+                        alt="Xosso Catalog Page 11" width="800" height="1000" loading="lazy"></div>
                 <div class="crayon-img-wrap"><img src="assets/product/xosso-pages/page_012.jpg"
-                        alt="Xosso Catalog Page 12"></div>
+                        alt="Xosso Catalog Page 12" width="800" height="1000" loading="lazy"></div>
                 <div class="crayon-img-wrap"><img src="assets/product/xosso-pages/page_013.jpg"
-                        alt="Xosso Catalog Page 13"></div>
+                        alt="Xosso Catalog Page 13" width="800" height="1000" loading="lazy"></div>
                 <div class="crayon-img-wrap"><img src="assets/product/xosso-pages/page_014.jpg"
-                        alt="Xosso Catalog Page 14"></div>
+                        alt="Xosso Catalog Page 14" width="800" height="1000" loading="lazy"></div>
                 <div class="crayon-img-wrap"><img src="assets/product/xosso-pages/page_015.jpg"
-                        alt="Xosso Catalog Page 15"></div>
+                        alt="Xosso Catalog Page 15" width="800" height="1000" loading="lazy"></div>
             </div>
         </div>
     </section>
@@ -541,9 +544,9 @@
 
     <footer id="site-footer"></footer>
 
-    <script src="assets/js/products.js"></script>
-    <script src="assets/js/components.js"></script>
-    <script src="assets/js/header-nav.js"></script>
+    <script src="assets/js/products.js" defer></script>
+    <script src="assets/js/components.js" defer></script>
+    <script src="assets/js/header-nav.js" defer></script>
 </body>
 
 </html>

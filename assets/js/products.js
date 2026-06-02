@@ -1049,76 +1049,84 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- Dynamic Related Products ---
-    const relatedContainer = document.getElementById('dynamic-related-products');
-    if (relatedContainer && typeof productData !== 'undefined') {
-        const shuffled = [...productData].sort(() => 0.5 - Math.random());
-        const selected = shuffled.slice(0, 4);
-        
-        let cardsHtml = '';
-        selected.forEach(prod => {
-            let catDisplay = prod.category.replace(/-/g, ' ');
-            catDisplay = catDisplay.replace(/\b\w/g, c => c.toUpperCase());
+    function initDynamicProducts() {
+        // --- Dynamic Related Products ---
+        const relatedContainer = document.getElementById('dynamic-related-products');
+        if (relatedContainer && typeof productData !== 'undefined') {
+            const shuffled = [...productData].sort(() => 0.5 - Math.random());
+            const selected = shuffled.slice(0, 4);
             
-            cardsHtml += `
-                <div class="brand-card">
-                    <a href="${prod.url}" class="card-img" style="display:block; height:100%; text-decoration:none;">
-                        <img src="${prod.image}" alt="${prod.name}" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover;" onerror="this.onerror=null; this.src='assets/img/categories/${prod.category}.png';">
-                    </a>
-                    <div class="card-body">
-                        <a href="${prod.url}" class="brand-name" style="text-decoration:none;">${prod.name}</a>
-                        <div class="brand-desc">${prod.description || 'Premium interior materials from Interior Spot.'}</div>
-                        <div class="card-specs">
-                            <div class="spec-item"><i class="fas fa-layer-group"></i> ${catDisplay}</div>
-                            <div class="price">Enquire for Price</div>
-                        </div>
-                        <div class="card-actions">
-                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in ${prod.name}. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
-                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
+            let cardsHtml = '';
+            selected.forEach(prod => {
+                let catDisplay = prod.category.replace(/-/g, ' ');
+                catDisplay = catDisplay.replace(/\b\w/g, c => c.toUpperCase());
+                
+                cardsHtml += `
+                    <div class="brand-card">
+                        <a href="${prod.url}" class="card-img" style="display:block; height:100%; text-decoration:none;">
+                            <img src="${prod.image}" alt="${prod.name}" width="250" height="312" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover;" onerror="this.onerror=null; this.src='assets/img/categories/${prod.category}.png';">
+                        </a>
+                        <div class="card-body">
+                            <a href="${prod.url}" class="brand-name" style="text-decoration:none;">${prod.name}</a>
+                            <div class="brand-desc">${prod.description || 'Premium interior materials from Interior Spot.'}</div>
+                            <div class="card-specs">
+                                <div class="spec-item"><i class="fas fa-layer-group"></i> ${catDisplay}</div>
+                                <div class="price">Enquire for Price</div>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://wa.me/918122258359?text=Hi, I'm interested in ${prod.name}. Please share details." class="btn-wa" target="_blank" aria-label="Enquire about ${prod.name} on WhatsApp"><i class="fab fa-whatsapp"></i> Enquire</a>
+                                <a href="tel:+918122258359" class="btn-phone" aria-label="Call to enquire about ${prod.name}"><i class="fas fa-phone"></i></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            `;
-        });
-        relatedContainer.innerHTML = cardsHtml;
+                `;
+            });
+            relatedContainer.innerHTML = cardsHtml;
+        }
+
+        // --- Dynamic Daily Picks (index.html) ---
+        const dailyPicksContainer = document.getElementById('dynamic-daily-picks');
+        if (dailyPicksContainer && typeof productData !== 'undefined') {
+            const shuffled = [...productData].sort(() => 0.5 - Math.random());
+            const selected = shuffled.slice(0, 6); // Show 6 in marquee instead of 10 for performance
+            
+            let cardsHtml = '';
+            selected.forEach(prod => {
+                let catDisplay = prod.category.replace(/-/g, ' ');
+                catDisplay = catDisplay.replace(/\b\w/g, c => c.toUpperCase());
+                
+                cardsHtml += `
+                    <div class="brand-card">
+                        <div class="card-img" style="position:relative;">
+                            <div style="position:absolute; top:12px; left:12px; background:#c5a059; color:white; padding:4px 10px; border-radius:20px; font-size:10px; font-weight:800; z-index:10; text-transform:uppercase; box-shadow:0 2px 5px rgba(0,0,0,0.2);">Daily Pick</div>
+                            <a href="${prod.url}" style="display:block; height:100%; text-decoration:none;">
+                                <img src="${prod.image}" alt="${prod.name}" width="250" height="312" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover;" onerror="this.onerror=null; this.src='assets/img/categories/${prod.category}.png';">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <a href="${prod.url}" class="brand-name" style="text-decoration:none;">${prod.name}</a>
+                            <div class="brand-desc">${prod.description || 'Premium interior materials from Interior Spot.'}</div>
+                            <div class="card-specs">
+                                <div class="spec-item"><i class="fas fa-layer-group"></i> ${catDisplay}</div>
+                                <div class="price">Enquire for Price</div>
+                            </div>
+                            <div class="card-actions">
+                                <a href="https://wa.me/918122258359?text=Hi, I'm interested in ${prod.name}. Please share details." class="btn-wa" target="_blank" aria-label="Enquire about ${prod.name} on WhatsApp"><i class="fab fa-whatsapp"></i> Enquire</a>
+                                <a href="tel:+918122258359" class="btn-phone" aria-label="Call to enquire about ${prod.name}"><i class="fas fa-phone"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            // Duplicate the set once for smooth marquee scrolling effect
+            dailyPicksContainer.innerHTML = cardsHtml + cardsHtml;
+        }
     }
 
-    // --- Dynamic Daily Picks (index.html) ---
-    const dailyPicksContainer = document.getElementById('dynamic-daily-picks');
-    if (dailyPicksContainer && typeof productData !== 'undefined') {
-        const shuffled = [...productData].sort(() => 0.5 - Math.random());
-        const selected = shuffled.slice(0, 6); // Show 6 in marquee instead of 10 for performance
-        
-        let cardsHtml = '';
-        selected.forEach(prod => {
-            let catDisplay = prod.category.replace(/-/g, ' ');
-            catDisplay = catDisplay.replace(/\b\w/g, c => c.toUpperCase());
-            
-            cardsHtml += `
-                <div class="brand-card">
-                    <div class="card-img" style="position:relative;">
-                        <div style="position:absolute; top:12px; left:12px; background:#c5a059; color:white; padding:4px 10px; border-radius:20px; font-size:10px; font-weight:800; z-index:10; text-transform:uppercase; box-shadow:0 2px 5px rgba(0,0,0,0.2);">Daily Pick</div>
-                        <a href="${prod.url}" style="display:block; height:100%; text-decoration:none;">
-                            <img src="${prod.image}" alt="${prod.name}" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover;" onerror="this.onerror=null; this.src='assets/img/categories/${prod.category}.png';">
-                        </a>
-                    </div>
-                    <div class="card-body">
-                        <a href="${prod.url}" class="brand-name" style="text-decoration:none;">${prod.name}</a>
-                        <div class="brand-desc">${prod.description || 'Premium interior materials from Interior Spot.'}</div>
-                        <div class="card-specs">
-                            <div class="spec-item"><i class="fas fa-layer-group"></i> ${catDisplay}</div>
-                            <div class="price">Enquire for Price</div>
-                        </div>
-                        <div class="card-actions">
-                            <a href="https://wa.me/918122258359?text=Hi, I'm interested in ${prod.name}. Please share details." class="btn-wa" target="_blank"><i class="fab fa-whatsapp"></i> Enquire</a>
-                            <a href="tel:+918122258359" class="btn-phone"><i class="fas fa-phone"></i></a>
-                        </div>
-                    </div>
-                </div>
-            `;
-        });
-        
-        // Duplicate the set once for smooth marquee scrolling effect
-        dailyPicksContainer.innerHTML = cardsHtml + cardsHtml;
+    if ('requestIdleCallback' in window) {
+        requestIdleCallback(initDynamicProducts);
+    } else {
+        setTimeout(initDynamicProducts, 200);
     }
 });

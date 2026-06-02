@@ -19,7 +19,11 @@ function loadComponents() {
 
     // Initialize Category Page Filter Sidebar
     if (typeof initCategoryFilterSidebar === 'function') {
-        initCategoryFilterSidebar();
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(initCategoryFilterSidebar);
+        } else {
+            setTimeout(initCategoryFilterSidebar, 200);
+        }
     }
 
     // Initialize Logic after components are loaded
