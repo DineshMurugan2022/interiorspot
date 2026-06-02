@@ -239,8 +239,11 @@ window.siteFooterHTML = `
             <h4>Our Categories</h4>
             <ul>
                 <li><a href="laminate.html">Laminates</a></li>
+                <li><a href="charcoal-sheets.html">Charcoal Sheets</a></li>
                 <li><a href="fluted-panel.html">Fluted Panels</a></li>
+                <li><a href="louvers.html">Louvers</a></li>
                 <li><a href="stone-veneer.html">Stone Veneer</a></li>
+                <li><a href="plywood.html">Plywood</a></li>
             </ul>
         </div>
         <div class="footer-col">
@@ -252,7 +255,7 @@ window.siteFooterHTML = `
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; 2024 Interior Spot. All Rights Reserved.</p>
+        <p>&copy; 2026 Interior Spot. All Rights Reserved.</p>
     </div>
 </div>
 `;
