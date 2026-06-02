@@ -1466,3 +1466,8 @@ footer {
         height: 45px;
     }
 }
+
+/* Globally hide the phone icon on product cards */
+.btn-phone {
+    display: none !important;
+}
