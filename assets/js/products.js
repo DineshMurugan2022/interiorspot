@@ -1096,7 +1096,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 catDisplay = catDisplay.replace(/\b\w/g, c => c.toUpperCase());
                 
                 cardsHtml += `
-                    <div class="brand-card">
+                    <div class="brand-card swiper-slide">
                         <div class="card-img" style="position:relative;">
                             <div style="position:absolute; top:12px; left:12px; background:#c5a059; color:white; padding:4px 10px; border-radius:20px; font-size:10px; font-weight:800; z-index:10; text-transform:uppercase; box-shadow:0 2px 5px rgba(0,0,0,0.2);">Daily Pick</div>
                             <a href="${prod.url}" style="display:block; height:100%; text-decoration:none;">
@@ -1119,8 +1119,30 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
             });
             
-            // Duplicate the set once for smooth marquee scrolling effect
-            dailyPicksContainer.innerHTML = cardsHtml + cardsHtml;
+            // Insert generated cards into container without duplication
+            dailyPicksContainer.innerHTML = cardsHtml;
+
+            // Initialize Swiper for Daily Picks
+            if (typeof Swiper !== 'undefined') {
+                new Swiper('.suggestionSwiper', {
+                    slidesPerView: 'auto',
+                    spaceBetween: 30,
+                    freeMode: true,
+                    grabCursor: true,
+                    autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: true,
+                    },
+                    breakpoints: {
+                        320: {
+                            spaceBetween: 15
+                        },
+                        768: {
+                            spaceBetween: 30
+                        }
+                    }
+                });
+            }
         }
     }
 

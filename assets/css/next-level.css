@@ -1497,24 +1497,7 @@ header.scrolled {
 
 .nl-suggestion-row {
     display: flex;
-    white-space: nowrap;
-    width: fit-content;
-    animation: suggestion-scroll 35s linear infinite;
-    gap: 30px;
     padding: 20px 0;
-}
-
-.nl-suggestion-row:hover {
-    animation-play-state: paused;
-}
-
-@keyframes suggestion-scroll {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-50%);
-    }
 }
 
 /* Custom Product Suggestion Card (Light Theme) */
@@ -2331,7 +2314,6 @@ header.scrolled {
 .nl-suggestion-row .brand-card {
     min-width: 280px;
     max-width: 280px;
-    margin-right: 20px;
     flex-shrink: 0;
 }
 
