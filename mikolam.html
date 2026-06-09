@@ -499,19 +499,20 @@
                 </p>
             </div>
 
-            <div class="crayon-grid">
-                <div class="crayon-img-wrap"><img decoding="async" src="assets/product/mikolam-pages/page_004.jpg" alt="Mikolam Catalog Page 4" width="800" height="1000" loading="lazy"></div>
-                <div class="crayon-img-wrap"><img decoding="async" src="assets/product/mikolam-pages/page_005.jpg" alt="Mikolam Catalog Page 5" width="800" height="1000" loading="lazy"></div>
-                <div class="crayon-img-wrap"><img decoding="async" src="assets/product/mikolam-pages/page_006.jpg" alt="Mikolam Catalog Page 6" width="800" height="1000" loading="lazy"></div>
-                <div class="crayon-img-wrap"><img decoding="async" src="assets/product/mikolam-pages/page_007.jpg" alt="Mikolam Catalog Page 7" width="800" height="1000" loading="lazy"></div>
-                <div class="crayon-img-wrap"><img decoding="async" src="assets/product/mikolam-pages/page_008.jpg" alt="Mikolam Catalog Page 8" width="800" height="1000" loading="lazy"></div>
-                <div class="crayon-img-wrap"><img decoding="async" src="assets/product/mikolam-pages/page_009.jpg" alt="Mikolam Catalog Page 9" width="800" height="1000" loading="lazy"></div>
-                <div class="crayon-img-wrap"><img decoding="async" src="assets/product/mikolam-pages/page_010.jpg" alt="Mikolam Catalog Page 10" width="800" height="1000" loading="lazy"></div>
-                <div class="crayon-img-wrap"><img decoding="async" src="assets/product/mikolam-pages/page_011.jpg" alt="Mikolam Catalog Page 11" width="800" height="1000" loading="lazy"></div>
-                <div class="crayon-img-wrap"><img decoding="async" src="assets/product/mikolam-pages/page_012.jpg" alt="Mikolam Catalog Page 12" width="800" height="1000" loading="lazy"></div>
-                <div class="crayon-img-wrap"><img decoding="async" src="assets/product/mikolam-pages/page_013.jpg" alt="Mikolam Catalog Page 13" width="800" height="1000" loading="lazy"></div>
-                <div class="crayon-img-wrap"><img decoding="async" src="assets/product/mikolam-pages/page_014.jpg" alt="Mikolam Catalog Page 14" width="800" height="1000" loading="lazy"></div>
-                <div class="crayon-img-wrap"><img decoding="async" src="assets/product/mikolam-pages/page_015.jpg" alt="Mikolam Catalog Page 15" width="800" height="1000" loading="lazy"></div>
+            <div class="crayon-grid" id="catalogue-gallery">
+                <!-- Javascript will inject images here -->
+                <script>
+                    const gallery = document.getElementById('catalogue-gallery');
+                    const validPages = [4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27];
+                    validPages.forEach(num => {
+                        let pageNum = num.toString().padStart(3, '0');
+                        gallery.innerHTML += `
+                            <div class="crayon-img-wrap">
+                                <img decoding="async" src="assets/product/mikolam-pages/page_${pageNum}.jpg" alt="Mikolam Catalog Page ${num}" loading="lazy">
+                            </div>
+                        `;
+                    });
+                </script>
             </div>
         </div>
     </section>

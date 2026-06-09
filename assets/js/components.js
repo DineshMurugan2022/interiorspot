@@ -62,7 +62,7 @@ window.siteHeaderHTML = `
                             </div>
                             <div class="mega-item">
                                 <a href="3d-designs.html">
-                                    <img src="assets/img/categories/3d-designs.png" alt="3D MDF Designs">
+                                    <img src="assets/img/categories/3d-designs.jpeg" alt="3D MDF Designs">
                                     <span>3D MDF Designs</span>
                                 </a>
                             </div>
