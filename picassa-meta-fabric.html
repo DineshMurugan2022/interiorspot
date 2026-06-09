@@ -452,9 +452,12 @@
                 <span class="tax">Tax included.</span>
             </div>
 
-            <div class="pdp-actions">
-                <a href="https://wa.me/918122258359?text=Hi, I'm interested in the CRAYON Laminates." class="btn-wa-large" target="_blank" aria-label="Enquire on WhatsApp">
+            <div class="pdp-actions" style="display: flex; gap: 15px; flex-wrap: wrap;">
+                <a href="https://wa.me/918122258359?text=Hi, I'm interested in the Picassa Meta Fabric." class="btn-wa-large" target="_blank" aria-label="Enquire on WhatsApp" style="flex: 1; text-align: center;">
                     <i class="fab fa-whatsapp"></i> Enquire Now
+                </a>
+                <a href="Picassa Catalogue Meta Fabric.pdf" class="btn-wa-large" target="_blank" download aria-label="Download Catalogue" style="flex: 1; text-align: center; background: #1a3b8f; box-shadow: 0 4px 15px rgba(26,59,143,0.2);">
+                    <i class="fas fa-download"></i> Download PDF
                 </a>
             </div>
 
@@ -479,21 +482,19 @@
                 </p>
             </div>
 
-            <div class="crayon-grid">
-                <div class="crayon-img-wrap"><img decoding="async" src="assets/product/galleries/picassa-meta-fabric/page_001.jpg?v=1" alt="Picassa Meta Fabric Catalog Page" width="800" height="1000" loading="lazy"></div>
-                <div class="crayon-img-wrap"><img decoding="async" src="assets/product/galleries/picassa-meta-fabric/page_002.jpg?v=1" alt="Picassa Meta Fabric Catalog Page" width="800" height="1000" loading="lazy"></div>
-                <div class="crayon-img-wrap"><img decoding="async" src="assets/product/galleries/picassa-meta-fabric/page_003.jpg?v=1" alt="Picassa Meta Fabric Catalog Page" width="800" height="1000" loading="lazy"></div>
-                <div class="crayon-img-wrap"><img decoding="async" src="assets/product/galleries/picassa-meta-fabric/page_004.jpg?v=1" alt="Picassa Meta Fabric Catalog Page" width="800" height="1000" loading="lazy"></div>
-                <div class="crayon-img-wrap"><img decoding="async" src="assets/product/galleries/picassa-meta-fabric/page_005.jpg?v=1" alt="Picassa Meta Fabric Catalog Page" width="800" height="1000" loading="lazy"></div>
-                <div class="crayon-img-wrap"><img decoding="async" src="assets/product/galleries/picassa-meta-fabric/page_006.jpg?v=1" alt="Picassa Meta Fabric Catalog Page" width="800" height="1000" loading="lazy"></div>
-                <div class="crayon-img-wrap"><img decoding="async" src="assets/product/galleries/picassa-meta-fabric/page_007.jpg?v=1" alt="Picassa Meta Fabric Catalog Page" width="800" height="1000" loading="lazy"></div>
-                <div class="crayon-img-wrap"><img decoding="async" src="assets/product/galleries/picassa-meta-fabric/page_008.jpg?v=1" alt="Picassa Meta Fabric Catalog Page" width="800" height="1000" loading="lazy"></div>
-                <div class="crayon-img-wrap"><img decoding="async" src="assets/product/galleries/picassa-meta-fabric/page_009.jpg?v=1" alt="Picassa Meta Fabric Catalog Page" width="800" height="1000" loading="lazy"></div>
-                <div class="crayon-img-wrap"><img decoding="async" src="assets/product/galleries/picassa-meta-fabric/page_010.jpg?v=1" alt="Picassa Meta Fabric Catalog Page" width="800" height="1000" loading="lazy"></div>
-                <div class="crayon-img-wrap"><img decoding="async" src="assets/product/galleries/picassa-meta-fabric/page_011.jpg?v=1" alt="Picassa Meta Fabric Catalog Page" width="800" height="1000" loading="lazy"></div>
-                <div class="crayon-img-wrap"><img decoding="async" src="assets/product/galleries/picassa-meta-fabric/page_012.jpg?v=1" alt="Picassa Meta Fabric Catalog Page" width="800" height="1000" loading="lazy"></div>
-
-</div>
+            <div class="crayon-grid" id="catalogue-gallery">
+                <script>
+                    const gallery = document.getElementById('catalogue-gallery');
+                    for (let i = 1; i <= 29; i++) {
+                        let pageNum = i.toString().padStart(3, '0');
+                        gallery.innerHTML += `
+                            <div class="crayon-img-wrap">
+                                <img decoding="async" src="assets/product/galleries/picassa-meta-fabric/page_${pageNum}.jpg" alt="Picassa Meta Fabric Page ${i}" loading="lazy">
+                            </div>
+                        `;
+                    }
+                </script>
+            </div>
         </div>
     </section>
 

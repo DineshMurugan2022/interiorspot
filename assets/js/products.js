@@ -1087,8 +1087,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // --- Dynamic Daily Picks (index.html) ---
         const dailyPicksContainer = document.getElementById('dynamic-daily-picks');
         if (dailyPicksContainer && typeof productData !== 'undefined') {
+            const newProducts = [
+                { id: 901, name: "Spectre WPC Louvers", category: "decoratives", url: "is-catalogue-spectre.html", image: "assets/product/galleries/catalogue-spectre/page_001.jpg", price: "Enquire for Price", description: "Premium WPC Louvers by Spectre" },
+                { id: 902, name: "3D Customized Designs", category: "3d-designs", url: "is-catalogue-469-3d.html", image: "assets/product/galleries/catalogue-469-3d/page_001.jpg", price: "Enquire for Price", description: "Premium 3D Customized Designs" },
+                { id: 903, name: "Laminato Highlighters", category: "decoratives", url: "is-catalogue-laminato.html", image: "assets/product/galleries/catalogue-laminato/page_004.jpg", price: "Enquire for Price", description: "Premium Highlighters by Laminato" },
+                { id: 904, name: "KD Customized Mosaics", category: "mosaics", url: "is-catalogue-kd.html", image: "assets/product/galleries/catalogue-kd/page_003.jpg", price: "Enquire for Price", description: "Premium Customized Mosaic Tiles by KD Associates" }
+            ];
             const shuffled = [...productData].sort(() => 0.5 - Math.random());
-            const selected = shuffled.slice(0, 6); // Show 6 in marquee instead of 10 for performance
+            const selected = [...newProducts, ...shuffled.slice(0, 4)]; // Show 4 new + 4 random
             
             let cardsHtml = '';
             selected.forEach(prod => {
@@ -1129,9 +1135,17 @@ document.addEventListener('DOMContentLoaded', () => {
                     spaceBetween: 30,
                     freeMode: true,
                     grabCursor: true,
+                    loop: true,
+                    speed: 4000,
                     autoplay: {
-                        delay: 2500,
-                        disableOnInteraction: true,
+                        delay: 0,
+                        disableOnInteraction: false,
+                        pauseOnMouseEnter: true
+                    },
+                    on: {
+                        init: function () {
+                            this.wrapperEl.style.transitionTimingFunction = "linear";
+                        }
                     },
                     breakpoints: {
                         320: {

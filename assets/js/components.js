@@ -259,3 +259,118 @@ window.siteFooterHTML = `
     </div>
 </div>
 `;
+
+// ===== GLOBAL LIGHTBOX =====
+document.addEventListener('DOMContentLoaded', () => {
+    // Create lightbox HTML
+    const lightboxHTML = `
+        <div class="lightbox-overlay" id="is-lightbox">
+            <div class="lightbox-img-container">
+                <i class="fas fa-times lightbox-close" id="lb-close"></i>
+                <i class="fas fa-chevron-left lightbox-nav lightbox-prev" id="lb-prev"></i>
+                <i class="fas fa-chevron-right lightbox-nav lightbox-next" id="lb-next"></i>
+                <img src="" id="lb-img" alt="Lightbox Image">
+            </div>
+        </div>
+    `;
+    document.body.insertAdjacentHTML('beforeend', lightboxHTML);
+
+    const overlay = document.getElementById('is-lightbox');
+    const lbImg = document.getElementById('lb-img');
+    const btnClose = document.getElementById('lb-close');
+    const btnPrev = document.getElementById('lb-prev');
+    const btnNext = document.getElementById('lb-next');
+
+    // Use event delegation so dynamically loaded images work
+    let currentGallery = [];
+    let currentIndex = 0;
+
+    document.body.addEventListener('click', (e) => {
+        if (e.target.tagName === 'IMG') {
+            const img = e.target;
+            
+            // Exclude lightbox image itself
+            if (img.id === 'lb-img') return;
+            
+            // Exclude structural images (logos, icons)
+            if (img.closest('header') || img.closest('footer') || img.closest('.logo') || img.closest('.brand-logo')) return;
+            
+            // If the image is inside a link to another page, don't lightbox it (let it navigate)
+            const parentLink = img.closest('a');
+            if (parentLink && !parentLink.href.match(/\.(jpg|jpeg|png|gif|webp)$/i)) {
+                return;
+            }
+            
+            if (parentLink) e.preventDefault();
+
+            // Find a logical container to group a gallery
+            const container = img.closest('.crayon-grid') || 
+                              img.closest('.brand-grid') || 
+                              img.closest('.shop-grid') || 
+                              img.closest('.nl-collection-grid') || 
+                              img.closest('.swiper-wrapper') || 
+                              img.closest('.pdp-images') || 
+                              img.closest('section') || 
+                              document.body;
+            
+            // Get all valid sibling images in this container
+            currentGallery = Array.from(container.querySelectorAll('img')).filter(i => {
+                if (i.id === 'lb-img') return false;
+                if (i.closest('header') || i.closest('footer') || i.closest('.logo')) return false;
+                const pLink = i.closest('a');
+                if (pLink && !pLink.href.match(/\.(jpg|jpeg|png|gif|webp)$/i)) return false;
+                return true;
+            });
+            
+            currentIndex = currentGallery.indexOf(img);
+            if(currentIndex === -1) {
+                currentGallery = [img];
+                currentIndex = 0;
+            }
+            
+            showLightbox(img.src);
+        }
+    });
+
+    function showLightbox(src) {
+        lbImg.src = src;
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden'; // prevent scrolling
+    }
+
+    function closeLightbox() {
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    function showNext(e) {
+        if(e) e.stopPropagation();
+        if (currentGallery.length > 0) {
+            currentIndex = (currentIndex + 1) % currentGallery.length;
+            lbImg.src = currentGallery[currentIndex].src;
+        }
+    }
+
+    function showPrev(e) {
+        if(e) e.stopPropagation();
+        if (currentGallery.length > 0) {
+            currentIndex = (currentIndex - 1 + currentGallery.length) % currentGallery.length;
+            lbImg.src = currentGallery[currentIndex].src;
+        }
+    }
+
+    btnClose.addEventListener('click', closeLightbox);
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) closeLightbox();
+    });
+    btnNext.addEventListener('click', showNext);
+    btnPrev.addEventListener('click', showPrev);
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (!overlay.classList.contains('active')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowRight') showNext();
+        if (e.key === 'ArrowLeft') showPrev();
+    });
+});
