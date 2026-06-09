@@ -942,61 +942,101 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- Live Search Assistance (Filtering Dropdown) via Event Delegation ---
+    // --- Professional Live Search Autocomplete ---
+    let originalCategories = null;
+    
     document.addEventListener('input', (e) => {
         if (e.target && e.target.matches('.header-search input')) {
             const searchInputEl = e.target;
-            const searchDropdownEl = document.querySelector('.search-dropdown');
-            if (!searchDropdownEl) return;
+            const searchContainer = searchInputEl.closest('.header-search');
+            if (!searchContainer || typeof productData === 'undefined') return;
+
+            let autocompleteMenu = searchContainer.querySelector('.autocomplete-menu');
+            if (!autocompleteMenu) {
+                autocompleteMenu = document.createElement('ul');
+                autocompleteMenu.className = 'autocomplete-menu';
+                // Inline styles for professional look
+                autocompleteMenu.style.cssText = `
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    right: 0;
+                    background: #fff;
+                    border: 1px solid #eee;
+                    border-radius: 8px;
+                    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+                    margin-top: 5px;
+                    padding: 5px 0;
+                    list-style: none;
+                    z-index: 1000;
+                    max-height: 400px;
+                    overflow-y: auto;
+                    display: none;
+                `;
+                searchContainer.style.position = 'relative';
+                searchContainer.appendChild(autocompleteMenu);
+            }
 
             const query = searchInputEl.value.trim().toLowerCase();
-            const dropdownItems = document.querySelectorAll('.search-dropdown-menu li:not(.no-results)');
-            let noResultsItem = document.querySelector('.search-dropdown-menu li.no-results');
-
-            if (!noResultsItem) {
-                noResultsItem = document.createElement('li');
-                noResultsItem.className = 'no-results';
-                noResultsItem.innerHTML = '<span style="padding: 10px 20px; display: block; color: #888; font-style: italic; font-size: 13px;">No matching categories found</span>';
-                const menu = document.querySelector('.search-dropdown-menu');
-                if(menu) menu.appendChild(noResultsItem);
+            
+            // Clear current menu
+            autocompleteMenu.innerHTML = '';
+            
+            if (query.length < 2) {
+                autocompleteMenu.style.display = 'none';
+                return;
             }
 
-            let hasMatch = false;
+            // Filter productData
+            const matches = productData.filter(product => {
+                const nameMatch = product.name.toLowerCase().includes(query);
+                const catMatch = product.category.toLowerCase().includes(query);
+                return nameMatch || catMatch;
+            }).slice(0, 8); // limit to top 8 suggestions
 
-            // Normalize query for common typos in live search
-            let normalizedQuery = query;
-            if (query === 'lamintae') normalizedQuery = 'laminate';
-
-            if (query.length > 0) {
-                dropdownItems.forEach(item => {
-                    const text = item.textContent.toLowerCase();
-                    if (text.includes(normalizedQuery) || (normalizedQuery.includes(text) && text.length > 3)) {
-                        item.style.display = 'block';
-                        hasMatch = true;
-                    } else {
-                        item.style.display = 'none';
-                    }
+            if (matches.length > 0) {
+                matches.forEach(product => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `
+                        <a href="${product.url}" style="display: flex; align-items: center; gap: 15px; padding: 10px 15px; text-decoration: none; border-bottom: 1px solid #f5f5f5; transition: background 0.2s;">
+                            <img src="${product.image}" alt="${product.name}" style="width: 45px; height: 45px; border-radius: 6px; object-fit: cover; flex-shrink: 0; border: 1px solid #eee;">
+                            <div style="display: flex; flex-direction: column; overflow: hidden;">
+                                <span style="font-weight: 600; color: #1a3b8f; font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${product.name}</span>
+                                <span style="font-size: 12px; color: #666; text-transform: capitalize; margin-top: 2px;">${product.category.replace('-', ' ')}</span>
+                            </div>
+                        </a>
+                    `;
+                    // Hover effect
+                    const a = li.querySelector('a');
+                    a.addEventListener('mouseenter', () => a.style.background = '#f8f9fa');
+                    a.addEventListener('mouseleave', () => a.style.background = 'transparent');
+                    autocompleteMenu.appendChild(li);
                 });
-
-                if(noResultsItem) noResultsItem.style.display = hasMatch ? 'none' : 'block';
-                searchDropdownEl.classList.add('active');
             } else {
-                // Reset if empty
-                dropdownItems.forEach(item => item.style.display = 'block');
-                if(noResultsItem) noResultsItem.style.display = 'none';
-                searchDropdownEl.classList.remove('active');
+                const li = document.createElement('li');
+                li.innerHTML = '<span style="padding: 15px 20px; display: block; color: #888; font-style: italic; font-size: 14px; text-align: center;">No matching products found.</span>';
+                autocompleteMenu.appendChild(li);
             }
+            
+            autocompleteMenu.style.display = 'block';
         }
     });
 
-    // Close dropdown when clicking outside
+    // Close autocomplete when clicking outside
     document.addEventListener('click', (e) => {
-        const searchDropdownEl = document.querySelector('.search-dropdown');
         const searchInputEl = document.querySelector('.header-search input');
-        if (searchDropdownEl && searchInputEl) {
-            if (!searchInputEl.contains(e.target) && !searchDropdownEl.contains(e.target)) {
-                searchDropdownEl.classList.remove('active');
+        const autocompleteMenu = document.querySelector('.autocomplete-menu');
+        
+        if (autocompleteMenu && searchInputEl) {
+            if (!searchInputEl.contains(e.target) && !autocompleteMenu.contains(e.target)) {
+                autocompleteMenu.style.display = 'none';
             }
+        }
+        
+        // Retain category dropdown closing logic
+        const searchDropdownEl = document.querySelector('.search-dropdown');
+        if (searchDropdownEl && !searchDropdownEl.contains(e.target)) {
+             searchDropdownEl.classList.remove('active');
         }
     });
 
