@@ -344,6 +344,10 @@ const productData = [
     { id: 209, name: "Smart Glass Soundproof Partition", category: "profile-works", url: "smart-glass-partition.html", image: "assets/product/galleries/smart-glass-partition/page_001.webp?v=2", price: "Enquire for Price", description: "Premium profile works material." },
     { id: 210, name: "Profile Sliding Door Demo", category: "profile-works", url: "sliding-door-demo.html", image: "assets/img/logo.png", price: "Enquire for Price", description: "Premium profile works material." },
     { id: 211, name: "Aluminium Slim Profile", category: "profile-works", url: "slim-profile.html", image: "assets/product/galleries/slim-profile/page_001.jpg?v=2", price: "Enquire for Price", description: "Premium profile works material." },
+    { id: 901, name: "Spectre WPC Louvers", category: "decoratives", url: "is-catalogue-spectre.html", image: "assets/product/galleries/catalogue-spectre/page_001.jpg", price: "Enquire for Price", description: "Premium WPC Louvers by Spectre" },
+    { id: 902, name: "3D Customized Designs", category: "3d-designs", url: "is-catalogue-469-3d.html", image: "assets/product/galleries/catalogue-469-3d/page_001.jpg", price: "Enquire for Price", description: "Premium 3D Customized Designs" },
+    { id: 903, name: "Laminato Highlighters", category: "decoratives", url: "is-catalogue-laminato.html", image: "assets/product/galleries/catalogue-laminato/page_004.jpg", price: "Enquire for Price", description: "Premium Highlighters by Laminato" },
+    { id: 904, name: "KD Customized Mosaics", category: "mosaics", url: "is-catalogue-kd.html", image: "assets/product/galleries/catalogue-kd/page_003.jpg", price: "Enquire for Price", description: "Premium Customized Mosaic Tiles by KD Associates" }
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -882,7 +886,19 @@ document.addEventListener('DOMContentLoaded', () => {
             'steel profile': 'slim-profile.html',
             'door': 'slim-profile.html',
             'sliding': 'slim-profile.html',
-            'wardrobe': 'slim-profile.html'
+            'wardrobe': 'slim-profile.html',
+            
+            // Newly added for daily picks
+            'kd': 'is-catalogue-kd.html',
+            'kd mosaics': 'is-catalogue-kd.html',
+            'kd customized mosaics': 'is-catalogue-kd.html',
+            'customized mosaics': 'is-catalogue-kd.html',
+            'laminato': 'is-catalogue-laminato.html',
+            'laminato highlighters': 'is-catalogue-laminato.html',
+            'spectre': 'is-catalogue-spectre.html',
+            'spectre wpc': 'is-catalogue-spectre.html',
+            '469 3d': 'is-catalogue-469-3d.html',
+            '3d designs': 'is-catalogue-469-3d.html'
         };
 
         // 1. Direct mapping check
@@ -1127,13 +1143,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // --- Dynamic Daily Picks (index.html) ---
         const dailyPicksContainer = document.getElementById('dynamic-daily-picks');
         if (dailyPicksContainer && typeof productData !== 'undefined') {
-            const newProducts = [
-                { id: 901, name: "Spectre WPC Louvers", category: "decoratives", url: "is-catalogue-spectre.html", image: "assets/product/galleries/catalogue-spectre/page_001.jpg", price: "Enquire for Price", description: "Premium WPC Louvers by Spectre" },
-                { id: 902, name: "3D Customized Designs", category: "3d-designs", url: "is-catalogue-469-3d.html", image: "assets/product/galleries/catalogue-469-3d/page_001.jpg", price: "Enquire for Price", description: "Premium 3D Customized Designs" },
-                { id: 903, name: "Laminato Highlighters", category: "decoratives", url: "is-catalogue-laminato.html", image: "assets/product/galleries/catalogue-laminato/page_004.jpg", price: "Enquire for Price", description: "Premium Highlighters by Laminato" },
-                { id: 904, name: "KD Customized Mosaics", category: "mosaics", url: "is-catalogue-kd.html", image: "assets/product/galleries/catalogue-kd/page_003.jpg", price: "Enquire for Price", description: "Premium Customized Mosaic Tiles by KD Associates" }
-            ];
-            const shuffled = [...productData].sort(() => 0.5 - Math.random());
+            const newProductIds = [901, 902, 903, 904];
+            const newProducts = productData.filter(p => newProductIds.includes(p.id));
+            const shuffled = [...productData].filter(p => !newProductIds.includes(p.id)).sort(() => 0.5 - Math.random());
             const selected = [...newProducts, ...shuffled.slice(0, 4)]; // Show 4 new + 4 random
             
             let cardsHtml = '';
