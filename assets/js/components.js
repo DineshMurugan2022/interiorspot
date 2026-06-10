@@ -68,7 +68,7 @@ window.siteHeaderHTML = `
                             </div>
                             <div class="mega-item">
                                 <a href="pvc-wall-panels.html">
-                                    <img src="assets/img/categories/pvc-wall-panels.png" alt="PVC Wall Panels">
+                                    <img src="assets/img/categories/IMG_20260610_103436.jpg(1).jpeg" alt="PVC Wall Panels">
                                     <span>PVC Wall Panels</span>
                                 </a>
                             </div>
