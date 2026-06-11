@@ -208,9 +208,9 @@ window.siteHeaderHTML = `
         </div>
 
         <div class="header-icons">
-            <a href="https://wa.me/918122258359" class="icon-circle whatsapp"><i
+            <a href="https://wa.me/918220667127" class="icon-circle whatsapp"><i
                     class="fab fa-whatsapp"></i></a>
-            <a href="tel:+918122258359" class="icon-circle phone"><i class="fas fa-phone-alt"></i></a>
+            <a href="tel:+918220667127" class="icon-circle phone"><i class="fas fa-phone-alt"></i></a>
         </div>
     </nav>
 </div>
@@ -249,7 +249,7 @@ window.siteFooterHTML = `
         <div class="footer-col">
             <h4>Contact Us</h4>
             <p><i class="fas fa-map-marker-alt"></i> 42-69, TK Mudali St, Choolai, Chennai - 600112</p>
-            <p><i class="fas fa-phone"></i> +91 81222 58359</p>
+            <p><i class="fas fa-phone"></i> +91 82206 67127</p>
             <p><i class="fas fa-phone"></i> +91 80560 57048</p>
             <p><i class="fas fa-envelope"></i> interiorspot8@gmail.com</p>
         </div>

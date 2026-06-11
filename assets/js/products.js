@@ -1130,8 +1130,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <div class="price">Enquire for Price</div>
                             </div>
                             <div class="card-actions">
-                                <a href="https://wa.me/918122258359?text=Hi, I'm interested in ${prod.name}. Please share details." class="btn-wa" target="_blank" aria-label="Enquire about ${prod.name} on WhatsApp"><i class="fab fa-whatsapp"></i> Enquire</a>
-                                <a href="tel:+918122258359" class="btn-phone" aria-label="Call to enquire about ${prod.name}"><i class="fas fa-phone"></i></a>
+                                <a href="https://wa.me/918220667127?text=Hi, I'm interested in ${prod.name}. Please share details." class="btn-wa" target="_blank" aria-label="Enquire about ${prod.name} on WhatsApp"><i class="fab fa-whatsapp"></i> Enquire</a>
+                                <a href="tel:+918220667127" class="btn-phone" aria-label="Call to enquire about ${prod.name}"><i class="fas fa-phone"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1169,8 +1169,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <div class="price">Enquire for Price</div>
                             </div>
                             <div class="card-actions">
-                                <a href="https://wa.me/918122258359?text=Hi, I'm interested in ${prod.name}. Please share details." class="btn-wa" target="_blank" aria-label="Enquire about ${prod.name} on WhatsApp"><i class="fab fa-whatsapp"></i> Enquire</a>
-                                <a href="tel:+918122258359" class="btn-phone" aria-label="Call to enquire about ${prod.name}"><i class="fas fa-phone"></i></a>
+                                <a href="https://wa.me/918220667127?text=Hi, I'm interested in ${prod.name}. Please share details." class="btn-wa" target="_blank" aria-label="Enquire about ${prod.name} on WhatsApp"><i class="fab fa-whatsapp"></i> Enquire</a>
+                                <a href="tel:+918220667127" class="btn-phone" aria-label="Call to enquire about ${prod.name}"><i class="fas fa-phone"></i></a>
                             </div>
                         </div>
                     </div>
