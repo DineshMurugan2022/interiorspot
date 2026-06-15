@@ -160,13 +160,13 @@ window.siteHeaderHTML = `
                     <a href="laminate.html">Laminates</a>
                     <a href="charcoal-sheets.html">Charcoal Sheets</a>
                     <a href="fluted-panel.html">Fluted Panel</a>
-                    <a href="decoratives.html">Decorative Sheets</a>
+                    <a href="decoratives.html">Decorative</a>
                     <a href="rattan-cane.html">Rattan Cane</a>
                     <a href="3d-designs.html">3D MDF Designs</a>
                     <a href="pvc-wall-panels.html">PVC Wall Panels</a>
-                    <a href="mosaics.html">Designer Mosaics</a>
-                    <a href="korian.html">Corian Surfaces</a>
-                    <a href="alabaster.html">Alabaster Sheets</a>
+                    <a href="mosaics.html">Mosaics</a>
+                    <a href="korian.html">Corian</a>
+                    <a href="alabaster.html">Alabaster</a>
                     <a href="stone-veneer.html">Stone Veneer</a>
                     <a href="ripple-ss.html">Ripple SS</a>
                     <a href="exterior-products.html">Exterior Products</a>
@@ -237,13 +237,25 @@ window.siteFooterHTML = `
         </div>
         <div class="footer-col">
             <h4>Our Categories</h4>
-            <ul>
+            <ul style="column-count: 2; column-gap: 20px; margin-bottom: 0;">
                 <li><a href="laminate.html">Laminates</a></li>
                 <li><a href="charcoal-sheets.html">Charcoal Sheets</a></li>
-                <li><a href="fluted-panel.html">Fluted Panels</a></li>
-                <li><a href="flexible-fluted-panel.html">Flexible Fluted Panel</a></li>
+                <li><a href="fluted-panel.html">Fluted Panel</a></li>
+                <li><a href="decoratives.html">Decorative</a></li>
+                <li><a href="rattan-cane.html">Rattan Cane</a></li>
+                <li><a href="3d-designs.html">3D MDF Designs</a></li>
+                <li><a href="pvc-wall-panels.html">PVC Wall Panels</a></li>
+                <li><a href="mosaics.html">Mosaics</a></li>
+                <li><a href="korian.html">Corian</a></li>
+                <li><a href="alabaster.html">Alabaster</a></li>
                 <li><a href="stone-veneer.html">Stone Veneer</a></li>
+                <li><a href="ripple-ss.html">Ripple SS</a></li>
+                <li><a href="exterior-products.html">Exterior Products</a></li>
                 <li><a href="plywood.html">Plywood</a></li>
+                <li><a href="flexible-fluted-panel.html">Flexible Fluted Panel</a></li>
+                <li><a href="wpc-wall-panels.html">WPC Wall Panels</a></li>
+                <li><a href="wood-panels.html">Wood Panels</a></li>
+                <li><a href="profile-doors.html">Profile Doors</a></li>
             </ul>
         </div>
         <div class="footer-col">
