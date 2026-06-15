@@ -50,7 +50,7 @@ window.siteHeaderHTML = `
                             </div>
                             <div class="mega-item">
                                 <a href="decoratives.html">
-                                    <img src="assets/img/categories/decoratives.png" alt="Decorative">
+                                    <img src="assets/img/categories/decoratives.jpeg" alt="Decorative">
                                     <span>Decorative</span>
                                 </a>
                             </div>
@@ -95,7 +95,7 @@ window.siteHeaderHTML = `
                             <!-- Row 2: 8 Categories -->
                             <div class="mega-item">
                                 <a href="stone-veneer.html">
-                                    <img src="assets/img/categories/stone-veneer.png" alt="Stone Veneer">
+                                    <img src="assets/img/categories/stone-veneer.jpg" alt="Stone Veneer">
                                     <span>Stone Veneer</span>
                                 </a>
                             </div>
@@ -119,9 +119,9 @@ window.siteHeaderHTML = `
                                 </a>
                             </div>
                             <div class="mega-item">
-                                <a href="louvers.html">
-                                    <img src="assets/img/categories/flexible-panels.png" alt="Louvers">
-                                    <span>Louvers</span>
+                                <a href="flexible-fluted-panel.html">
+                                    <img src="assets/img/categories/flexible-fluted-panel.jpeg" alt="Flexible Fluted Panel">
+                                    <span>Flexible Fluted Panel</span>
                                 </a>
                             </div>
                             <div class="mega-item">
@@ -137,9 +137,9 @@ window.siteHeaderHTML = `
                                 </a>
                             </div>
                             <div class="mega-item">
-                                <a href="ceiling-panels.html">
-                                    <img src="assets/img/categories/profile-works.png" alt="Ceiling Panels">
-                                    <span>Ceiling Panels</span>
+                                <a href="profile-doors.html">
+                                    <img src="assets/img/categories/profile-works.png" alt="Profile Doors">
+                                    <span>Profile Doors</span>
                                 </a>
                             </div>
                         </div>
@@ -171,10 +171,10 @@ window.siteHeaderHTML = `
                     <a href="ripple-ss.html">Ripple SS</a>
                     <a href="exterior-products.html">Exterior Products</a>
                     <a href="plywood.html">Plywood</a>
-                    <a href="louvers.html">Louvers</a>
+                    <a href="flexible-fluted-panel.html">Flexible Fluted Panel</a>
                     <a href="wpc-wall-panels.html">WPC Wall Panels</a>
                     <a href="wood-panels.html">Wood Panels</a>
-                    <a href="ceiling-panels.html">Ceiling Panels</a>
+                    <a href="profile-doors.html">Profile Doors</a>
                 </div>
             </div>
         </div>
@@ -197,10 +197,10 @@ window.siteHeaderHTML = `
                     <li><a href="ripple-ss.html">Ripple SS</a></li>
                     <li><a href="exterior-products.html">Exterior Products</a></li>
                     <li><a href="plywood.html">Plywood</a></li>
-                    <li><a href="louvers.html">Louvers</a></li>
+                    <li><a href="flexible-fluted-panel.html">Flexible Fluted Panel</a></li>
                     <li><a href="wpc-wall-panels.html">WPC Wall Panels</a></li>
                     <li><a href="wood-panels.html">Wood Panels</a></li>
-                    <li><a href="ceiling-panels.html">Ceiling Panels</a></li>
+                    <li><a href="profile-doors.html">Profile Doors</a></li>
                 </ul>
             </div>
             <input type="text" placeholder="What are you looking for?">
@@ -241,7 +241,7 @@ window.siteFooterHTML = `
                 <li><a href="laminate.html">Laminates</a></li>
                 <li><a href="charcoal-sheets.html">Charcoal Sheets</a></li>
                 <li><a href="fluted-panel.html">Fluted Panels</a></li>
-                <li><a href="louvers.html">Louvers</a></li>
+                <li><a href="flexible-fluted-panel.html">Flexible Fluted Panel</a></li>
                 <li><a href="stone-veneer.html">Stone Veneer</a></li>
                 <li><a href="plywood.html">Plywood</a></li>
             </ul>

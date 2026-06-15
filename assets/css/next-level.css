@@ -782,6 +782,7 @@ header.scrolled {
     /* Original color */
     opacity: 0.9;
     transition: var(--nl-transition);
+    mix-blend-mode: multiply;
 }
 
 .nl-brand-card:hover {
