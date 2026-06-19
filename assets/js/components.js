@@ -119,7 +119,7 @@ window.siteHeaderHTML = `
                                 </a>
                             </div>
                             <div class="mega-item">
-                                <a href="flexible-fluted-panel.html">
+                                <a href="fluted-panel.html">
                                     <img src="assets/img/categories/flexible-fluted-panel.jpeg" alt="Flexible Fluted Panel">
                                     <span>Flexible Fluted Panel</span>
                                 </a>
@@ -137,7 +137,7 @@ window.siteHeaderHTML = `
                                 </a>
                             </div>
                             <div class="mega-item">
-                                <a href="profile-doors.html">
+                                <a href="profile-works.html">
                                     <img src="assets/img/categories/profile-works.png" alt="Profile Doors">
                                     <span>Profile Doors</span>
                                 </a>
@@ -171,10 +171,10 @@ window.siteHeaderHTML = `
                     <a href="ripple-ss.html">Ripple SS</a>
                     <a href="exterior-products.html">Exterior Products</a>
                     <a href="plywood.html">Plywood</a>
-                    <a href="flexible-fluted-panel.html">Flexible Fluted Panel</a>
+                    <a href="fluted-panel.html">Flexible Fluted Panel</a>
                     <a href="wpc-wall-panels.html">WPC Wall Panels</a>
                     <a href="wood-panels.html">Wood Panels</a>
-                    <a href="profile-doors.html">Profile Doors</a>
+                    <a href="profile-works.html">Profile Doors</a>
                 </div>
             </div>
         </div>
@@ -197,10 +197,10 @@ window.siteHeaderHTML = `
                     <li><a href="ripple-ss.html">Ripple SS</a></li>
                     <li><a href="exterior-products.html">Exterior Products</a></li>
                     <li><a href="plywood.html">Plywood</a></li>
-                    <li><a href="flexible-fluted-panel.html">Flexible Fluted Panel</a></li>
+                    <li><a href="fluted-panel.html">Flexible Fluted Panel</a></li>
                     <li><a href="wpc-wall-panels.html">WPC Wall Panels</a></li>
                     <li><a href="wood-panels.html">Wood Panels</a></li>
-                    <li><a href="profile-doors.html">Profile Doors</a></li>
+                    <li><a href="profile-works.html">Profile Doors</a></li>
                 </ul>
             </div>
             <input type="text" placeholder="What are you looking for?">
@@ -252,10 +252,10 @@ window.siteFooterHTML = `
                 <li><a href="ripple-ss.html">Ripple SS</a></li>
                 <li><a href="exterior-products.html">Exterior Products</a></li>
                 <li><a href="plywood.html">Plywood</a></li>
-                <li><a href="flexible-fluted-panel.html">Flexible Fluted Panel</a></li>
+                <li><a href="fluted-panel.html">Flexible Fluted Panel</a></li>
                 <li><a href="wpc-wall-panels.html">WPC Wall Panels</a></li>
                 <li><a href="wood-panels.html">Wood Panels</a></li>
-                <li><a href="profile-doors.html">Profile Doors</a></li>
+                <li><a href="profile-works.html">Profile Doors</a></li>
             </ul>
         </div>
         <div class="footer-col">

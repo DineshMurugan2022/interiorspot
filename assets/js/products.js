@@ -353,18 +353,14 @@ const productData = [
 document.addEventListener('DOMContentLoaded', () => {
     // URL Parameter Category Filtering
     const urlParams = new URLSearchParams(window.location.search);
-    const catFilter = urlParams.get('cat');
+    let catFilter = urlParams.get('cat');
+    
+    if (window.location.pathname.includes('profile-works.html')) {
+        catFilter = 'profile-works';
+    }
+
     const productGrid = document.querySelector('.product-grid');
     const heroSection = document.getElementById('category-hero-section');
-    const specContainer = document.getElementById('category-specs');
-
-    if (heroSection && catFilter) {
-        renderHero(catFilter);
-    }
-
-    if (productGrid) {
-        renderProducts(catFilter);
-    }
 
     if (specContainer && catFilter) {
         renderSpecs(catFilter);
@@ -677,14 +673,14 @@ document.addEventListener('DOMContentLoaded', () => {
             'exterior panels': 'vivre-aluclad.html',
 
             // Generic Louvers
-            'louver': 'flexible-fluted-panel.html',
-            'fluted': 'flexible-fluted-panel.html',
-            'louvered panel': 'flexible-fluted-panel.html',
-            'fluted panel': 'flexible-fluted-panel.html',
-            'waterproof panel': 'flexible-fluted-panel.html',
-            'waterproof louvers': 'flexible-fluted-panel.html',
-            'wooden louvers': 'flexible-fluted-panel.html',
-            'premium louvers': 'flexible-fluted-panel.html',
+            'louver': 'fluted-panel.html',
+            'fluted': 'fluted-panel.html',
+            'louvered panel': 'fluted-panel.html',
+            'fluted panel': 'fluted-panel.html',
+            'waterproof panel': 'fluted-panel.html',
+            'waterproof louvers': 'fluted-panel.html',
+            'wooden louvers': 'fluted-panel.html',
+            'premium louvers': 'fluted-panel.html',
 
             // Cork
             'cork': 'is-sloan-cork.html',
