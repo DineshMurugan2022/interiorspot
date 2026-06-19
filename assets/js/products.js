@@ -361,6 +361,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const productGrid = document.querySelector('.product-grid');
     const heroSection = document.getElementById('category-hero-section');
+    const specContainer = document.getElementById('category-specs');
+
+    if (heroSection && catFilter) {
+        renderHero(catFilter);
+    }
+
+    if (productGrid) {
+        renderProducts(catFilter);
+    }
 
     if (specContainer && catFilter) {
         renderSpecs(catFilter);
