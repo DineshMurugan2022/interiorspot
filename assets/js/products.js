@@ -358,6 +358,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (window.location.pathname.includes('profile-works.html')) {
         catFilter = 'profile-works';
     }
+    if (window.location.pathname.includes('flexible-panels.html')) {
+        catFilter = 'flexible-panels';
+    }
 
     const productGrid = document.querySelector('.product-grid');
     const heroSection = document.getElementById('category-hero-section');
