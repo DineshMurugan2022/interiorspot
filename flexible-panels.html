@@ -5,19 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible Panels | Interior Spot Chennai</title>
-    <meta name="description" content="Explore our premium collection of flexible panels including Flexible Stone, Liquid Metal, Soft Panels, and Designer Sheets for versatile interior applications.">
-    <meta name="keywords" content="flexible panels, flexible stone, liquid metal panels, soft panels, designer sheets, flexible louvers, interior spot chennai">
+    <meta name="description"
+        content="Explore our premium collection of flexible panels including Flexible Stone, Liquid Metal, Soft Panels, and Designer Sheets for versatile interior applications.">
+    <meta name="keywords"
+        content="flexible panels, flexible stone, liquid metal panels, soft panels, designer sheets, flexible louvers, interior spot chennai">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/next-level.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root { --next-blue: #1a3b8f; }
+        :root {
+            --next-blue: #1a3b8f;
+        }
 
         /* ===== HERO ===== */
         .category-hero {
@@ -28,6 +33,7 @@
             position: relative;
             overflow: hidden;
         }
+
         .category-hero::before {
             content: '';
             position: absolute;
@@ -35,9 +41,10 @@
             right: -20%;
             width: 500px;
             height: 500px;
-            background: rgba(255,255,255,0.04);
+            background: rgba(255, 255, 255, 0.04);
             border-radius: 50%;
         }
+
         .category-hero h1 {
             font-size: 60px;
             font-weight: 800;
@@ -45,11 +52,13 @@
             font-family: 'Outfit', sans-serif;
             letter-spacing: -1px;
         }
+
         .category-hero p {
             font-size: 16px;
             opacity: 0.85;
             margin-bottom: 30px;
         }
+
         .hero-pills {
             display: flex;
             justify-content: center;
@@ -57,9 +66,10 @@
             flex-wrap: wrap;
             margin-bottom: 30px;
         }
+
         .hero-pill {
-            background: rgba(255,255,255,0.12);
-            border: 1px solid rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.12);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             color: white;
             padding: 7px 18px;
             border-radius: 20px;
@@ -74,15 +84,20 @@
             position: sticky;
             top: 0;
             z-index: 200;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
         }
+
         .cat-filter-scroll {
             display: flex;
             overflow-x: auto;
             scrollbar-width: none;
             -ms-overflow-style: none;
         }
-        .cat-filter-scroll::-webkit-scrollbar { display: none; }
+
+        .cat-filter-scroll::-webkit-scrollbar {
+            display: none;
+        }
+
         .cat-tab {
             flex-shrink: 0;
             padding: 16px 22px;
@@ -97,7 +112,12 @@
             transition: all 0.2s ease;
             white-space: nowrap;
         }
-        .cat-tab:hover { color: var(--next-blue); background: #f8f9ff; }
+
+        .cat-tab:hover {
+            color: var(--next-blue);
+            background: #f8f9ff;
+        }
+
         .cat-tab.active {
             color: var(--next-blue);
             border-bottom-color: var(--next-blue);
@@ -109,13 +129,28 @@
             padding: 55px 0 40px;
             display: none;
         }
-        .cat-section.active { display: block; animation: fadeUp 0.35s ease; }
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(18px); }
-            to   { opacity: 1; transform: translateY(0); }
+
+        .cat-section.active {
+            display: block;
+            animation: fadeUp 0.35s ease;
         }
 
-        .cat-section-header { margin-bottom: 35px; }
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(18px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .cat-section-header {
+            margin-bottom: 35px;
+        }
+
         .cat-badge {
             display: inline-block;
             background: var(--next-blue);
@@ -128,12 +163,14 @@
             letter-spacing: 0.5px;
             margin-bottom: 12px;
         }
+
         .cat-section-header h2 {
             font-size: 30px;
             font-weight: 800;
             color: #1a1a2e;
             margin-bottom: 8px;
         }
+
         .cat-section-header .sub-desc {
             color: #777;
             font-size: 15px;
@@ -147,34 +184,42 @@
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
             gap: 28px;
         }
+
         .brand-card {
             background: #fff;
             border-radius: 18px;
             overflow: hidden;
-            box-shadow: 0 3px 18px rgba(0,0,0,0.07);
+            box-shadow: 0 3px 18px rgba(0, 0, 0, 0.07);
             border: 1.5px solid #f0f0f5;
             display: flex;
             flex-direction: column;
             transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
+
         .brand-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 16px 40px rgba(26,59,143,0.14);
+            box-shadow: 0 16px 40px rgba(26, 59, 143, 0.14);
             border-color: #c8d5ff;
         }
+
         .brand-card .card-img {
             width: 100%;
             aspect-ratio: 4/5;
             overflow: hidden;
             background: #f5f6fb;
         }
+
         .brand-card .card-img img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.5s ease;
         }
-        .brand-card:hover .card-img img { transform: scale(1.08); }
+
+        .brand-card:hover .card-img img {
+            transform: scale(1.08);
+        }
+
         .brand-card .card-body {
             padding: 18px 18px 20px;
             display: flex;
@@ -182,9 +227,22 @@
             gap: 8px;
             flex: 1;
         }
-        .brand-name { font-size: 16px; font-weight: 700; color: #1a1a2e; line-height: 1.3; }
-        .brand-desc { font-size: 13px; color: #888; line-height: 1.55; flex: 1; margin-bottom: 8px; }
-        
+
+        .brand-name {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1a1a2e;
+            line-height: 1.3;
+        }
+
+        .brand-desc {
+            font-size: 13px;
+            color: #888;
+            line-height: 1.55;
+            flex: 1;
+            margin-bottom: 8px;
+        }
+
         /* ===== CARD SPECS ===== */
         .card-specs {
             display: flex;
@@ -199,8 +257,18 @@
             color: #555;
             border: 1px solid #eef1ff;
         }
-        .card-specs .spec-item { display: flex; align-items: center; gap: 5px; }
-        .card-specs .spec-item i { color: #5c7aff; font-size: 11px; }
+
+        .card-specs .spec-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .card-specs .spec-item i {
+            color: #5c7aff;
+            font-size: 11px;
+        }
+
         .card-specs .price {
             color: var(--next-blue);
             font-size: 15px;
@@ -212,6 +280,7 @@
             gap: 12px;
             margin-top: auto;
         }
+
         .btn-wa {
             flex: 1;
             display: flex;
@@ -228,7 +297,12 @@
             text-decoration: none;
             transition: all 0.25s ease;
         }
-        .btn-wa:hover { background: #1bab52; transform: scale(1.02); }
+
+        .btn-wa:hover {
+            background: #1bab52;
+            transform: scale(1.02);
+        }
+
         .btn-phone {
             display: flex;
             align-items: center;
@@ -244,7 +318,12 @@
             transition: all 0.25s ease;
             min-width: 44px;
         }
-        .btn-phone:hover { background: var(--next-blue); color: white; border-color: var(--next-blue); }
+
+        .btn-phone:hover {
+            background: var(--next-blue);
+            color: white;
+            border-color: var(--next-blue);
+        }
 
         /* Placeholder when no image */
         .img-ph {
@@ -259,15 +338,41 @@
             background: linear-gradient(135deg, #edf0ff 0%, #f5f7ff 100%);
             color: var(--next-blue);
         }
-        .img-ph i { font-size: 38px; opacity: 0.35; }
-        .img-ph span { font-size: 12px; font-weight: 700; opacity: 0.5; letter-spacing: 0.5px; text-transform: uppercase; text-align: center; padding: 0 10px;}
+
+        .img-ph i {
+            font-size: 38px;
+            opacity: 0.35;
+        }
+
+        .img-ph span {
+            font-size: 12px;
+            font-weight: 700;
+            opacity: 0.5;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 0 10px;
+        }
 
         /* Mobile */
         @media (max-width: 768px) {
-            .category-hero h1 { font-size: 38px; }
-            .brand-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
-            .cat-section-header h2 { font-size: 22px; }
-            .brand-name { font-size: 14px; }
+            .category-hero h1 {
+                font-size: 38px;
+            }
+
+            .brand-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 14px;
+            }
+
+            .cat-section-header h2 {
+                font-size: 22px;
+            }
+
+            .brand-name {
+                font-size: 14px;
+            }
+
             .card-specs {
                 padding: 8px 10px;
                 font-size: 11px;
@@ -277,11 +382,18 @@
                 justify-content: flex-start;
                 gap: 6px;
             }
+
             .card-specs .price {
                 margin-left: auto;
                 margin-top: 0;
             }
-            .btn-wa, .btn-phone { padding: 12px 14px; font-size: 12px; min-height: 44px; }
+
+            .btn-wa,
+            .btn-phone {
+                padding: 12px 14px;
+                font-size: 12px;
+                min-height: 44px;
+            }
         }
     </style>
 </head>
@@ -293,7 +405,8 @@
     <section class="category-hero">
         <div class="container">
             <h1>Flexible Panels</h1>
-            <p>Premium flexible panels including Liquid Metal, Flexible Stone, and Soft Panels for highly versatile, curved, and customized designs.</p>
+            <p>Premium flexible panels including Liquid Metal, Flexible Stone, and Soft Panels for highly versatile,
+                curved, and customized designs.</p>
             <div class="hero-pills">
                 <span class="hero-pill"><i class="fas fa-layer-group"></i> 4 Sub-Categories</span>
                 <span class="hero-pill"><i class="fas fa-compress-arrows-alt"></i> Highly Flexible</span>
@@ -324,42 +437,57 @@
             <div class="cat-section-header">
                 <span class="cat-badge">Interior Grade · Metallic</span>
                 <h2>Liquid Metal Panels</h2>
-                <p class="sub-desc">Striking metallic finish flexible panels combining the raw aesthetic of metal with the installation ease of flexible sheets.</p>
+                <p class="sub-desc">Striking metallic finish flexible panels combining the raw aesthetic of metal with
+                    the installation ease of flexible sheets.</p>
             </div>
             <div class="brand-grid">
 
                 <div class="brand-card">
                     <a href="metalixo-liquid.html" class="card-img" style="display:block; text-decoration:none;">
-                        <img decoding="async" src="assets/product/galleries/metalixo-liquid/page_013.jpg?v=2" alt="Metalixo Liquid Metal" width="250" height="312" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                        <img decoding="async" src="assets/product/galleries/metalixo-liquid/page_013.jpg?v=2"
+                            alt="Metalixo Liquid Metal" width="250" height="312" loading="lazy"
+                            style="width:100%; height:100%; object-fit:cover;">
                     </a>
                     <div class="card-body">
-                        <a href="metalixo-liquid.html" class="brand-name" style="text-decoration:none;">Metalixo Liquid Metal</a>
-                        <div class="brand-desc">Premium Metalixo Liquid Metal material for seamless metallic wall wrapping.</div>
+                        <a href="metalixo-liquid.html" class="brand-name" style="text-decoration:none;">Metalixo Liquid
+                            Metal</a>
+                        <div class="brand-desc">Premium Metalixo Liquid Metal material for seamless metallic wall
+                            wrapping.</div>
                         <div class="card-specs">
                             <div class="spec-item"><i class="fas fa-expand"></i> Custom</div>
                             <div class="price">Enquire</div>
                         </div>
                         <div class="card-actions">
-                            <a href="https://wa.me/918220667127?text=Hi, I'm interested in Metalixo Liquid Metal. Please share details." class="btn-wa" target="_blank" aria-label="Enquire on WhatsApp"><i class="fab fa-whatsapp"></i> Enquire</a>
-                            <a href="tel:+918220667127" class="btn-phone" aria-label="Call to enquire"><i class="fas fa-phone"></i></a>
+                            <a href="https://wa.me/918220667127?text=Hi, I'm interested in Metalixo Liquid Metal. Please share details."
+                                class="btn-wa" target="_blank" aria-label="Enquire on WhatsApp"><i
+                                    class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918220667127" class="btn-phone" aria-label="Call to enquire"><i
+                                    class="fas fa-phone"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="brand-card">
                     <a href="ciscon-metal.html" class="card-img" style="display:block; text-decoration:none;">
-                        <img decoding="async" src="assets/product/galleries/ciscon-metal/page_013.jpg?v=2" alt="Ciscon Metal Panel" width="250" height="312" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                        <img decoding="async" src="assets/product/galleries/ciscon-metal/page_013.jpg?v=2"
+                            alt="Ciscon Metal Panel" width="250" height="312" loading="lazy"
+                            style="width:100%; height:100%; object-fit:cover;">
                     </a>
                     <div class="card-body">
-                        <a href="ciscon-metal.html" class="brand-name" style="text-decoration:none;">Ciscon Metal Panel</a>
-                        <div class="brand-desc">Premium Ciscon Metal Panel featuring high-end metallic sheen and flexibility.</div>
+                        <a href="ciscon-metal.html" class="brand-name" style="text-decoration:none;">Ciscon Metal
+                            Panel</a>
+                        <div class="brand-desc">Premium Ciscon Metal Panel featuring high-end metallic sheen and
+                            flexibility.</div>
                         <div class="card-specs">
                             <div class="spec-item"><i class="fas fa-expand"></i> Custom</div>
                             <div class="price">Enquire</div>
                         </div>
                         <div class="card-actions">
-                            <a href="https://wa.me/918220667127?text=Hi, I'm interested in Ciscon Metal Panel. Please share details." class="btn-wa" target="_blank" aria-label="Enquire on WhatsApp"><i class="fab fa-whatsapp"></i> Enquire</a>
-                            <a href="tel:+918220667127" class="btn-phone" aria-label="Call to enquire"><i class="fas fa-phone"></i></a>
+                            <a href="https://wa.me/918220667127?text=Hi, I'm interested in Ciscon Metal Panel. Please share details."
+                                class="btn-wa" target="_blank" aria-label="Enquire on WhatsApp"><i
+                                    class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918220667127" class="btn-phone" aria-label="Call to enquire"><i
+                                    class="fas fa-phone"></i></a>
                         </div>
                     </div>
                 </div>
@@ -374,42 +502,57 @@
             <div class="cat-section-header">
                 <span class="cat-badge">Interior Grade · Stone Veneer</span>
                 <h2>Flexible Stone Panels</h2>
-                <p class="sub-desc">Natural stone aesthetics with an ultra-flexible backing, allowing you to wrap columns, curved walls, and complex surfaces.</p>
+                <p class="sub-desc">Natural stone aesthetics with an ultra-flexible backing, allowing you to wrap
+                    columns, curved walls, and complex surfaces.</p>
             </div>
             <div class="brand-grid">
 
                 <div class="brand-card">
                     <a href="stonish-flex.html" class="card-img" style="display:block; text-decoration:none;">
-                        <img decoding="async" src="assets/product/galleries/stonish-flex/page_006.jpg?v=2" alt="Stonish Flexible Stone" width="250" height="312" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                        <img decoding="async" src="assets/product/galleries/stonish-flex/page_006.jpg?v=2"
+                            alt="Stonish Flexible Stone" width="250" height="312" loading="lazy"
+                            style="width:100%; height:100%; object-fit:cover;">
                     </a>
                     <div class="card-body">
-                        <a href="stonish-flex.html" class="brand-name" style="text-decoration:none;">Stonish Flexible Stone</a>
-                        <div class="brand-desc">Premium Stonish Flexible Stone material. Bring the majesty of natural stone to curved surfaces.</div>
+                        <a href="stonish-flex.html" class="brand-name" style="text-decoration:none;">Stonish Flexible
+                            Stone</a>
+                        <div class="brand-desc">Premium Stonish Flexible Stone material. Bring the majesty of natural
+                            stone to curved surfaces.</div>
                         <div class="card-specs">
                             <div class="spec-item"><i class="fas fa-expand"></i> Sheet</div>
                             <div class="price">Enquire</div>
                         </div>
                         <div class="card-actions">
-                            <a href="https://wa.me/918220667127?text=Hi, I'm interested in Stonish Flexible Stone. Please share details." class="btn-wa" target="_blank" aria-label="Enquire on WhatsApp"><i class="fab fa-whatsapp"></i> Enquire</a>
-                            <a href="tel:+918220667127" class="btn-phone" aria-label="Call to enquire"><i class="fas fa-phone"></i></a>
+                            <a href="https://wa.me/918220667127?text=Hi, I'm interested in Stonish Flexible Stone. Please share details."
+                                class="btn-wa" target="_blank" aria-label="Enquire on WhatsApp"><i
+                                    class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918220667127" class="btn-phone" aria-label="Call to enquire"><i
+                                    class="fas fa-phone"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="brand-card">
                     <a href="master-flex-10x4.html" class="card-img" style="display:block; text-decoration:none;">
-                        <img decoding="async" src="assets/product/galleries/master-flex-10x4/page_011.jpg?v=2" alt="Master 10x4 Flexible Stone" width="250" height="312" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                        <img decoding="async" src="assets/product/galleries/master-flex-10x4/page_011.jpg?v=2"
+                            alt="Master 10x4 Flexible Stone" width="250" height="312" loading="lazy"
+                            style="width:100%; height:100%; object-fit:cover;">
                     </a>
                     <div class="card-body">
-                        <a href="master-flex-10x4.html" class="brand-name" style="text-decoration:none;">Master 10x4 Flexible Stone</a>
-                        <div class="brand-desc">Large format Master 10x4 Flexible Stone material with seamless flow.</div>
+                        <a href="master-flex-10x4.html" class="brand-name" style="text-decoration:none;">Master 10x4
+                            Flexible Stone</a>
+                        <div class="brand-desc">Large format Master 10x4 Flexible Stone material with seamless flow.
+                        </div>
                         <div class="card-specs">
                             <div class="spec-item"><i class="fas fa-expand"></i> 10' x 4'</div>
                             <div class="price">Enquire</div>
                         </div>
                         <div class="card-actions">
-                            <a href="https://wa.me/918220667127?text=Hi, I'm interested in Master 10x4 Flexible Stone. Please share details." class="btn-wa" target="_blank" aria-label="Enquire on WhatsApp"><i class="fab fa-whatsapp"></i> Enquire</a>
-                            <a href="tel:+918220667127" class="btn-phone" aria-label="Call to enquire"><i class="fas fa-phone"></i></a>
+                            <a href="https://wa.me/918220667127?text=Hi, I'm interested in Master 10x4 Flexible Stone. Please share details."
+                                class="btn-wa" target="_blank" aria-label="Enquire on WhatsApp"><i
+                                    class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918220667127" class="btn-phone" aria-label="Call to enquire"><i
+                                    class="fas fa-phone"></i></a>
                         </div>
                     </div>
                 </div>
@@ -424,60 +567,81 @@
             <div class="cat-section-header">
                 <span class="cat-badge">Interior Grade · Designer</span>
                 <h2>Designer &amp; Soft Panels</h2>
-                <p class="sub-desc">Experience unique tactile feedback with our soft panels and designer sheets, perfect for headboards, feature walls, and acoustic improvement.</p>
+                <p class="sub-desc">Experience unique tactile feedback with our soft panels and designer sheets, perfect
+                    for headboards, feature walls, and acoustic improvement.</p>
             </div>
             <div class="brand-grid">
 
                 <div class="brand-card">
                     <a href="graffito-soft.html" class="card-img" style="display:block; text-decoration:none;">
-                        <img decoding="async" src="assets/product/galleries/graffito-soft/page_009.jpg?v=2" alt="Graffito Soft Panels" width="250" height="312" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                        <img decoding="async" src="assets/product/galleries/graffito-soft/page_009.jpg?v=2"
+                            alt="Graffito Soft Panels" width="250" height="312" loading="lazy"
+                            style="width:100%; height:100%; object-fit:cover;">
                     </a>
                     <div class="card-body">
-                        <a href="graffito-soft.html" class="brand-name" style="text-decoration:none;">Graffito Soft Panels</a>
-                        <div class="brand-desc">Premium Graffito Soft Panels offering sound dampening and a luxurious feel.</div>
+                        <a href="graffito-soft.html" class="brand-name" style="text-decoration:none;">Graffito Soft
+                            Panels</a>
+                        <div class="brand-desc">Premium Graffito Soft Panels offering sound dampening and a luxurious
+                            feel.</div>
                         <div class="card-specs">
                             <div class="spec-item"><i class="fas fa-expand"></i> Custom</div>
                             <div class="price">Enquire</div>
                         </div>
                         <div class="card-actions">
-                            <a href="https://wa.me/918220667127?text=Hi, I'm interested in Graffito Soft Panels. Please share details." class="btn-wa" target="_blank" aria-label="Enquire on WhatsApp"><i class="fab fa-whatsapp"></i> Enquire</a>
-                            <a href="tel:+918220667127" class="btn-phone" aria-label="Call to enquire"><i class="fas fa-phone"></i></a>
+                            <a href="https://wa.me/918220667127?text=Hi, I'm interested in Graffito Soft Panels. Please share details."
+                                class="btn-wa" target="_blank" aria-label="Enquire on WhatsApp"><i
+                                    class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918220667127" class="btn-phone" aria-label="Call to enquire"><i
+                                    class="fas fa-phone"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="brand-card">
                     <a href="is-shade-designer.html" class="card-img" style="display:block; text-decoration:none;">
-                        <img decoding="async" src="assets/product/galleries/is-shade-designer/page_009.jpg?v=2" alt="IS Shade Designer Sheets" width="250" height="312" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                        <img decoding="async" src="assets/product/galleries/is-shade-designer/page_009.jpg?v=2"
+                            alt="IS Shade Designer Sheets" width="250" height="312" loading="lazy"
+                            style="width:100%; height:100%; object-fit:cover;">
                     </a>
                     <div class="card-body">
-                        <a href="is-shade-designer.html" class="brand-name" style="text-decoration:none;">IS Shade Designer Sheets</a>
+                        <a href="is-shade-designer.html" class="brand-name" style="text-decoration:none;">IS Shade
+                            Designer Sheets</a>
                         <div class="brand-desc">Premium IS Shade Designer Sheets for bold, artistic statements.</div>
                         <div class="card-specs">
                             <div class="spec-item"><i class="fas fa-expand"></i> Custom</div>
                             <div class="price">Enquire</div>
                         </div>
                         <div class="card-actions">
-                            <a href="https://wa.me/918220667127?text=Hi, I'm interested in IS Shade Designer Sheets. Please share details." class="btn-wa" target="_blank" aria-label="Enquire on WhatsApp"><i class="fab fa-whatsapp"></i> Enquire</a>
-                            <a href="tel:+918220667127" class="btn-phone" aria-label="Call to enquire"><i class="fas fa-phone"></i></a>
+                            <a href="https://wa.me/918220667127?text=Hi, I'm interested in IS Shade Designer Sheets. Please share details."
+                                class="btn-wa" target="_blank" aria-label="Enquire on WhatsApp"><i
+                                    class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918220667127" class="btn-phone" aria-label="Call to enquire"><i
+                                    class="fas fa-phone"></i></a>
                         </div>
                     </div>
                 </div>
 
                 <div class="brand-card">
                     <a href="is-sloan-cork.html" class="card-img" style="display:block; text-decoration:none;">
-                        <img decoding="async" src="assets/product/galleries/is-sloan-cork/page_011.jpg?v=2" alt="IS Sloan Metallic Cork" width="250" height="312" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                        <img decoding="async" src="assets/product/galleries/is-sloan-cork/page_011.jpg?v=2"
+                            alt="IS Sloan Metallic Cork" width="250" height="312" loading="lazy"
+                            style="width:100%; height:100%; object-fit:cover;">
                     </a>
                     <div class="card-body">
-                        <a href="is-sloan-cork.html" class="brand-name" style="text-decoration:none;">IS Sloan Metallic Cork</a>
-                        <div class="brand-desc">Premium IS Sloan Metallic Cork providing organic textures with modern aesthetics.</div>
+                        <a href="is-sloan-cork.html" class="brand-name" style="text-decoration:none;">IS Sloan Metallic
+                            Cork</a>
+                        <div class="brand-desc">Premium IS Sloan Metallic Cork providing organic textures with modern
+                            aesthetics.</div>
                         <div class="card-specs">
                             <div class="spec-item"><i class="fas fa-expand"></i> Custom</div>
                             <div class="price">Enquire</div>
                         </div>
                         <div class="card-actions">
-                            <a href="https://wa.me/918220667127?text=Hi, I'm interested in IS Sloan Metallic Cork. Please share details." class="btn-wa" target="_blank" aria-label="Enquire on WhatsApp"><i class="fab fa-whatsapp"></i> Enquire</a>
-                            <a href="tel:+918220667127" class="btn-phone" aria-label="Call to enquire"><i class="fas fa-phone"></i></a>
+                            <a href="https://wa.me/918220667127?text=Hi, I'm interested in IS Sloan Metallic Cork. Please share details."
+                                class="btn-wa" target="_blank" aria-label="Enquire on WhatsApp"><i
+                                    class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918220667127" class="btn-phone" aria-label="Call to enquire"><i
+                                    class="fas fa-phone"></i></a>
                         </div>
                     </div>
                 </div>
@@ -492,24 +656,32 @@
             <div class="cat-section-header">
                 <span class="cat-badge">Interior Grade · Fluted</span>
                 <h2>Flexible Louvers</h2>
-                <p class="sub-desc">Bring the popular fluted design to curved surfaces effortlessly with our flexible louvers.</p>
+                <p class="sub-desc">Bring the popular fluted design to curved surfaces effortlessly with our flexible
+                    louvers.</p>
             </div>
             <div class="brand-grid">
 
                 <div class="brand-card">
                     <a href="mystic-flex.html" class="card-img" style="display:block; text-decoration:none;">
-                        <img decoding="async" src="assets/product/galleries/mystic-flex/page_008.jpg?v=2" alt="Mystic Flex Louvers" width="250" height="312" loading="lazy" style="width:100%; height:100%; object-fit:cover;">
+                        <img decoding="async" src="assets/product/galleries/mystic-flex/page_008.jpg?v=2"
+                            alt="Mystic Flex Louvers" width="250" height="312" loading="lazy"
+                            style="width:100%; height:100%; object-fit:cover;">
                     </a>
                     <div class="card-body">
-                        <a href="mystic-flex.html" class="brand-name" style="text-decoration:none;">Mystic Flex Louvers</a>
-                        <div class="brand-desc">Premium Mystic Flex Louvers material combining flexibility with sharp louver profiles.</div>
+                        <a href="mystic-flex.html" class="brand-name" style="text-decoration:none;">Mystic Flex
+                            Louvers</a>
+                        <div class="brand-desc">Premium Mystic Flex Louvers material combining flexibility with sharp
+                            louver profiles.</div>
                         <div class="card-specs">
                             <div class="spec-item"><i class="fas fa-expand"></i> Custom</div>
                             <div class="price">Enquire</div>
                         </div>
                         <div class="card-actions">
-                            <a href="https://wa.me/918220667127?text=Hi, I'm interested in Mystic Flex Louvers. Please share details." class="btn-wa" target="_blank" aria-label="Enquire on WhatsApp"><i class="fab fa-whatsapp"></i> Enquire</a>
-                            <a href="tel:+918220667127" class="btn-phone" aria-label="Call to enquire"><i class="fas fa-phone"></i></a>
+                            <a href="https://wa.me/918220667127?text=Hi, I'm interested in Mystic Flex Louvers. Please share details."
+                                class="btn-wa" target="_blank" aria-label="Enquire on WhatsApp"><i
+                                    class="fab fa-whatsapp"></i> Enquire</a>
+                            <a href="tel:+918220667127" class="btn-phone" aria-label="Call to enquire"><i
+                                    class="fas fa-phone"></i></a>
                         </div>
                     </div>
                 </div>
@@ -542,6 +714,41 @@
             });
         });
     </script>
+</body>
+
+</html>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="assets/js/components.js" defer></script>
+<script src="assets/js/header-nav.js" defer></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const tabs = document.querySelectorAll('.cat-tab');
+        const sections = document.querySelectorAll('.cat-section');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active from all
+                tabs.forEach(t => t.classList.remove('active'));
+                sections.forEach(s => s.classList.remove('active'));
+
+                // Add active to clicked
+                tab.classList.add('active');
+                const target = tab.getAttribute('data-target');
+                document.getElementById(target).classList.add('active');
+            });
+        });
+    });
+</script>
 </body>
 
 </html>

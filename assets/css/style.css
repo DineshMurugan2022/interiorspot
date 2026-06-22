@@ -51,7 +51,7 @@ img {
 
 .container {
     max-width: 1300px;
-    margin: 0 auto;
+    margin: 18px 18px;
     padding: 0 20px;
 }
 
@@ -204,7 +204,8 @@ header {
     height: 60px;
     aspect-ratio: 1;
     object-fit: cover;
-    border-radius: 8px; /* Changed from 12px to 8px to match small square layout */
+    border-radius: 8px;
+    /* Changed from 12px to 8px to match small square layout */
     background: #f5f5f5;
     padding: 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -1293,9 +1294,11 @@ footer {
     width: 60px;
     height: 60px;
     object-fit: cover;
-    border-radius: 8px; /* Changed from 50% to 8px to make it a small square */
+    border-radius: 8px;
+    /* Changed from 50% to 8px to make it a small square */
     background: #f5f5f5;
-    padding: 0; /* Removed padding so image spans full square area like modern icons */
+    padding: 0;
+    /* Removed padding so image spans full square area like modern icons */
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
@@ -1470,4 +1473,55 @@ footer {
 /* Globally hide the phone icon on product cards */
 .btn-phone {
     display: none !important;
+}/* ===== CATEGORY FILTER TABS (Global Override) ===== */
+.cat-filter-scroll, .category-tabs {
+    display: flex !important;
+    justify-content: flex-start !important;
+    gap: 12px !important;
+    padding: 16px 20px !important;
+}
+
+@media (min-width: 768px) {
+    .cat-filter-scroll, .category-tabs {
+        justify-content: center !important;
+        gap: 16px !important;
+    }
+}
+
+.cat-tab {
+    flex-shrink: 0 !important;
+    padding: 14px 32px !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    color: #4a332a !important;
+    cursor: pointer !important;
+    border: 1px solid rgba(141, 110, 99, 0.3) !important;
+    border-bottom: 1px solid rgba(141, 110, 99, 0.3) !important;
+    border-radius: 50px !important;
+    background: #ffffff !important;
+    font-family: 'Outfit', sans-serif !important;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    white-space: nowrap !important;
+    box-shadow: 0 4px 15px rgba(62, 39, 35, 0.05), inset 0 0 0 0 transparent !important;
+    letter-spacing: 0.5px !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.cat-tab:hover {
+    color: #4e7e36 !important;
+    background: #f4fdf0 !important;
+    border-color: #4e7e36 !important;
+    border-bottom-color: #4e7e36 !important;
+    transform: translateY(-4px) !important;
+    box-shadow: 0 10px 25px rgba(78, 126, 54, 0.15) !important;
+}
+
+.cat-tab.active {
+    color: #fff !important;
+    background: linear-gradient(135deg, #5b9240 0%, #40682c 100%) !important;
+    border-color: transparent !important;
+    border-bottom-color: transparent !important;
+    box-shadow: 0 12px 30px rgba(78, 126, 54, 0.35), inset 0 2px 4px rgba(255, 255, 255, 0.2) !important;
+    transform: translateY(-2px) scale(1.02) !important;
 }
